@@ -1,0 +1,58 @@
+usage: betterbench run [-h] [--no-update-check] --endpoint ENDPOINT --model
+                       MODEL [--config CONFIG] [--corpus CORPUS]
+                       [--categories [CATEGORIES ...]] [--passes N | --quick]
+                       [--warmup N] [--seed SEED] [--greedy] [--decode]
+                       [--prefill] [--concurrency] [--no-concurrency]
+                       [--no-prefill] [--max-model-len MAX_MODEL_LEN]
+                       [--api-key API_KEY] [--name NAME] [--note KEY=VALUE]
+                       [--out OUT] [--no-html] [--html-out HTML_OUT]
+
+options:
+  -h, --help            show this help message and exit
+  --no-update-check     don't check whether a newer BetterBench has been
+                        released (or set BETTERBENCH_NO_UPDATE_CHECK=1)
+  --endpoint ENDPOINT   OpenAI-compatible base, e.g. http://host:8080/v1
+  --model MODEL
+  --config CONFIG
+  --corpus CORPUS
+  --categories [CATEGORIES ...]
+  --passes N            measured passes per category (default 20, or the
+                        config file's value)
+  --quick               short smoke run: 5 passes per category after 1 warmup
+                        — too few passes for a publishable number, use it to
+                        check a setup
+  --warmup N            discarded passes per category (default 3; 1 under
+                        --quick)
+  --seed SEED
+  --greedy              temperature=0 (reproducibility)
+  --no-concurrency      skip the concurrency sweep
+  --no-prefill          skip the prompt-processing sweep
+  --max-model-len MAX_MODEL_LEN
+                        model context window in tokens; overrides auto-
+                        detection. Prefill depths that don't fit are skipped
+                        instead of erroring.
+  --api-key API_KEY     sent as 'Authorization: Bearer KEY' to the endpoint
+                        (or $BETTERBENCH_API_KEY); used on the wire only,
+                        never recorded in results.json
+  --name NAME           label for the default run directory, after the
+                        timestamp (default: the model name)
+  --note KEY=VALUE      free-form metadata recorded in results.json, e.g.
+                        --note image=v0.9.3 --note quant=mxfp4 --note tp=2.
+                        Repeatable. These are the details that decide whether
+                        two results are comparable at all, and there was no
+                        way to record them.
+  --out OUT             explicit output path; default: a versioned directory
+                        under $BETTERBENCH_HOME (default ~/.betterbench)/runs/
+                        — results.json plus the HTML report, nothing in the
+                        cwd
+  --no-html             skip the standalone HTML report (written beside --out
+                        by default)
+  --html-out HTML_OUT   path for the HTML report (default: --out with .html)
+
+phase selection:
+  By default all three phases run. Name one or more to run only those.
+
+  --decode              single-stream (batch = 1) decode only
+  --prefill             prompt-processing (prefill) depth sweep only (needs no
+                        corpus)
+  --concurrency         concurrency sweep only

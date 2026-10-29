@@ -1,0 +1,8 @@
+{
+  "phase": "complete",
+  "updated": "2026-10-28 23:03:06",
+  "returncode": 1,
+  "measurement_valid": true,
+  "report_recovered": true,
+  "note": "All measurements saved successfully; original process exited 1 only due to cp1252 stdout Unicode error. Re-rendered report with UTF-8, no remeasurement."
+}

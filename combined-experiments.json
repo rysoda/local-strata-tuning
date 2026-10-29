@@ -1,0 +1,287 @@
+[
+  {
+    "id": "short-read-0",
+    "args": [
+      "--short-read",
+      "0"
+    ],
+    "env": {},
+    "family": "short-read"
+  },
+  {
+    "id": "head-alias-compatible",
+    "args": [
+      "--short-read",
+      "0",
+      "--prefill-head-alias"
+    ],
+    "env": {},
+    "family": "combined"
+  },
+  {
+    "id": "combined-resource",
+    "args": [
+      "--kv-resident",
+      "20480",
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36"
+    ],
+    "env": {},
+    "family": "combined"
+  },
+  {
+    "id": "combined-adaptive",
+    "args": [
+      "--kv-resident",
+      "20480",
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "family": "combined"
+  },
+  {
+    "id": "combined-lookup",
+    "args": [
+      "--kv-resident",
+      "20480",
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--lookup-chain",
+      "2"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "family": "combined"
+  },
+  {
+    "id": "combined-draft",
+    "args": [
+      "--kv-resident",
+      "20480",
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--suffix-draft",
+      "0",
+      "--mtp-draft-vocab",
+      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.51\\data\\draft_vocab_en.bin",
+      "--mtp-q4",
+      "all"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "family": "combined"
+  },
+  {
+    "id": "quality-reference-postcombined",
+    "args": [],
+    "env": {},
+    "family": "reference"
+  },
+  {
+    "id": "prefill-cap-5376",
+    "family": "prefill",
+    "args": [
+      "--prefill",
+      "auto:5376"
+    ],
+    "env": {}
+  },
+  {
+    "id": "combined-draft-capped",
+    "family": "combined",
+    "args": [
+      "--kv-resident",
+      "20480",
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--suffix-draft",
+      "0",
+      "--mtp-draft-vocab",
+      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.51\\data\\draft_vocab_en.bin",
+      "--mtp-q4",
+      "all",
+      "--prefill",
+      "auto:5376"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    }
+  },
+  {
+    "id": "combined-simple-capped",
+    "family": "combined",
+    "args": [
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--prefill",
+      "auto:5376"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    }
+  },
+  {
+    "id": "quality-reference-final",
+    "family": "reference",
+    "args": [],
+    "env": {}
+  },
+  {
+    "id": "best-confirm-1",
+    "family": "combined",
+    "args": [
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--prefill",
+      "auto:5376"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "sanity": true
+  },
+  {
+    "id": "reference-confirm",
+    "family": "reference",
+    "args": [],
+    "env": {},
+    "sanity": true
+  },
+  {
+    "id": "best-confirm-2",
+    "family": "combined",
+    "args": [
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1",
+      "--prefill",
+      "auto:5376"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "sanity": false
+  },
+  {
+    "id": "ablate-no-host",
+    "family": "combined",
+    "args": [
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    }
+  },
+  {
+    "id": "ablate-no-tasks",
+    "family": "combined",
+    "args": [
+      "--host-core",
+      "last",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    }
+  },
+  {
+    "id": "ablate-no-balance",
+    "family": "combined",
+    "args": [
+      "--host-core",
+      "last",
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-only-confirm",
+    "family": "combined",
+    "args": [
+      "--adapt-every",
+      "1"
+    ],
+    "env": {}
+  },
+  {
+    "id": "reference-after-ablations",
+    "family": "reference",
+    "args": [],
+    "env": {}
+  },
+  {
+    "id": "final-candidate-1",
+    "family": "combined",
+    "args": [
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "sanity": true
+  },
+  {
+    "id": "reference-final-bracket",
+    "family": "reference",
+    "args": [],
+    "env": {}
+  },
+  {
+    "id": "final-candidate-2",
+    "family": "combined",
+    "args": [
+      "--pool-tasks",
+      "36",
+      "--adapt-every",
+      "1"
+    ],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    },
+    "sanity": false
+  }
+]

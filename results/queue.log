@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\ai\tuning\scripts\tune.py", line 171, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "C:\ai\tuning\scripts\tune.py", line 145, in main
+    if baseline['phase']=='failed': raise RuntimeError('Baseline failed; inspect before continuing')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Baseline failed; inspect before continuing

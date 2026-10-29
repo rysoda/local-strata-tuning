@@ -1,0 +1,791 @@
+{
+  "runs": {
+    "baseline": {
+      "phase": "complete",
+      "metrics": {
+        "decode": 36.08212242874981,
+        "prefill": 381.82877280589923,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      }
+    },
+    "quality-reference": {
+      "phase": "complete",
+      "server_pid": 7552,
+      "started": "2026-10-28 23:03:37",
+      "benchmark_pid": 7808,
+      "metrics": {
+        "decode": 28.95482749742478,
+        "prefill": 385.45740557525687,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:11:38"
+    },
+    "ple-mmap": {
+      "phase": "complete",
+      "server_pid": 7140,
+      "started": "2026-10-28 23:11:48",
+      "benchmark_pid": 8336,
+      "metrics": {
+        "decode": 24.136549397313914,
+        "prefill": 371.14935602086473,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:20:14"
+    },
+    "reserve-1400": {
+      "phase": "complete",
+      "server_pid": 2136,
+      "started": "2026-10-28 23:20:24",
+      "benchmark_pid": 6564,
+      "metrics": {
+        "decode": 28.282179189466863,
+        "prefill": 345.771184044542,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:28:51"
+    },
+    "kv-resident-20480": {
+      "phase": "complete",
+      "server_pid": 6124,
+      "started": "2026-10-28 23:29:02",
+      "benchmark_pid": 9472,
+      "metrics": {
+        "decode": 30.364592725621904,
+        "prefill": 428.8435120378407,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:36:25"
+    },
+    "host-last": {
+      "phase": "complete",
+      "server_pid": 3500,
+      "started": "2026-10-28 23:36:35",
+      "benchmark_pid": 8432,
+      "metrics": {
+        "decode": 30.494523525914147,
+        "prefill": 421.1427966838203,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:43:58"
+    },
+    "host-sibling": {
+      "phase": "complete",
+      "server_pid": 1596,
+      "started": "2026-10-28 23:44:08",
+      "benchmark_pid": 6668,
+      "metrics": {
+        "decode": 25.131503956526622,
+        "prefill": 424.71071863792395,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:52:04"
+    },
+    "workers-4": {
+      "phase": "complete",
+      "server_pid": 1908,
+      "started": "2026-10-28 23:52:14",
+      "benchmark_pid": 1968,
+      "metrics": {
+        "decode": 27.587517969561404,
+        "prefill": 426.87339890852104,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-28 23:59:44"
+    },
+    "workers-3": {
+      "phase": "complete",
+      "server_pid": 9404,
+      "started": "2026-10-28 23:59:54",
+      "benchmark_pid": 15188,
+      "metrics": {
+        "decode": 25.586454506646557,
+        "prefill": 427.34033957803604,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:07:43"
+    },
+    "tasks-36": {
+      "phase": "complete",
+      "server_pid": 444,
+      "started": "2026-10-29 00:07:53",
+      "benchmark_pid": 6852,
+      "metrics": {
+        "decode": 30.72538745150168,
+        "prefill": 429.24193173900323,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:15:13"
+    },
+    "tasks-72": {
+      "phase": "complete",
+      "server_pid": 12872,
+      "started": "2026-10-29 00:15:23",
+      "benchmark_pid": 15108,
+      "metrics": {
+        "decode": 30.532383053926935,
+        "prefill": 430.53708387569594,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:22:36"
+    },
+    "pcie-0.15": {
+      "phase": "complete",
+      "server_pid": 14352,
+      "started": "2026-10-29 00:22:46",
+      "benchmark_pid": 10424,
+      "metrics": {
+        "decode": 27.794252146795696,
+        "prefill": 426.0622741276528,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:30:06"
+    },
+    "pcie-0.4": {
+      "phase": "complete",
+      "server_pid": 14440,
+      "started": "2026-10-29 00:30:16",
+      "benchmark_pid": 6096,
+      "metrics": {
+        "decode": 27.732555214103918,
+        "prefill": 430.30312333212305,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:37:46"
+    },
+    "pcie-balance": {
+      "phase": "complete",
+      "server_pid": 13724,
+      "started": "2026-10-29 00:37:56",
+      "benchmark_pid": 13168,
+      "metrics": {
+        "decode": 30.806800744756277,
+        "prefill": 425.94430358490547,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:45:29"
+    },
+    "spec-3": {
+      "phase": "complete",
+      "server_pid": 11636,
+      "started": "2026-10-29 00:45:40",
+      "benchmark_pid": 984,
+      "metrics": {
+        "decode": 29.511638256960644,
+        "prefill": 429.6061712851186,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 00:53:26"
+    },
+    "spec-5": {
+      "phase": "complete",
+      "server_pid": 12584,
+      "started": "2026-10-29 00:53:36",
+      "benchmark_pid": 14528,
+      "metrics": {
+        "decode": 27.627459109641528,
+        "prefill": 428.6868793213915,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:01:07"
+    },
+    "confidence-0.3": {
+      "phase": "complete",
+      "server_pid": 10328,
+      "started": "2026-10-29 01:01:17",
+      "benchmark_pid": 11968,
+      "metrics": {
+        "decode": 27.20673015772581,
+        "prefill": 431.03688446104036,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:08:52"
+    },
+    "confidence-0.7": {
+      "phase": "complete",
+      "server_pid": 10040,
+      "started": "2026-10-29 01:09:02",
+      "benchmark_pid": 14884,
+      "metrics": {
+        "decode": 29.43914171767766,
+        "prefill": 426.8218846478329,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:16:33"
+    },
+    "lookup-chain-2": {
+      "phase": "complete",
+      "server_pid": 8632,
+      "started": "2026-10-29 01:16:43",
+      "benchmark_pid": 13328,
+      "metrics": {
+        "decode": 30.562987363937918,
+        "prefill": 428.4925035318656,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:24:05"
+    },
+    "suffix-off": {
+      "phase": "complete",
+      "server_pid": 7492,
+      "started": "2026-10-29 01:24:15",
+      "benchmark_pid": 10732,
+      "metrics": {
+        "decode": 30.628961977462577,
+        "prefill": 428.58830519167645,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:31:30"
+    },
+    "draft-english": {
+      "phase": "complete",
+      "server_pid": 9728,
+      "started": "2026-10-29 01:31:40",
+      "benchmark_pid": 7128,
+      "metrics": {
+        "decode": 29.974137736146403,
+        "prefill": 426.81677469923636,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:39:07"
+    },
+    "draft-q4": {
+      "phase": "complete",
+      "server_pid": 12840,
+      "started": "2026-10-29 01:39:17",
+      "benchmark_pid": 11416,
+      "metrics": {
+        "decode": 30.50903262968175,
+        "prefill": 414.86010214280117,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:46:51"
+    },
+    "adapt-every-1": {
+      "phase": "complete",
+      "server_pid": 4616,
+      "started": "2026-10-29 01:47:01",
+      "benchmark_pid": 12056,
+      "metrics": {
+        "decode": 31.533462107448216,
+        "prefill": 429.79634217321603,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 01:54:05"
+    },
+    "adapt-every-8": {
+      "phase": "complete",
+      "server_pid": 2196,
+      "started": "2026-10-29 01:54:15",
+      "benchmark_pid": 6288,
+      "metrics": {
+        "decode": 30.24301061809458,
+        "prefill": 429.241941996199,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:01:37"
+    },
+    "adapt-swaps-48": {
+      "phase": "complete",
+      "server_pid": 9992,
+      "started": "2026-10-29 02:01:47",
+      "benchmark_pid": 14788,
+      "metrics": {
+        "decode": 29.475509319461494,
+        "prefill": 429.37691784388727,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:09:24"
+    },
+    "adapt-swaps-160": {
+      "phase": "complete",
+      "server_pid": 15244,
+      "started": "2026-10-29 02:09:34",
+      "benchmark_pid": 6504,
+      "metrics": {
+        "decode": 30.03469577250879,
+        "prefill": 429.67090906084644,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:17:10"
+    },
+    "adapt-decay-09": {
+      "phase": "complete",
+      "server_pid": 4444,
+      "started": "2026-10-29 02:17:20",
+      "benchmark_pid": 1804,
+      "metrics": {
+        "decode": 30.528250638941106,
+        "prefill": 428.3464693477597,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:24:45"
+    },
+    "adapt-async": {
+      "phase": "complete",
+      "server_pid": 6392,
+      "started": "2026-10-29 02:24:55",
+      "benchmark_pid": 4604,
+      "metrics": {
+        "decode": 29.800433064070535,
+        "prefill": 426.82762481506717,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:32:16"
+    },
+    "adapt-overlap": {
+      "phase": "complete",
+      "server_pid": 12056,
+      "started": "2026-10-29 02:32:26",
+      "benchmark_pid": 6720,
+      "metrics": {
+        "decode": 29.77946013878828,
+        "prefill": 430.3131263168451,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:39:54"
+    },
+    "prefill-4096": {
+      "phase": "complete",
+      "server_pid": 14620,
+      "started": "2026-10-29 02:40:04",
+      "benchmark_pid": 7408,
+      "metrics": {
+        "decode": 28.56336086470738,
+        "prefill": 384.61694335198547,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:47:56"
+    },
+    "prefill-2048": {
+      "phase": "complete",
+      "server_pid": 2380,
+      "started": "2026-10-29 02:48:06",
+      "benchmark_pid": 12672,
+      "metrics": {
+        "decode": 29.946850340016887,
+        "prefill": 297.7905105771206,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 02:57:18"
+    },
+    "head-alias": {
+      "phase": "failed",
+      "server_pid": 8988,
+      "started": "2026-10-29 02:57:28",
+      "error": "server exited 1",
+      "finished": "2026-10-29 02:57:42"
+    },
+    "quality-reference-repeat": {
+      "phase": "complete",
+      "server_pid": 2760,
+      "started": "2026-10-29 02:58:11",
+      "benchmark_pid": 10436,
+      "metrics": {
+        "decode": 28.75336806225158,
+        "prefill": 429.3183412452005,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:05:35"
+    },
+    "short-read-0": {
+      "phase": "complete",
+      "server_pid": 6304,
+      "started": "2026-10-29 03:05:52",
+      "benchmark_pid": 11768,
+      "metrics": {
+        "decode": 30.02017094878701,
+        "prefill": 424.0179873786909,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:13:31"
+    },
+    "head-alias-compatible": {
+      "phase": "complete",
+      "server_pid": 4184,
+      "started": "2026-10-29 03:13:41",
+      "benchmark_pid": 2512,
+      "metrics": {
+        "decode": 29.70189713490782,
+        "prefill": 290.88080046846676,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:23:07"
+    },
+    "combined-resource": {
+      "phase": "complete",
+      "server_pid": 1720,
+      "started": "2026-10-29 03:23:17",
+      "benchmark_pid": 8500,
+      "metrics": {
+        "decode": 28.83472807588234,
+        "prefill": 373.2893235600486,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:31:07"
+    },
+    "combined-adaptive": {
+      "phase": "complete",
+      "server_pid": 2428,
+      "started": "2026-10-29 03:31:17",
+      "benchmark_pid": 12740,
+      "metrics": {
+        "decode": 31.991134172547515,
+        "prefill": 377.00373331659887,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:39:12"
+    },
+    "combined-lookup": {
+      "phase": "complete",
+      "server_pid": 6872,
+      "started": "2026-10-29 03:39:22",
+      "benchmark_pid": 3052,
+      "metrics": {
+        "decode": 31.47517248921107,
+        "prefill": 375.3519929188683,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:47:13"
+    },
+    "combined-draft": {
+      "phase": "complete",
+      "server_pid": 12564,
+      "started": "2026-10-29 03:47:23",
+      "benchmark_pid": 11516,
+      "metrics": {
+        "decode": 32.62590727709894,
+        "prefill": 374.4846797484729,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 03:55:14"
+    },
+    "quality-reference-postcombined": {
+      "phase": "complete",
+      "server_pid": 14696,
+      "started": "2026-10-29 03:55:24",
+      "benchmark_pid": 11972,
+      "metrics": {
+        "decode": 30.16707786871775,
+        "prefill": 426.8497903076059,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 04:02:47"
+    },
+    "prefill-cap-5376": {
+      "phase": "complete",
+      "server_pid": 8564,
+      "started": "2026-10-29 04:04:12",
+      "benchmark_pid": 10900,
+      "metrics": {
+        "decode": 30.306221873510545,
+        "prefill": 428.46849259748944,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 04:11:36"
+    },
+    "combined-draft-capped": {
+      "phase": "complete",
+      "server_pid": 6536,
+      "started": "2026-10-29 04:11:46",
+      "benchmark_pid": 8076,
+      "metrics": {
+        "decode": 29.82291887631244,
+        "prefill": 377.51739302875916,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 04:19:53"
+    },
+    "combined-simple-capped": {
+      "phase": "complete",
+      "server_pid": 6276,
+      "started": "2026-10-29 04:20:03",
+      "benchmark_pid": 7348,
+      "metrics": {
+        "decode": 32.5091332996529,
+        "prefill": 422.1871744448207,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 04:27:41"
+    },
+    "quality-reference-final": {
+      "phase": "complete",
+      "server_pid": 12276,
+      "started": "2026-10-29 04:27:51",
+      "benchmark_pid": 2864,
+      "metrics": {
+        "decode": 29.559353761130666,
+        "prefill": 427.10778004532284,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 04:35:18"
+    },
+    "best-confirm-1": {
+      "phase": "complete",
+      "server_pid": 6872,
+      "started": "2026-10-29 04:35:56",
+      "benchmark_pid": 6920,
+      "metrics": {
+        "decode": 30.80249492791661,
+        "prefill": 422.1525741165419,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-10-29 04:49:47"
+    },
+    "reference-confirm": {
+      "phase": "complete",
+      "server_pid": 8232,
+      "started": "2026-10-29 04:49:57",
+      "benchmark_pid": 14452,
+      "metrics": {
+        "decode": 29.707159786646432,
+        "prefill": 429.24839882085007,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-10-29 05:03:37"
+    },
+    "best-confirm-2": {
+      "phase": "complete",
+      "server_pid": 12292,
+      "started": "2026-10-29 05:03:47",
+      "benchmark_pid": 4596,
+      "metrics": {
+        "decode": 30.34484626644476,
+        "prefill": 419.7875160350874,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:11:15"
+    },
+    "ablate-no-host": {
+      "phase": "complete",
+      "server_pid": 3112,
+      "started": "2026-10-29 05:12:22",
+      "benchmark_pid": 3692,
+      "metrics": {
+        "decode": 31.972027109269558,
+        "prefill": 428.2938606184256,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:19:28"
+    },
+    "ablate-no-tasks": {
+      "phase": "complete",
+      "server_pid": 2552,
+      "started": "2026-10-29 05:19:38",
+      "benchmark_pid": 3608,
+      "metrics": {
+        "decode": 31.25626203267338,
+        "prefill": 421.93888826221917,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:27:02"
+    },
+    "ablate-no-balance": {
+      "phase": "complete",
+      "server_pid": 7668,
+      "started": "2026-10-29 05:27:12",
+      "benchmark_pid": 6604,
+      "metrics": {
+        "decode": 31.770936773725055,
+        "prefill": 422.6106974466575,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:34:44"
+    },
+    "adapt-only-confirm": {
+      "phase": "complete",
+      "server_pid": 5492,
+      "started": "2026-10-29 05:34:55",
+      "benchmark_pid": 4252,
+      "metrics": {
+        "decode": 30.77981931167269,
+        "prefill": 430.1209656336139,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:42:21"
+    },
+    "reference-after-ablations": {
+      "phase": "complete",
+      "server_pid": 10392,
+      "started": "2026-10-29 05:42:31",
+      "benchmark_pid": 10796,
+      "metrics": {
+        "decode": 29.74564960381089,
+        "prefill": 428.6819352994339,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 05:50:05"
+    },
+    "final-candidate-1": {
+      "phase": "complete",
+      "server_pid": 8372,
+      "started": "2026-10-29 05:50:53",
+      "benchmark_pid": 7244,
+      "metrics": {
+        "decode": 31.247824652572334,
+        "prefill": 428.5139727360429,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-10-29 06:04:23"
+    },
+    "reference-final-bracket": {
+      "phase": "complete",
+      "server_pid": 3400,
+      "started": "2026-10-29 06:04:33",
+      "benchmark_pid": 13012,
+      "metrics": {
+        "decode": 30.298720086880664,
+        "prefill": 424.6053742789728,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 06:11:55"
+    },
+    "final-candidate-2": {
+      "phase": "complete",
+      "server_pid": 8304,
+      "started": "2026-10-29 06:12:05",
+      "benchmark_pid": 10376,
+      "metrics": {
+        "decode": 31.269230531748683,
+        "prefill": 426.3830407970653,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-10-29 06:19:24"
+    }
+  },
+  "phase": "tuning-complete",
+  "runner_pid": 984,
+  "current": null,
+  "final_selection": {
+    "single_components": [
+      "tasks-36",
+      "pcie-balance",
+      "adapt-every-1"
+    ],
+    "confirmation_ids": [
+      "ablate-no-host",
+      "final-candidate-1",
+      "final-candidate-2"
+    ],
+    "recommended_config": "configs/recommended.json"
+  }
+}

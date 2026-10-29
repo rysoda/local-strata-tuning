@@ -1,0 +1,41 @@
+{
+    "Name":  "11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz",
+    "NumberOfCores":  6,
+    "NumberOfLogicalProcessors":  12
+}
+[
+    {
+        "Capacity":  17179869184,
+        "Speed":  3467,
+        "ConfiguredClockSpeed":  3467,
+        "Manufacturer":  "8A76",
+        "PartNumber":  "LD4BU016G-3600WG    "
+    },
+    {
+        "Capacity":  17179869184,
+        "Speed":  3467,
+        "ConfiguredClockSpeed":  3467,
+        "Manufacturer":  "029E",
+        "PartNumber":  "CMK32GX4M2D3600C18  "
+    },
+    {
+        "Capacity":  17179869184,
+        "Speed":  3467,
+        "ConfiguredClockSpeed":  3467,
+        "Manufacturer":  "8A76",
+        "PartNumber":  "LD4BU016G-3600WG    "
+    },
+    {
+        "Capacity":  17179869184,
+        "Speed":  3467,
+        "ConfiguredClockSpeed":  3467,
+        "Manufacturer":  "029E",
+        "PartNumber":  "CMK32GX4M2D3600C18  "
+    }
+]
+{
+    "FriendlyName":  "SPCC M.2 PCIe SSD",
+    "MediaType":  "SSD",
+    "BusType":  "NVMe",
+    "Size":  2048408248320
+}

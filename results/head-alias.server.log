@@ -1,0 +1,32 @@
+loading the vision encoder ...
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+[strata] loading the experts into RAM (about 55 GB) and locking part of them for the GPU.
+         YOUR PC CAN BE SLOW OR STOP RESPONDING FOR 1-3 MINUTES NOW - this is normal.
+         Please wait and don't close this window; the server says when it is ready.
+Traceback (most recent call last):
+  File "C:\Users\John Doe\AppData\Local\Strata\components\control\0.1.51\serve\server.py", line 8718, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\John Doe\AppData\Local\Strata\components\control\0.1.51\serve\server.py", line 8418, in main
+    engine = StrataEngine(exe, engine_args(cfg) + (effort_end or []), cwd=cfg.get("cwd"), log=cfg.get("log"),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John Doe\AppData\Local\Strata\components\control\0.1.51\serve\server.py", line 1119, in __init__
+    raise EngineDied(why + (f" (see {log})" if log else "") + note +
+EngineDied: the engine exited before it was ready (see C:\ai\tuning\results\head-alias.engine.log)
+the engine process ended: exit code 2
+the engine log's last lines:
+  [strata] 2026-10-29 02:57:30 engine started: C:\Users\John Doe\AppData\Local\Strata\components\engine\0.1.52-windows-x86_64-cuda-cuda12\strata.exe --serve --pack C:\Strata-data\packs\iq3_s --native C:\Strata-data\models\IQ3_S\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\Strata-data\models\IQ3_S\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile C:\Users\John Doe\AppData\Local\Strata\components\control\0.1.51\data\expert-profile.bin --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\Strata-data\mtp\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --prefill-head-alias
+  strata generate: memory guard: limit 63.9 GiB (source: meminfo), current 6.5 GiB, reclaimable cache credited 0.0 GiB; available 57.4 GiB (MemAvailable 57.4 GiB), floor 2560 MiB
+  strata generate: PCIe probe: 12.7 GB/s host->device (best of 12.7 12.7 12.7 12.7) -> pcie_frac 0.35 (default 0.55)
+  strata generate: native pack: C:\Strata-data\packs\iq3_s experts (largest blob 2.66 MB), token embedding IQ4_XS in mapped host memory (322 MiB, 0.4 s)
+  strata generate: 1466 MiB of weights loaded from C:\Strata-data\packs\iq3_s in 0.5 s (302 canonical tensors skipped: served natively)
+  strata generate: 300 native projection matrices, 2018.88 MiB of weights, in 3.3 s
+  strata generate: PLE direct read probe: 46721 rows/s (fine)
+  strata generate: the SSD is kept awake while rows are read: one page of the table after 100 ms without a read, until 60 s after the last request (STRATA_SSD_KEEPALIVE=0 turns it off)
+  strata generate: profile C:\Users\John Doe\AppData\Local\Strata\components\control\0.1.51\data\expert-profile.bin: 24576 ranked pairs, built for 24576 slots
+  strata generate: KV streaming: 32768 of 131072 cells per QSA layer in VRAM, the K/V in 1.55 GiB of pinned RAM
+  strata generate: PLE on, table 320001536 rows of C:\Strata-data\models\IQ3_S\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf
+  strata mtp: draft layer loaded, 835 MiB of VRAM (experts 675, dense 111), files read in 0.27 s (2942 MiB/s)
+  strata generate: experimental native Q5_K head, 521472000 bytes, in 0.6 s
+  strata generate: --prefill-head-alias is unavailable: it needs --short-read 0

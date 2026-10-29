@@ -1,0 +1,281 @@
+[
+  {
+    "id": "quality-reference",
+    "family": "reference",
+    "args": [],
+    "env": {}
+  },
+  {
+    "id": "ple-mmap",
+    "family": "ple",
+    "args": [
+      "--ple-io",
+      "mmap"
+    ],
+    "env": {}
+  },
+  {
+    "id": "reserve-1400",
+    "family": "reserve",
+    "args": [
+      "--vram-reserve-mib",
+      "1400"
+    ],
+    "env": {}
+  },
+  {
+    "id": "kv-resident-20480",
+    "family": "kv",
+    "args": [
+      "--kv-resident",
+      "20480"
+    ],
+    "env": {}
+  },
+  {
+    "id": "host-last",
+    "family": "host",
+    "args": [
+      "--host-core",
+      "last"
+    ],
+    "env": {}
+  },
+  {
+    "id": "host-sibling",
+    "family": "host",
+    "args": [
+      "--host-core",
+      "sibling"
+    ],
+    "env": {}
+  },
+  {
+    "id": "workers-4",
+    "family": "workers",
+    "args": [
+      "--pool-workers",
+      "4"
+    ],
+    "env": {}
+  },
+  {
+    "id": "workers-3",
+    "family": "workers",
+    "args": [
+      "--pool-workers",
+      "3"
+    ],
+    "env": {}
+  },
+  {
+    "id": "tasks-36",
+    "family": "tasks",
+    "args": [
+      "--pool-tasks",
+      "36"
+    ],
+    "env": {}
+  },
+  {
+    "id": "tasks-72",
+    "family": "tasks",
+    "args": [
+      "--pool-tasks",
+      "72"
+    ],
+    "env": {}
+  },
+  {
+    "id": "pcie-0.15",
+    "family": "pcie",
+    "args": [
+      "--pcie-frac",
+      "0.15"
+    ],
+    "env": {}
+  },
+  {
+    "id": "pcie-0.4",
+    "family": "pcie",
+    "args": [
+      "--pcie-frac",
+      "0.4"
+    ],
+    "env": {}
+  },
+  {
+    "id": "pcie-balance",
+    "family": "pcie",
+    "args": [],
+    "env": {
+      "STRATA_PCIE_BALANCE": "1"
+    }
+  },
+  {
+    "id": "spec-3",
+    "family": "spec",
+    "args": [
+      "--spec",
+      "3"
+    ],
+    "env": {}
+  },
+  {
+    "id": "spec-5",
+    "family": "spec",
+    "args": [
+      "--spec",
+      "5"
+    ],
+    "env": {}
+  },
+  {
+    "id": "confidence-0.3",
+    "family": "confidence",
+    "args": [
+      "--spec-min-p",
+      "0.3"
+    ],
+    "env": {}
+  },
+  {
+    "id": "confidence-0.7",
+    "family": "confidence",
+    "args": [
+      "--spec-min-p",
+      "0.7"
+    ],
+    "env": {}
+  },
+  {
+    "id": "lookup-chain-2",
+    "family": "lookup",
+    "args": [
+      "--lookup-chain",
+      "2"
+    ],
+    "env": {}
+  },
+  {
+    "id": "suffix-off",
+    "family": "suffix",
+    "args": [
+      "--suffix-draft",
+      "0"
+    ],
+    "env": {}
+  },
+  {
+    "id": "draft-english",
+    "family": "draft-vocab",
+    "args": [
+      "--mtp-draft-vocab",
+      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.51\\data\\draft_vocab_en.bin"
+    ],
+    "env": {}
+  },
+  {
+    "id": "draft-q4",
+    "family": "draft-quant",
+    "args": [
+      "--mtp-q4",
+      "all"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-every-1",
+    "family": "adapt-every",
+    "args": [
+      "--adapt-every",
+      "1"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-every-8",
+    "family": "adapt-every",
+    "args": [
+      "--adapt-every",
+      "8"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-swaps-48",
+    "family": "adapt-swaps",
+    "args": [
+      "--adapt-swaps",
+      "48"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-swaps-160",
+    "family": "adapt-swaps",
+    "args": [
+      "--adapt-swaps",
+      "160"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-decay-09",
+    "family": "adapt-decay",
+    "args": [
+      "--adapt-decay",
+      "0.9"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-async",
+    "family": "adapt-mode",
+    "args": [
+      "--adapt-async",
+      "1"
+    ],
+    "env": {}
+  },
+  {
+    "id": "adapt-overlap",
+    "family": "adapt-mode",
+    "args": [],
+    "env": {
+      "STRATA_ADAPT_OVERLAP": "1"
+    }
+  },
+  {
+    "id": "prefill-4096",
+    "family": "prefill",
+    "args": [
+      "--prefill",
+      "4096"
+    ],
+    "env": {}
+  },
+  {
+    "id": "prefill-2048",
+    "family": "prefill",
+    "args": [
+      "--prefill",
+      "2048"
+    ],
+    "env": {}
+  },
+  {
+    "id": "head-alias",
+    "family": "head-alias",
+    "args": [
+      "--prefill-head-alias"
+    ],
+    "env": {}
+  },
+  {
+    "id": "quality-reference-repeat",
+    "family": "reference",
+    "args": [],
+    "env": {}
+  }
+]

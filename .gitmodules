@@ -1,0 +1,3 @@
+[submodule "research/strata-source"]
+	path = research/strata-source
+	url = https://github.com/Niko1221/Strata.git

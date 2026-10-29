@@ -1,0 +1,11 @@
+# Machine-local configurations contain the existing API credential.
+# Redacted copies of every configuration are committed under configs/shareable/.
+/configs/*.json
+/.local/
+
+# Python caches and interrupted atomic writes.
+__pycache__/
+*.py[cod]
+*.tmp
+/STOP
+/results/queue.lock
