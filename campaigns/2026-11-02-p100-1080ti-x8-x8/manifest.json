@@ -1,0 +1,23 @@
+{
+  "id": "2026-11-02-p100-1080ti-x8-x8",
+  "title": "P100 + GTX 1080 Ti CPU PCIe x8/x8 tuning",
+  "status": "complete",
+  "hardware": {
+    "gpu": ["GPU 0: Tesla P100 PCIe 16 GB (TCC)", "GPU 1: GTX 1080 Ti 11 GB (WDDM)"],
+    "cpu": "Intel Core i5-11400F",
+    "ram_gib": 64,
+    "pcie": "Both PCIe 3 x8, CPU lane splitting"
+  },
+  "software": {"engine": "0.1.55 CUDA12", "control": "0.1.55", "betterbench": "0.6.1", "os": "Windows"},
+  "model": {"name": "qwen3.8-flash-next-iq3_s", "context": 131072, "kv": "int8", "kv_resident": 32768},
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": "REPORT.md",
+  "state": "state/gpu-x8-state.json",
+  "completed_phase": "gpu-tuning-complete",
+  "completed_benchmarks": 16,
+  "rejected_configurations": 2,
+  "recommended_profile": "recommended-x8.json",
+  "resume_script": "scripts/run.py",
+  "pause_file": "state/STOP-GPU-X8",
+  "related_campaigns": ["2026-10-28-1080ti-tuning", "2026-11-01-p100-1080ti-x16-x4"]
+}

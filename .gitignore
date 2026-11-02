@@ -1,15 +1,12 @@
-# Machine-local configurations contain the existing API credential.
-# Redacted copies of every configuration are committed under configs/shareable/.
-/configs/*.json
-/.local/
+# Credentials and runtime configurations stay local to each campaign.
+/campaigns/*/configs/private/
+/campaigns/*/state/local-deployment/
+
+# Runtime locks and pause flags are not experiment evidence.
+/campaigns/*/state/*.lock
+/campaigns/*/state/STOP*
 
 # Python caches and interrupted atomic writes.
 __pycache__/
 *.py[cod]
 *.tmp
-/STOP
-/results/queue.lock
-/results/gpu-comparison.lock
-/results/gpu-x8.lock
-/STOP-GPU
-/STOP-GPU-X8

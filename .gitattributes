@@ -1,2 +1,6 @@
 * text=auto eol=lf
 *.cmd text eol=crlf
+
+# Preserve original evidence/checkpoint bytes, including recorded line endings.
+/campaigns/*/results/** -text
+/campaigns/*/state/** -text

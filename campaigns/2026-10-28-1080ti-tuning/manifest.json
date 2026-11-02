@@ -1,0 +1,23 @@
+{
+  "id": "2026-10-28-1080ti-tuning",
+  "title": "GTX 1080 Ti single-card parameter tuning",
+  "status": "complete",
+  "hardware": {
+    "gpu": ["GTX 1080 Ti 11 GB (WDDM)"],
+    "cpu": "Intel Core i5-11400F",
+    "ram_gib": 64,
+    "pcie": "Single-card CPU link; measured host-to-device probe about 12.7 GB/s"
+  },
+  "software": {"engine": "0.1.52 CUDA12", "control": "0.1.51", "betterbench": "0.6.1", "os": "Windows"},
+  "model": {"name": "qwen3.8-flash-next-iq3_s", "context": 131072, "kv": "int8", "kv_resident": 32768},
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": "FINAL_REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "tuning-complete",
+  "completed_benchmarks": 54,
+  "rejected_configurations": 1,
+  "recommended_profile": "recommended.json",
+  "resume_script": "scripts/tune.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": ["2026-11-01-p100-1080ti-x16-x4", "2026-11-02-p100-1080ti-x8-x8"]
+}

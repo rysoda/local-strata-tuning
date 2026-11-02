@@ -1,0 +1,18 @@
+{
+  "id": "{{id}}",
+  "title": "{{title}}",
+  "status": "planned",
+  "hardware": {"gpu": [], "cpu": null, "ram_gib": null, "pcie": null},
+  "software": {"engine": null, "control": null, "betterbench": null, "os": null},
+  "model": {"name": "qwen3.8-flash-next-iq3_s", "context": 131072, "kv": "int8", "kv_resident": 32768},
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": null,
+  "state": "state/queue-state.json",
+  "completed_phase": null,
+  "completed_benchmarks": 0,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": null,
+  "pause_file": "state/STOP",
+  "related_campaigns": []
+}
