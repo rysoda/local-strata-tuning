@@ -4,11 +4,13 @@ Hardware-specific tuning of **Qwen3.8-Flash-Next IQ3_S at 131072 context**, usin
 
 ## Campaign index
 
-| Campaign | Hardware / links | Engine / Control | Status | Main finding |
-|---|---|---|---|---|
-| [1080 Ti parameter tuning](campaigns/2026-10-28-1080ti-tuning/) | GTX 1080 Ti; original single-card topology | 0.1.52 / 0.1.51 | Complete: 54 benchmarks | About +3.2% decode against the full-expert reference; prefill essentially unchanged |
-| [P100 + 1080 Ti x16/x4](campaigns/2026-11-01-p100-1080ti-x16-x4/) | P100 x16; 1080 Ti x4 | 0.1.55 / 0.1.55 | Historical: 6 benchmarks | Dual-card screening; superseded by the new topology |
-| **[P100 + 1080 Ti x8/x8](campaigns/2026-11-02-p100-1080ti-x8-x8/)** | Both CPU-connected PCIe 3 x8 | 0.1.55 / 0.1.55 | **Complete: 16 benchmarks, 2 rejected configurations** | **Recommended for current hardware: explicit 32/16 split, trim, later reserve 1600 MiB** |
+| Campaign | Hardware / links | Engine / Control | Status | Decode (tok/s) | Prefill (tok/s) | Main finding |
+|---|---|---|---|---:|---:|---|
+| [1080 Ti parameter tuning](campaigns/2026-10-28-1080ti-tuning/) | GTX 1080 Ti; original single-card topology | 0.1.52 / 0.1.51 | Complete: 54 benchmarks | 31.25–31.27 | 426.38–428.51 | About +3.2% decode against the full-expert reference; prefill essentially unchanged |
+| [P100 + 1080 Ti x16/x4](campaigns/2026-11-01-p100-1080ti-x16-x4/) | P100 x16; 1080 Ti x4 | 0.1.55 / 0.1.55 | Historical: 6 benchmarks | 35.08–35.93 | 283.96–287.42 | Dual-card screening; superseded by the new topology |
+| **[P100 + 1080 Ti x8/x8](campaigns/2026-11-02-p100-1080ti-x8-x8/)** | Both CPU-connected PCIe 3 x8 | 0.1.55 / 0.1.55 | **Complete: 16 benchmarks, 2 rejected configurations** | **37.30–40.62** | **317.70–319.54** | **Recommended for current hardware: explicit 32/16 split, trim, later reserve 1600 MiB** |
+
+Speeds are ranges of per-run medians from final confirmation runs, not discovery maxima. The historical x16/x4 row covers the two repeated Main-card orders, not one selected configuration. Prefill uses the shared BetterBench 16K-target workload (roughly 12K actual model tokens).
 
 **Current recommendation:** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
 
