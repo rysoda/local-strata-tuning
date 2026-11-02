@@ -4,6 +4,12 @@ Reproducible tuning records for Qwen3.8-Flash-Next IQ3_S at 131072 context on a 
 
 **Start with [FINAL_REPORT.md](FINAL_REPORT.md).** It contains the recommendation, final confirmation results, quality caveats and limitations. The 54 successful benchmark runs are quick screening measurements, not formal significance or comprehensive quality-equivalence claims.
 
+## P100 + 1080 Ti follow-up (PCIe x8/x8)
+
+See **[GPU_X8_REPORT.md](GPU_X8_REPORT.md)** for the new engine/control 0.1.55 comparison: 16 complete benchmarks and two rejected configurations. Recommended: P100 layers 0–31, 1080 Ti layers 32–47/Main, stage-weight trimming and 1600 MiB later-card reserve. Original single-card results are historical, not directly comparable.
+
+On the tested machine use **`Run-Tuned-X8.cmd`** with private `configs/recommended-x8.json`. A redacted copy is published under `configs/shareable/`; restore credentials and adapt paths before use elsewhere. This separate launcher does not overwrite the original recommendation. Results: [GPU_X8_RESULTS.md](GPU_X8_RESULTS.md); recovery/checkpoints: [GPU_X8_NOTES.md](GPU_X8_NOTES.md). Both candidate and fresh P100 reference passed 6/6 functional/recall smoke checks; this is not comprehensive quality proof.
+
 ## Contents
 
 - [RESULTS.md](RESULTS.md): all single-parameter and follow-up results, with final usage marks.

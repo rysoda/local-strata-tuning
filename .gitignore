@@ -9,3 +9,7 @@ __pycache__/
 *.tmp
 /STOP
 /results/queue.lock
+/results/gpu-comparison.lock
+/results/gpu-x8.lock
+/STOP-GPU
+/STOP-GPU-X8

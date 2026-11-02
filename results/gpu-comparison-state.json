@@ -1,0 +1,95 @@
+{
+  "runs": {
+    "gpu-p100-only": {
+      "phase": "complete",
+      "server_pid": 8148,
+      "started": "2026-11-01 21:57:24",
+      "benchmark_pid": 11788,
+      "metrics": {
+        "decode": 33.9929113360354,
+        "prefill": 293.0496738084007,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-01 22:06:32"
+    },
+    "gpu-1080-only": {
+      "phase": "complete",
+      "server_pid": 8340,
+      "started": "2026-11-01 22:06:42",
+      "benchmark_pid": 13104,
+      "metrics": {
+        "decode": 22.956300249382597,
+        "prefill": 192.71036093983133,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-01 22:20:33"
+    },
+    "gpu-dual-p100-main": {
+      "phase": "complete",
+      "server_pid": 8924,
+      "started": "2026-11-01 22:20:43",
+      "benchmark_pid": 7076,
+      "metrics": {
+        "decode": 37.960846017342675,
+        "prefill": 291.3685200682957,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-01 22:30:24"
+    },
+    "gpu-dual-1080-main": {
+      "phase": "complete",
+      "server_pid": 7556,
+      "started": "2026-11-01 22:30:34",
+      "benchmark_pid": 2728,
+      "metrics": {
+        "decode": 38.60323616098411,
+        "prefill": 296.43797211393667,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-01 22:39:59"
+    },
+    "gpu-dual-p100-confirm": {
+      "phase": "complete",
+      "server_pid": 2344,
+      "started": "2026-11-01 22:41:44",
+      "benchmark_pid": 2052,
+      "metrics": {
+        "decode": 35.08085601435051,
+        "prefill": 287.4178684322467,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-01 22:51:49"
+    },
+    "gpu-dual-1080-confirm": {
+      "phase": "complete",
+      "server_pid": 3412,
+      "started": "2026-11-01 22:51:59",
+      "benchmark_pid": 6732,
+      "metrics": {
+        "decode": 35.927503693415666,
+        "prefill": 283.9561912564733,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-11-01 23:10:06"
+    }
+  },
+  "runner_pid": 14024,
+  "phase": "screening-complete-review-required",
+  "current": null
+}

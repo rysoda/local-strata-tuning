@@ -1,0 +1,41 @@
+{
+  "runs": {
+    "x8-p100-only": {
+      "phase": "complete",
+      "server_pid": 6456,
+      "started": "2026-11-02 00:18:25",
+      "benchmark_pid": 9092,
+      "metrics": {
+        "decode": 31.94545523423146,
+        "prefill": 295.5172866060336,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 00:27:32"
+    },
+    "x8-1080-only": {
+      "phase": "complete",
+      "server_pid": 3360,
+      "started": "2026-11-02 00:27:42",
+      "benchmark_pid": 5208,
+      "metrics": {
+        "decode": 20.696443491309633,
+        "prefill": 201.49188782919782,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 00:41:09"
+    },
+    "x8-dual-p100": {
+      "phase": "benchmark-running",
+      "server_pid": 10832,
+      "started": "2026-11-02 00:41:19",
+      "benchmark_pid": 3596
+    }
+  },
+  "runner_pid": 10844,
+  "phase": "running",
+  "current": "x8-dual-p100"
+}

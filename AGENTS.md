@@ -60,6 +60,17 @@ This will be a long task. Make sure to write down where you're at so if you were
 
 You can edit this file with any comments you think you'll need in future runs below.
 
+## P100 + 1080 Ti x8/x8 checkpoint (2026-11-02)
+
+- **Completed new-topology work**: 16 complete BetterBench runs, 2 reviewed/rejected configurations, one archived interrupted attempt. Engine/control **0.1.55 CUDA12** throughout new comparisons; both CPU PCIe 3 x8. All test servers/benchmarks stopped.
+- Start with **`GPU_X8_REPORT.md`**. Live table `GPU_X8_RESULTS.md`, detailed recovery/work log `GPU_X8_NOTES.md`, durable state `results/gpu-x8-state.json` phase **`gpu-tuning-complete`**. `python scripts/gpu_x8.py` now reports completion and starts nothing; do not restart old queues.
+- Recommended new hardware configuration: GPU 0 **P100 layers 0-31**, GPU 1 **1080 Ti layers 32-47 / Main**; `gpu=[0,1]`, `gpu_order=as_given`, `layer_split=32`, **`--trim-stage-weights --vram-reserve-later-mib 1600`**. Keep full routing, IQ3_S, 131072 context, int8 KV/32768 residency and prior speed settings. Pipeline/peer not selected.
+- New ready private profile **`configs/recommended-x8.json`**, launcher **`Run-Tuned-X8.cmd`**, script `scripts/run_gpu_tuned.py` (`--check` supported). Contains existing credentials: do not publish. Original installed profile and original single-1080 recommendation/launcher unchanged.
+- Final bracket: candidate **40.62 / 317.70**, P100 reference **32.36 / 264.12**, candidate **37.30 / 319.54** decode/prefill tok/s. Decode gains **+15.3 to +25.5%** versus fresh reference, no significance claim. Earlier P100 screen prefill was 295.52, so claimed prefill gains depend materially on reference; see report caveats.
+- Candidate and P100 reference each **6/6** functional/recall checks including **119151 actual prompt tokens**. Smoke checks, not comprehensive quality proof.
+- Reject default-draft pipeline with 1080 Main: hangs/non-finite logits/watchdog resets. Expert peer failed startup OOM. Both explicitly reviewed/skipped in state, not valid speed results.
+- Final P100 peak **80 C**, 1080 **62-63 C**; sampled thermal flags inactive, but ensure adequate P100 airflow. No power/clock tuning performed.
+
 ## Final checkpoint (2026-10-29)
 
 - Task completed: **54 complete BetterBench runs**, one documented incompatible startup; all benchmark processes stopped. Installed profile verified unchanged.

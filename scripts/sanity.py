@@ -39,7 +39,9 @@ def tool_ok(msg):
 chat('tool-call','Use lookup_issue to retrieve issue 42. Do not invent its contents; make the tool call now.',tools=[{'type':'function','function':{'name':'lookup_issue','description':'Retrieve an issue by numeric ID.','parameters':{'type':'object','properties':{'issue_id':{'type':'integer'}},'required':['issue_id']}}}],validator=tool_ok)
 
 # Use the installed tokenizer, not a word-count approximation. Do not load target weights.
-control=pathlib.Path(os.environ['LOCALAPPDATA'])/'Strata/components/control/0.1.51'
+control=pathlib.Path(cfg['cwd'])
+if not (control/'tools/strata_tokenizer.py').exists():
+    raise RuntimeError('Config cwd must identify the installed Control component for tokenizer checks')
 sys.path.insert(0,str(control/'tools'))
 import strata_tokenizer as ST
 tpath=pathlib.Path(cfg['tokenizer'])

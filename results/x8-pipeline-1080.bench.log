@@ -1,0 +1,9 @@
+BetterBench 0.6.1 · corpus v1.0 · 4 prompts in 1 categories
+phases: decode, prefill
+1 warmup + 5 measured passes per category  (quick mode — smoke check, not a publishable result)
+model max context: unknown — will skip any depth the server rejects (pass --max-model-len to skip up front)
+output: C:\ai\tuning\results\x8-pipeline-1080.json
+[single] code: warmup 1 + 5 runs
+  ! code/code-debug-medium: no content chunks received
+  ! code/code-gen-medium: no content chunks received
+[prefill] depth ~16384 tok: warmup 2 + 8

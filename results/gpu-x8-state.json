@@ -1,0 +1,271 @@
+{
+  "runs": {
+    "x8-p100-only": {
+      "phase": "complete",
+      "server_pid": 6456,
+      "started": "2026-11-02 00:18:25",
+      "benchmark_pid": 9092,
+      "metrics": {
+        "decode": 31.94545523423146,
+        "prefill": 295.5172866060336,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 00:27:32"
+    },
+    "x8-1080-only": {
+      "phase": "complete",
+      "server_pid": 3360,
+      "started": "2026-11-02 00:27:42",
+      "benchmark_pid": 5208,
+      "metrics": {
+        "decode": 20.696443491309633,
+        "prefill": 201.49188782919782,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 00:41:09"
+    },
+    "x8-dual-p100": {
+      "phase": "complete",
+      "server_pid": 6340,
+      "started": "2026-11-02 08:10:04",
+      "benchmark_pid": 7544,
+      "metrics": {
+        "decode": 36.180892604401734,
+        "prefill": 304.5927309018552,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 08:19:27"
+    },
+    "x8-dual-1080": {
+      "phase": "complete",
+      "server_pid": 12396,
+      "started": "2026-11-02 08:19:37",
+      "benchmark_pid": 6908,
+      "metrics": {
+        "decode": 34.80151153897256,
+        "prefill": 300.44564823382404,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 08:28:56"
+    },
+    "x8-pipeline-p100": {
+      "phase": "complete",
+      "server_pid": 11196,
+      "started": "2026-11-02 08:29:06",
+      "benchmark_pid": 3728,
+      "metrics": {
+        "decode": 37.91753679860181,
+        "prefill": 287.1969371885207,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 08:38:34"
+    },
+    "x8-pipeline-1080": {
+      "phase": "failed",
+      "server_pid": 5004,
+      "started": "2026-11-02 08:38:44",
+      "benchmark_pid": 11380,
+      "error": "BetterBench exited 1",
+      "finished": "2026-11-02 09:00:16",
+      "reviewed_skip": true,
+      "review_note": "Stopped owned benchmark after repeated 300-second engine silences, watchdog restarts and non-finite logits. Not a valid speed result; reject this default-draft pipeline configuration. Test stage-0 draft plus 1600 MiB reserve separately."
+    },
+    "x8-trim-32": {
+      "phase": "complete",
+      "server_pid": 10736,
+      "started": "2026-11-02 09:01:06",
+      "benchmark_pid": 11372,
+      "metrics": {
+        "decode": 38.7200966759899,
+        "prefill": 321.33167843136783,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 09:09:55"
+    },
+    "x8-trim-24": {
+      "phase": "complete",
+      "server_pid": 6744,
+      "started": "2026-11-02 09:10:05",
+      "benchmark_pid": 3972,
+      "metrics": {
+        "decode": 36.774275776434145,
+        "prefill": 316.904925980666,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 09:18:59"
+    },
+    "x8-safe-p100": {
+      "phase": "complete",
+      "server_pid": 10616,
+      "started": "2026-11-02 09:19:09",
+      "benchmark_pid": 5960,
+      "metrics": {
+        "decode": 34.17324950448409,
+        "prefill": 286.71273530366057,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 09:28:58"
+    },
+    "x8-stage0-p100": {
+      "phase": "complete",
+      "server_pid": 12792,
+      "started": "2026-11-02 09:29:08",
+      "benchmark_pid": 6148,
+      "metrics": {
+        "decode": 35.944517494738825,
+        "prefill": 274.7296296633755,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 09:39:08"
+    },
+    "x8-stage0-1080": {
+      "phase": "complete",
+      "server_pid": 3260,
+      "started": "2026-11-02 09:39:18",
+      "benchmark_pid": 5108,
+      "metrics": {
+        "decode": 30.416536048500674,
+        "prefill": 287.00361742358723,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 09:49:17"
+    },
+    "x8-peer-p100": {
+      "phase": "failed",
+      "server_pid": 8620,
+      "started": "2026-11-02 09:49:27",
+      "error": "server exited 1",
+      "finished": "2026-11-02 09:50:10",
+      "reviewed_skip": true,
+      "review_note": "Installed engine exits at startup: peer experts: stream: out of memory. No benchmark, reject peer arrangement as tested. Keep context/precision unchanged."
+    },
+    "x8-prefill-pipe": {
+      "phase": "complete",
+      "server_pid": 12928,
+      "started": "2026-11-02 09:52:46",
+      "benchmark_pid": 5072,
+      "metrics": {
+        "decode": 34.93068457587271,
+        "prefill": 303.5978375013462,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 10:02:14"
+    },
+    "x8-trim-32-safe": {
+      "phase": "complete",
+      "server_pid": 7704,
+      "started": "2026-11-02 10:02:24",
+      "benchmark_pid": 13340,
+      "metrics": {
+        "decode": 40.55801614426846,
+        "prefill": 316.55612482696984,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 10:11:15"
+    },
+    "x8-trim-p100-safe": {
+      "phase": "complete",
+      "server_pid": 5420,
+      "started": "2026-11-02 10:11:25",
+      "benchmark_pid": 7940,
+      "metrics": {
+        "decode": 37.39846801552202,
+        "prefill": 286.10428497202724,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 10:21:01"
+    },
+    "x8-final-1": {
+      "phase": "complete",
+      "server_pid": 13116,
+      "started": "2026-11-02 10:21:50",
+      "benchmark_pid": 13888,
+      "metrics": {
+        "decode": 40.61937233875732,
+        "prefill": 317.69592653608777,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-11-02 10:38:33"
+    },
+    "x8-p100-reference": {
+      "phase": "complete",
+      "server_pid": 11384,
+      "started": "2026-11-02 10:38:43",
+      "benchmark_pid": 3392,
+      "metrics": {
+        "decode": 32.36265127218074,
+        "prefill": 264.1157848725596,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 6,
+        "total": 6
+      },
+      "finished": "2026-11-02 10:58:52"
+    },
+    "x8-final-2": {
+      "phase": "complete",
+      "server_pid": 9472,
+      "started": "2026-11-02 10:59:02",
+      "benchmark_pid": 11548,
+      "metrics": {
+        "decode": 37.30100532231646,
+        "prefill": 319.5444459286866,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-02 11:07:43"
+    }
+  },
+  "runner_pid": 3688,
+  "phase": "gpu-tuning-complete",
+  "current": null,
+  "recovery_note": "2026-11-02 08:12: no python/strata/betterbench processes, port 8080 free. Incomplete dual-P100 has no result JSON; archived logs/state under results/interrupted-x8-dual-p100-20261102. Rerun it, preserving completed single-card runs.",
+  "final_selection": {
+    "config": "configs/recommended-x8.json",
+    "launcher": "Run-Tuned-X8.cmd",
+    "confirmation_ids": [
+      "x8-final-1",
+      "x8-final-2"
+    ],
+    "reference_id": "x8-p100-reference",
+    "completed_benchmarks": 16,
+    "rejected_configurations": 2,
+    "notes": "Explicit P100 32 layers / 1080 Ti 16 layers Main, trim, later reserve 1600; both candidate and reference 6/6 checks. See GPU_X8_REPORT.md. No formal significance claim."
+  }
+}

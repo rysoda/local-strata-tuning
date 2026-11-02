@@ -1,0 +1,14 @@
+{
+  "runs": {
+    "gpu-p100-only": {
+      "phase": "failed",
+      "server_pid": 9840,
+      "started": "2026-11-01 21:56:43",
+      "error": "server exited 1",
+      "finished": "2026-11-01 21:56:50"
+    }
+  },
+  "runner_pid": 2736,
+  "phase": "paused-on-error",
+  "current": "gpu-p100-only"
+}
