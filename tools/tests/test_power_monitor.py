@@ -3,7 +3,7 @@ import importlib.util
 from pathlib import Path
 import unittest
 
-PATH = Path(__file__).resolve().parents[2] / 'campaigns/2026-11-03-p100-cooling/scripts/monitor_power.py'
+PATH = Path(__file__).resolve().parents[2] / 'campaigns/2026-11-03-p100-open-case-cooling/scripts/monitor_power.py'
 SPEC = importlib.util.spec_from_file_location('power_monitor', PATH)
 monitor = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(monitor)

@@ -1,4 +1,4 @@
-# P100 cooling — work log
+# P100 open case cooling — work log
 
 ## 2026-11-03
 
@@ -7,7 +7,7 @@
 - Local read-only probe identified P100 at NVIDIA index 0 and confirmed power/temperature/utilization/clock queries work. Existing workload was already active; no ownership assumed.
 - Three-second validation run saved as `results/20261103T133424.801675Z-monitor-validation-not-airflow.*`. This is monitor validation ONLY, not an airflow baseline or cooling result.
 - Phase remains planned for actual A/B/C measurements. User must capture fixed software/workload provenance, ambient temperature and physical configurations. No report or recommendation yet.
-- Safe next command from repository root: `python campaigns/2026-11-03-p100-cooling/scripts/monitor_power.py --label airflow-A` after warm-up. No automatic queue; run one airflow measurement at a time. No owned processes remain.
+- Safe next command from repository root: `python campaigns/2026-11-03-p100-open-case-cooling/scripts/monitor_power.py --label airflow-A` after warm-up. No automatic queue; run one airflow measurement at a time. No owned processes remain.
 - Failed/interrupted runs retain CSV and JSON status. Start a fresh unique run rather than appending or resuming an incomplete interval. No GPU settings are restored because none are modified.
 
 ## Review of latest four completed measurements

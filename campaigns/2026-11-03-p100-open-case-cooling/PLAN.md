@@ -1,4 +1,4 @@
-# P100 cooling measurement plan
+# P100 open case cooling — measurement plan
 
 ## Boundary and baseline
 

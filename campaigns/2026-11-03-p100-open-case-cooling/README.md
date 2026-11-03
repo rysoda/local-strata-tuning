@@ -1,4 +1,4 @@
-# P100 cooling: open case, no ducting
+# P100 open case cooling
 
 [Campaign index](../../README.md) · [Manifest](manifest.json) · [Plan](PLAN.md) · [Work log](NOTES.md)
 
@@ -44,7 +44,7 @@ For stronger confirmation, record those missing conditions, repeat in reverse or
 No workload, GPU setting or inference profile is changed by the monitor. Keep the existing stress test running, install the intended setup safely, and let temperatures/power stabilize before starting. From the repository root, run one measurement at a time with a descriptive label:
 
 ```sh
-python campaigns/2026-11-03-p100-cooling/scripts/monitor_power.py --label open-1fan-confirmation
+python campaigns/2026-11-03-p100-open-case-cooling/scripts/monitor_power.py --label open-1fan-confirmation
 ```
 
 Default: unique P100, 600 seconds, approximately one sample per second. Use `--gpu INDEX` or UUID for explicit selection. Requires Python 3 and `nvidia-smi` on PATH; no Python packages. Optional: `--seconds 60 --interval 1` or `--output-dir PATH`; short validation runs are not comparable ten-minute cooling results.

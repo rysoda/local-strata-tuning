@@ -16,7 +16,7 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 ## Cooling measurements (separate from inference tuning)
 
-[P100 airflow comparison](campaigns/2026-11-03-p100-cooling/README.md): latest four completed open-case, unducted runs favor **one fan provisionally**: **171.78 W / 1231 MHz** versus **152.13 W / 1167 MHz** with two fans, both near **79°C**. Two repeats per setup; cooling evidence, not a measured inference-speed gain.
+[P100 open case cooling](campaigns/2026-11-03-p100-open-case-cooling/README.md): latest four completed open-case, unducted runs favor **one fan provisionally**: **171.78 W / 1231 MHz** versus **152.13 W / 1167 MHz** with two fans, both near **79°C**. Two repeats per setup; cooling evidence, not a measured inference-speed gain.
 
 ## Run the current recommendation
 
