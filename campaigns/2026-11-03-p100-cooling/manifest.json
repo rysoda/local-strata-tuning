@@ -1,0 +1,35 @@
+{
+  "id": "2026-11-03-p100-cooling",
+  "title": "P100 airflow cooling comparison",
+  "status": "measured",
+  "hardware": {
+    "gpu": [{"name": "Tesla P100-PCIE-16GB", "uuid": "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999", "nvidia_smi_index_at_setup": 0}],
+    "cpu": null,
+    "ram_gib": null,
+    "pcie": null
+  },
+  "software": {
+    "engine": null,
+    "control": null,
+    "betterbench": null,
+    "os": null
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 131072,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": "PLAN.md",
+  "workload_description": "User-managed P100-only Strata prefill stress test; exact invocation not yet captured",
+  "measurement": {"duration_seconds": 600, "interval_seconds": 1, "metric": "time-weighted mean board power W"},
+  "report": "README.md",
+  "state": "state/queue-state.json",
+  "completed_phase": null,
+  "completed_benchmarks": 0,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": null,
+  "pause_file": "state/STOP",
+  "related_campaigns": []
+}

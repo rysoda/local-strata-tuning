@@ -14,6 +14,10 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 **Current recommendation:** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
 
+## Cooling measurements (separate from inference tuning)
+
+[P100 airflow comparison](campaigns/2026-11-03-p100-cooling/README.md): latest four completed open-case, unducted runs favor **one fan provisionally**: **171.78 W / 1231 MHz** versus **152.13 W / 1167 MHz** with two fans, both near **79°C**. Two repeats per setup; cooling evidence, not a measured inference-speed gain.
+
 ## Run the current recommendation
 
 Double-click **[launchers/Run-P100-1080Ti-X8.cmd](launchers/Run-P100-1080Ti-X8.cmd)** on the tested machine, or validate without inference:
