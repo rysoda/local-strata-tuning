@@ -1,0 +1,112 @@
+[
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T191700.411468Z-closed-1fan-1-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T191700.411468Z-closed-1fan-1-json.json",
+    "sha256": "991fbf3846282d8da1935ac6deb056fd1bd0baee787d00d1de6cde8ff263d30a"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T191700.411468Z-closed-1fan-1-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T191700.411468Z-closed-1fan-1-json.csv",
+    "sha256": "354cf7bee583629982b1caeb415f76955a6de459136d7e46e407aa8c10ab1c05"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T192706.955593Z-closed-1fan-1bis-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T192706.955593Z-closed-1fan-1bis-json.json",
+    "sha256": "5f09310bafd14b24b5f336507d68b16db374509588aa85e5945178f9eaf143f2"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T192706.955593Z-closed-1fan-1bis-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T192706.955593Z-closed-1fan-1bis-json.csv",
+    "sha256": "b337aa0d8b2e598c745bcfbfa47bbd3328ca2fdbf127305b29f44c0606879629"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T193733.289621Z-closed-2fan-100-1-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T193733.289621Z-closed-2fan-100-1-json.json",
+    "sha256": "4edc454213fae28a8243c56dd4ae264454074f378e8b504b70c1460e907ea1d9"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T193733.289621Z-closed-2fan-100-1-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T193733.289621Z-closed-2fan-100-1-json.csv",
+    "sha256": "3152f3db9243e62ca645ab950768da3907ca4abcc3595a1ae61629b98027952a"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T194842.834385Z-closed-2fan-75-1-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T194842.834385Z-closed-2fan-75-1-json.json",
+    "sha256": "a43f7bd5de0c65095e5c07c8a25465f23975dfb07d8e89fb47f35b37f983a7e0"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T194842.834385Z-closed-2fan-75-1-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T194842.834385Z-closed-2fan-75-1-json.csv",
+    "sha256": "993259646864f5f043a3283ad16887335390f6f9a13a72abcb3b4fe7c01af127"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T200032.814272Z-closed-2fan-50-1-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T200032.814272Z-closed-2fan-50-1-json.json",
+    "sha256": "ccdde6043e88e981f5bc6235a45aa15f8cb275c148fd7dc60d94015bdb3b1991"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T200032.814272Z-closed-2fan-50-1-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T200032.814272Z-closed-2fan-50-1-json.csv",
+    "sha256": "dbcbb260d1bcd00e93d9e18c1012e24060ca93d51b21a0d08d4c7f2552a940a9"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T201759.795036Z-closed-2fan-25-1-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T201759.795036Z-closed-2fan-25-1-json.json",
+    "sha256": "2badf4e6a8b5d301dfeb69ee64fdd72714cce36aab6b53b641a3f61f354cbb84"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T201759.795036Z-closed-2fan-25-1-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T201759.795036Z-closed-2fan-25-1-json.csv",
+    "sha256": "0cb755001d83dd0a83056e59297b600f8bc105fe764fc80cb730b851b9a9e9be"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T203256.121894Z-closed-1fan-2-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T203256.121894Z-closed-1fan-2-json.json",
+    "sha256": "610884a363b99313ab19af1c0da8b24c6d80203f5ef03bf0ea18c762767864c6"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T203256.121894Z-closed-1fan-2-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T203256.121894Z-closed-1fan-2-json.csv",
+    "sha256": "1221db45f6dd449f3d84c617a3b4b831d8af4fda2343860dcc07c2548ee60dbe"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T204403.503281Z-closed-2fan-25-2-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T204403.503281Z-closed-2fan-25-2-json.json",
+    "sha256": "d9a891a1d29161db61f591d651d7f611ff3bd5c93545bc053b5bf3028cda378d"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T204403.503281Z-closed-2fan-25-2-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T204403.503281Z-closed-2fan-25-2-json.csv",
+    "sha256": "6e2b02e974f4a1c3ec4933af8b31dc20cdcafbd1028dcca5f0ed3bc36295991c"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T210247.125361Z-closed-2fan-50-2-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T210247.125361Z-closed-2fan-50-2-json.json",
+    "sha256": "1ccc42dabe3684754f845e7b539a36bd3181c96f7f6f4820409cc02682670e97"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T210247.125361Z-closed-2fan-50-2-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T210247.125361Z-closed-2fan-50-2-json.csv",
+    "sha256": "0e9fca8ef566ba58adf7b74142dd7913c2c4e87e021cd291cf67c5e1a29fe292"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T211728.005777Z-closed-2fan-75-2-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T211728.005777Z-closed-2fan-75-2-json.json",
+    "sha256": "9237a9eb5c358fabccd5e24fd9af71e0acd2fc4809b1edc1bec293830ad3847c"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T211728.005777Z-closed-2fan-75-2-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T211728.005777Z-closed-2fan-75-2-json.csv",
+    "sha256": "e4571768b4f5ba6b1c77b227b7e7f070321c78e15f3d65a6c5500367803740b5"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T212840.375709Z-closed-2fan-100-2-json.json",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T212840.375709Z-closed-2fan-100-2-json.json",
+    "sha256": "86cfbb4bb1d0528e526e8ca7c7f0688a86fb2b1ed56808b9419e28f668c14f6d"
+  },
+  {
+    "original_path": "campaigns/2026-11-03-p100-open-case-cooling/results/20261103T212840.375709Z-closed-2fan-100-2-json.csv",
+    "path": "campaigns/2026-11-03-p100-closed-case-shroud-cooling/results/20261103T212840.375709Z-closed-2fan-100-2-json.csv",
+    "sha256": "7caa79f4bd4cb28e64db11c41c20d9b3623dbe97b6d86a07c9ddd555e4870868"
+  }
+]

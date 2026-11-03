@@ -1,0 +1,11 @@
+{
+  "phase": "review-complete",
+  "current": null,
+  "runs": {},
+  "completed_measurements": 11,
+  "completed_benchmarks": 0,
+  "measurement_inventory": "../results/relocation-sha256.json",
+  "automatic_queue": false,
+  "owned_processes": [],
+  "note": "Completed retrospective telemetry review. Raw JSON statuses identify measurements; runs is reserved for inference benchmark queues. No supervisor or resume required."
+}

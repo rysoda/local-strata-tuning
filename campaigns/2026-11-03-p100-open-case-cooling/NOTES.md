@@ -1,5 +1,9 @@
 # P100 open case cooling — work log
 
+## Later closed-case evidence separated
+
+- At the user's request, moved the 11 closed-case/shroud CSV/JSON pairs into [a separate campaign](../2026-11-03-p100-closed-case-shroud-cooling/README.md). Filenames and bytes are unchanged; the destination results directory contains the original/new path and SHA-256 inventory. No open-case measurements or planning state were changed. The closed-case auxiliary fan sits at the shroud edge and draws outside air inward; that configuration must not be pooled with the unducted comparison below.
+
 ## 2026-11-03
 
 - Created a separate campaign; historical campaign state untouched.

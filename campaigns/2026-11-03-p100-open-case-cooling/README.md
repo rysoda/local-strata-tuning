@@ -4,6 +4,8 @@
 
 **Conclusion: one fan is the better-supported choice for this particular open-case, unducted arrangement.** Across the latest four completed ten-minute runs, it sustained **171.78 W versus 152.13 W** with two fans (**+19.64 W / +12.9%**), and **1231 versus 1167 MHz** average SM clock (**+5.5%**), at essentially the same **79°C** GPU temperature. Both repeats agree closely. This supports better effective cooling with one fan under the tested load—not a general claim that fewer fans cool better.
 
+**Separate later comparison:** the 11 closed-case/fan-shroud measurements now belong to [P100 closed-case shroud cooling](../2026-11-03-p100-closed-case-shroud-cooling/README.md). Their raw files were relocated unchanged; they are not part of this open-case comparison.
+
 ## Scope and selected runs
 
 Physical setup is user-confirmed: **open case, no ducting**, alternating **one fan → two fans → one fan → two fans**. Fan models, speeds, positions/directions and inlet/room temperature were not recorded. GPU: Tesla P100-PCIE-16GB, UUID `GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999`.

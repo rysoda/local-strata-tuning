@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-03-p100-closed-case-shroud-cooling",
+  "title": "P100 closed-case shroud cooling",
+  "status": "measured",
+  "hardware": {
+    "gpu": [{"name": "Tesla P100-PCIE-16GB", "uuid": "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999"}],
+    "cpu": null,
+    "ram_gib": null,
+    "pcie": null,
+    "cooling": {
+      "case": "closed",
+      "shroud": true,
+      "primary_fan": "operating; speed and model unrecorded",
+      "auxiliary_fan": "at edge of shroud, drawing outside air inward; present but off for one-fan runs",
+      "auxiliary_speed_percent": [0, 25, 50, 75, 100],
+      "ambient_temperature_c": null
+    }
+  },
+  "software": {"engine": null, "control": null, "betterbench": null, "os": null},
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 131072,
+    "kv": "int8",
+    "kv_resident": 32768,
+    "provenance": "Inherited intended workload description; exact running profile not captured in telemetry"
+  },
+  "workload": "PLAN.md",
+  "workload_description": "User-managed P100-only Strata prefill stress test; exact invocation not captured",
+  "measurement": {
+    "duration_seconds": 600,
+    "interval_seconds": 1,
+    "method": "time-weighted sample-and-hold NVIDIA telemetry",
+    "completed_measurements": 11,
+    "failed_measurements": 0,
+    "off_reference": ["closed-1fan-1bis.json", "closed-1fan-2.json"],
+    "suspected_warmup": "closed-1fan-1.json"
+  },
+  "report": "README.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "review-complete",
+  "completed_benchmarks": 0,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "recommendation": "Provisionally leave auxiliary outside-air intake fan off for this exact closed-case/shroud setup",
+  "resume_script": null,
+  "pause_file": null,
+  "related_campaigns": ["2026-11-03-p100-open-case-cooling"]
+}
