@@ -1,0 +1,3 @@
+Results: C:\ai\tuning\campaigns\2026-11-02-p100-1080ti-x8-x8\results\quick-context-20261104-183154
+{"phase": "complete", "server_pid": 7684, "started": "2026-11-04 18:31:57", "benchmark_pid": 11528, "metrics": {"decode": 39.05416303010102, "prefill": 346.40681286105155, "decode_ok": 5, "prefill_ok": 8, "valid": true}, "finished": "2026-11-04 18:40:09"}
+{"phase": "complete", "server_pid": 6924, "started": "2026-11-04 18:40:19", "benchmark_pid": 3504, "metrics": {"decode": 38.64104399560606, "prefill": 347.0958702587909, "decode_ok": 5, "prefill_ok": 8, "valid": true}, "finished": "2026-11-04 18:48:38"}

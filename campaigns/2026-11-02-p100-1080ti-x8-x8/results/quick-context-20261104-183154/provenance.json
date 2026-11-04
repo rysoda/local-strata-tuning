@@ -1,0 +1,20 @@
+{
+  "engine": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe",
+  "engine_sha256": "f2e2cff75b6330ee3ef8b2f49f83ccbd65333ff61d37e862e4be76af71e3261a",
+  "control": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "gpu": [
+    0,
+    1
+  ],
+  "layer_split": "32",
+  "changed_argument_only": "--max-context",
+  "contexts": [
+    131072,
+    262144
+  ],
+  "kv_resident": 32768,
+  "workload": "C:\\ai\\tuning\\workloads\\betterbench-16k.json",
+  "sanity": "not requested; no long-context validation",
+  "source_profile_sha256": "3a9bd629b4af4c53a9811260c190471757dc373292db80c55c599277a721383e"
+}
