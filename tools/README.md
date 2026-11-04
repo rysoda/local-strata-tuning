@@ -11,6 +11,8 @@ python tools/launch.py 2026-11-02-p100-1080ti-x8-x8 --check
 python tools/launch.py 2026-11-02-p100-1080ti-x8-x8
 ```
 
+Optional `--context 262144` overrides only the runtime `--max-context`, including during `--check`; saved source profiles are untouched. The current x8/x8 Windows launcher supplies this override by user request (see [quick-check limitations](../campaigns/2026-11-02-p100-1080ti-x8-x8/QUICK_CONTEXT_CHECK.md)).
+
 `--check` resolves profile, credentials and configured installation without writing a runtime config, opening a port or launching anything. Actual launch writes only the campaign's ignored `configs/private/recommended.runtime.json`, logs to its `results/`, disables presets, binds localhost:8080 and refuses an occupied port. Private source profile first; otherwise published redacted profile plus `STRATA_API_KEY` or existing installed credential. It never silently upgrades engine/Control. The historical 1080 Ti Control 0.1.51 is no longer installed locally, so its launch check currently fails clearly.
 
 Convenient Windows entry points are in [launchers/](../launchers/).

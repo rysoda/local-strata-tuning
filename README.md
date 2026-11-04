@@ -29,6 +29,8 @@ Double-click **[launchers/Run-P100-1080Ti-X8.cmd](launchers/Run-P100-1080Ti-X8.c
 python tools/launch.py 2026-11-02-p100-1080ti-x8-x8 --check
 ```
 
+**Startup context is now 256K (262144)** by user request, via a launcher-only runtime override. Archived profiles and original campaign measurements remain at 128K. [Two quick tests](campaigns/2026-11-02-p100-1080ti-x8-x8/QUICK_CONTEXT_CHECK.md) showed about −1.1% decode and unchanged prefill on the same short workload; full 256K context performance/quality is not validated. The direct `tools/launch.py ... --check` command above checks the archived profile; add `--context 262144` to check or launch the new runtime setting.
+
 The launcher prefers the campaign's ignored `configs/private/` profile, falling back to its redacted `configs/shareable/` copy. Credentials resolve from `STRATA_API_KEY` or the installed 128K profile if necessary. Machine paths must be adapted on other systems. Runtime files and engine logs stay within the campaign; the installed profile is not overwritten. Port 8080 must be free.
 
 The [original single-card launcher](launchers/Run-1080Ti.cmd) remains available for historical reproduction, **but its validated Control 0.1.51 is no longer installed locally**. It deliberately refuses to silently use a newer version.

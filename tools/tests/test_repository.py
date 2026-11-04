@@ -73,6 +73,19 @@ class LayoutTests(unittest.TestCase):
                 self.assertEqual(cfg['api_key'], 'test-only-key')
                 self.assertEqual(cfg['host'], '127.0.0.1')
                 self.assertEqual(pathlib.Path(cfg['log']).parent, root/'results')
+                _, _, overridden = launch.resolve('test-campaign', 262144)
+                self.assertEqual(overridden['args'], ['--max-context', '262144'])
+                with mock.patch.object(sys, 'argv', ['launch.py', 'test-campaign', '--context', '262144', '--check']):
+                    self.assertEqual(launch.main(), 0)
+                profile = shared/'recommended.json'
+                original = json.loads(profile.read_text())
+                original['args'] = ['--kv', 'int8', '--max-context', '131072', '--kv-resident', '32768']
+                profile.write_text(json.dumps(original))
+                _, _, overridden = launch.resolve('test-campaign', 262144)
+                self.assertEqual(overridden['args'], ['--kv', 'int8', '--max-context', '262144', '--kv-resident', '32768'])
+                self.assertEqual(json.loads(profile.read_text()), original)
+                with self.assertRaises(ValueError):
+                    launch.resolve('test-campaign', 0)
             self.assertFalse((root/'configs/private').exists())
 
     @unittest.skipUnless(os.name == 'nt', 'Legacy campaign supervisors use Windows msvcrt')
