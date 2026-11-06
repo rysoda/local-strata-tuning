@@ -1,0 +1,79 @@
+{
+  "phase": "complete",
+  "pid": 6756,
+  "runs": {
+    "rear-pull-reference-1": {
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "rear-pull-reference-1",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\results"
+      ],
+      "monitor_pid": 2292,
+      "result": "results\\20261106T172551.928683Z-rear-pull-reference-1.json",
+      "average_power_w": 197.94553305000002,
+      "exit_code": 0
+    },
+    "rear-pull-reference-2": {
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "rear-pull-reference-2",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\results"
+      ],
+      "monitor_pid": 3228,
+      "result": "results\\20261106T173552.530002Z-rear-pull-reference-2.json",
+      "average_power_w": 196.4932158666667,
+      "exit_code": 0
+    },
+    "rear-pull-reference-3": {
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "rear-pull-reference-3",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\results"
+      ],
+      "monitor_pid": 10296,
+      "result": "results\\20261106T174553.143168Z-rear-pull-reference-3.json",
+      "average_power_w": 198.1776684499999,
+      "exit_code": 0
+    }
+  },
+  "user_report": "Stress test running about five minutes before request; user considers heat soaked",
+  "workload_control": "User-managed; exact invocation not captured",
+  "gpu_uuid": "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+  "seconds_per_run": 600,
+  "interval_seconds": 1,
+  "updated_utc": "2026-11-06T17:55:53.289016+00:00",
+  "current": null
+}

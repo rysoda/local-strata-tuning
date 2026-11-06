@@ -16,6 +16,8 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 ## Cooling measurements (separate from inference tuning)
 
+- [P100 rear pull fan](campaigns/2026-11-06-p100-rear-exhaust-cooling/README.md): new user-requested setup; P100-only Strata at **131072 context**. Three 10-minute reference captures completed: **197.54 W** mean board power; no controlled comparison yet.
+
 - [P100 closed-case shroud cooling](campaigns/2026-11-03-p100-closed-case-shroud-cooling/README.md): **11 completed runs** with a closed case and fan shroud, varying the auxiliary outside-air intake fan at the shroud edge. **Auxiliary fan off provisionally preferred:** balanced two-run reference **162.81 W / 1200 MHz**, versus **149.14 W / 1160 MHz** at 100%, all near **79°C**. Includes 25%, 50%, 75% and suspected warm-up evidence.
 - [P100 open case cooling](campaigns/2026-11-03-p100-open-case-cooling/README.md): four selected completed open-case, unducted runs favor **one fan provisionally**: **171.78 W / 1231 MHz** versus **152.13 W / 1167 MHz** with two fans, both near **79°C**. Two repeats per setup.
 

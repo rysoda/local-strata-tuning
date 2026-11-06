@@ -1,0 +1,22 @@
+{
+  "label": "rear-pull-reference-2",
+  "gpu_uuid": "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+  "gpu_name": "Tesla P100-PCIE-16GB",
+  "requested_seconds": 600.0,
+  "interval_seconds": 1.0,
+  "started_utc": "2026-11-06T17:35:52.530002+00:00",
+  "csv_file": "20261106T173552.530002Z-rear-pull-reference-2.csv",
+  "status": "complete",
+  "method": "time-weighted sample-and-hold; NVIDIA board power telemetry",
+  "duration_seconds": 600.0,
+  "sample_count": 567,
+  "average_power_w": 196.4932158666667,
+  "energy_wh": 32.748869311111115,
+  "average_temperature_c": 76.48925,
+  "max_temperature_c": 77.0,
+  "average_utilization_percent": 99.38145500000002,
+  "average_sm_clock_mhz": 1318.545735,
+  "max_sample_gap_seconds": 1.0939999999998236,
+  "error": null,
+  "finished_utc": "2026-11-06T17:45:52.671323+00:00"
+}
