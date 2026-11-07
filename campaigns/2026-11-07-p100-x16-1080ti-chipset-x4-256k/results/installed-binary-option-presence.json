@@ -1,0 +1,9 @@
+{
+  "--vram-reserve-mib": true,
+  "--vram-reserve-later-mib": true,
+  "--layer-split": true,
+  "--trim-stage-weights": true,
+  "STRATA_SPLIT_UNIFORM": true,
+  "STRATA_MTP_STAGE0": true,
+  "STRATA_DECODE_TIMING": true
+}

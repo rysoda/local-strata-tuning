@@ -23,11 +23,15 @@ All selected runs are 10 minutes. Temperature and SM clock show **mean / sampled
 |---|---|---|---|---:|---:|---|
 | [1080 Ti parameter tuning](campaigns/2026-10-28-1080ti-tuning/) | GTX 1080 Ti; original single-card topology | 0.1.52 / 0.1.51 | Complete: 54 benchmarks | 31.25–31.27 | 426.38–428.51 | About +3.2% decode against the full-expert reference; prefill essentially unchanged |
 | [P100 + 1080 Ti x16/x4](campaigns/2026-11-01-p100-1080ti-x16-x4/) | P100 x16; 1080 Ti x4 | 0.1.55 / 0.1.55 | Historical: 6 benchmarks | 35.08–35.93 | 283.96–287.42 | Dual-card screening; superseded by the new topology |
-| **[P100 + 1080 Ti x8/x8](campaigns/2026-11-02-p100-1080ti-x8-x8/)** | Both CPU-connected PCIe 3 x8 | 0.1.55 / 0.1.55 | **Complete: 16 benchmarks, 2 rejected configurations** | **37.30–40.62** | **317.70–319.54** | **Recommended for current hardware: explicit 32/16 split, trim, later reserve 1600 MiB** |
+| **[P100 + 1080 Ti x8/x8](campaigns/2026-11-02-p100-1080ti-x8-x8/)** | Both CPU-connected PCIe 3 x8 | 0.1.55 / 0.1.55 | **Complete: 16 benchmarks, 2 rejected configurations** | **37.30–40.62** | **317.70–319.54** | **Validated for the tested x8/x8 slots: explicit 32/16 split, trim, later reserve 1600 MiB** |
+| [Cooled x16/x4 128K attempt](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-retune/) | P100 CPU x16; 1080 Ti chipset x4 | 0.1.57 / 0.1.57 | Superseded; first run intentionally interrupted | — | — | User requested 256K; partial 128K evidence preserved, excluded from new results |
+| **[Cooled P100 x16 + 1080 Ti chipset x4 — 256K](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-256k/)** | **Current slots; cards stay put** | 0.1.57 / 0.1.57 | **Complete: 17 benchmarks** | 35.32–37.47 | 325.60–326.31 | Nearby confirmations and 256K recall smoke complete; see report for memory/quality limits |
 
 Speeds are ranges of per-run medians from final confirmation runs, not discovery maxima. The historical x16/x4 row covers the two repeated Main-card orders, not one selected configuration. Prefill uses the shared BetterBench 16K-target workload (roughly 12K actual model tokens).
 
-**Current recommendation:** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
+**Last completed inference recommendation (tested x8/x8 topology only):** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
+
+**Current topology retuning:** [new **256K** campaign and initial test plan](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-256k/README.md). Actual links verified x16/x4 after cooling changes; active installed software is now 0.1.57. **Complete: 17 benchmarks**. The selected 36/12 trimmed split averaged **36.40 decode / 325.96 prefill tok/s**, versus nearby P100-only **33.27 / 333.98**. Candidate/reference each passed **7/7** smokes including **230146 prompt tokens**. See the report for decode variability and headroom limits; the old x8/x8 results are not a same-condition reference. Installed profile snapshots are preserved; new tests use the explicitly requested **262144 context**, full experts and int8 KV, and exclude the as-found speed-projection vector. The interrupted 128K attempt is kept separate.
 
 ## Cooling measurements (separate from inference tuning)
 
@@ -40,7 +44,7 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 These are separate physical comparisons and cooling evidence, not measured inference-speed gains. Do not pool their results.
 
-## Run the current recommendation
+## Run the previous x8/x8 recommendation
 
 Double-click **[launchers/Run-P100-1080Ti-X8.cmd](launchers/Run-P100-1080Ti-X8.cmd)** on the tested machine, or validate without inference:
 
@@ -98,4 +102,4 @@ Clone research source too:
 git clone --recurse-submodules git@github.com:rysoda/local-strata-tuning.git
 ```
 
-All existing campaigns are completed; their supervisors exit without starting new tests. Adding a card is a reason for a new campaign, not for deleting old state.
+Completed campaigns remain closed; their supervisors exit without starting new tests. The cooled x16/x4 256K campaign is complete; its runner refuses to repeat completed work. Adding a second P100 is a reason for another campaign, not for deleting old state.

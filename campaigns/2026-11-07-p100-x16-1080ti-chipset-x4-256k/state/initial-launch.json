@@ -1,0 +1,14 @@
+{
+  "phase": "launched",
+  "started_utc": "2026-11-07T14:54:40.091114+00:00",
+  "context": 262144,
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-x16-1080ti-chipset-x4-256k\\scripts\\run.py",
+    "--run-initial",
+    "--cooling-note",
+    "Open case; intake + exhaust; 75 C target; intake capped at 45% for noise; fixed throughout comparison"
+  ],
+  "supervisor_pid": 4648
+}

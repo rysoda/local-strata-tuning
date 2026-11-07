@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-11-07T14:52:46.815348+00:00",
+  "requested_context": 262144,
+  "predecessor": "2026-11-07-p100-x16-1080ti-chipset-x4-retune",
+  "predecessor_attempt": "r01-quality-reference-layout; interrupted by user context change, no valid final benchmark",
+  "reused_material": "Read-only preparation snapshots captured earlier today; not fresh benchmark results",
+  "state_policy": "Fresh planned state, no 128K benchmark results copied"
+}

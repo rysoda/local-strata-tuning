@@ -1,0 +1,21 @@
+{
+  "phase": "superseded-context-change",
+  "current": null,
+  "runs": {
+    "r01-quality-reference-layout": {
+      "phase": "failed",
+      "server_pid": 12136,
+      "started": "2026-11-07 15:44:39",
+      "benchmark_pid": 9680,
+      "error": "BetterBench exited 1",
+      "finished": "2026-11-07 15:51:44",
+      "review_note": "User-requested context change, not a performance rejection. Preserve all partial evidence; exclude from 256K comparison."
+    }
+  },
+  "cooling_note": "Open case; intake + exhaust; 75 C target; intake capped at 45% for noise; fixed throughout comparison",
+  "runner_pid": 9792,
+  "updated_utc": "2026-11-07T14:51:55.423188+00:00",
+  "error": "Failed/invalid run; paused for review: r01-quality-reference-layout",
+  "superseded_by": "2026-11-07-p100-x16-1080ti-chipset-x4-256k",
+  "stop_reason": "User requested 262144 context; 131072 attempt intentionally interrupted and excluded"
+}

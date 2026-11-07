@@ -1,0 +1,1275 @@
+loading the vision encoder ...
+loading the model (the first start takes a minute or two) ...
+[strata] starting the engine: reading the model's weights ...
+[strata] loading the experts into RAM (about 55 GB) and locking part of them for the GPU.
+         YOUR PC CAN BE SLOW OR STOP RESPONDING FOR 1-3 MINUTES NOW - this is normal.
+         Please wait and don't close this window; the server says when it is ready.
+[strata] still starting (28 s) - please wait ...
+[strata] experts loaded: 46.84 GiB at 2.48 GiB/s (31 s so far)
+[strata] filling the GPU's expert cache (4547 experts, 8.67 GiB of VRAM) ...
+[strata] almost ready ...
+ready: http://127.0.0.1:8080/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/messages, context 131072 tokens, images on, API key required)
+       open http://127.0.0.1:8080/ in a browser to chat; close this window to stop the model
+       from other devices: http://172.27.73.6:8080/   (API: http://172.27.73.6:8080/v1)
+       nothing arrives? Windows Firewall blocks it until allowed: accept its prompt for Python, or run in an admin PowerShell:
+         New-NetFirewallRule -DisplayName "Strata 8080" -Direction Inbound -Protocol TCP -LocalPort 8080 -Action Allow -Profile Private
+       (and set this network to Private in Windows' network settings)
+[strata] reading the prompt: 47,045 tokens, 10 s so far
+[strata] reading the prompt: 47,045 tokens, 20 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 23 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 70 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 80 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 94 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 104 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,045 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,045 tokens, 129 s so far
+[strata] reading the prompt: 47,040 of 47,045 tokens, 138 s so far
+[strata] thinking: 14 of max 16 tokens, 29.3 tok/s, 139 s
+[strata] done: 16 tokens in 139 s (29.6 tok/s) (length, cancel=False), expert cache 59.7% hit (+11.2% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,040 tokens, 11 s so far
+[strata] reading the prompt: 47,040 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,040 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,040 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,040 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,040 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,040 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,040 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,040 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,040 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,040 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,040 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,040 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,040 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,040 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,040 tokens, 129 s so far
+[strata] reading the prompt: 47,035 of 47,040 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (34.5 tok/s) (length, cancel=False), expert cache 71.5% hit (+7.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,018 tokens, 11 s so far
+[strata] reading the prompt: 47,018 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,018 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,018 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,018 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,018 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,018 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,018 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,018 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,018 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,018 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,018 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,018 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,018 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,018 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,018 tokens, 129 s so far
+[strata] reading the prompt: 47,013 of 47,018 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (34.5 tok/s) (length, cancel=False), expert cache 79.4% hit (+4.8% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,071 tokens, 11 s so far
+[strata] reading the prompt: 47,071 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,071 tokens, 23 s so far
+[strata] reading the prompt: 8,192 of 47,071 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,071 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,071 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,071 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,071 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,071 tokens, 70 s so far
+[strata] reading the prompt: 24,576 of 47,071 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,071 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,071 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,071 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,071 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,071 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,071 tokens, 129 s so far
+[strata] reading the prompt: 47,066 of 47,071 tokens, 138 s so far
+[strata] thinking: 16 of max 16 tokens, 29.2 tok/s, 139 s
+[strata] done: 16 tokens in 139 s (27.5 tok/s) (length, cancel=False), expert cache 79.3% hit (+4.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,051 tokens, 11 s so far
+[strata] reading the prompt: 47,051 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,051 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,051 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,051 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,051 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,051 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,051 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,051 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,051 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,051 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,051 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,051 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,051 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,051 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,051 tokens, 129 s so far
+[strata] reading the prompt: 47,046 of 47,051 tokens, 138 s so far
+[strata] thinking: 16 of max 16 tokens, 32.2 tok/s, 139 s
+[strata] done: 16 tokens in 139 s (30.1 tok/s) (length, cancel=False), expert cache 88.2% hit (+2.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,244 tokens, 11 s so far
+[strata] reading the prompt: 47,244 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,244 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,244 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,244 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,244 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,244 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,244 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,244 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,244 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,244 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,244 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,244 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,244 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,244 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,244 tokens, 129 s so far
+[strata] reading the prompt: 47,239 of 47,244 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (34.1 tok/s) (length, cancel=False), expert cache 90.5% hit (+1.2% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,293 tokens, 11 s so far
+[strata] reading the prompt: 47,293 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,293 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,293 tokens, 129 s so far
+[strata] reading the prompt: 47,288 of 47,293 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (41.5 tok/s) (length, cancel=False), expert cache 92.9% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,371 tokens, 11 s so far
+[strata] reading the prompt: 47,371 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,371 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,371 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,371 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,371 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,371 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,371 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,371 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,371 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,371 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,371 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,371 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,371 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,371 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,371 tokens, 129 s so far
+[strata] reading the prompt: 47,366 of 47,371 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (43.0 tok/s) (length, cancel=False), expert cache 93.6% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,959 tokens, 11 s so far
+[strata] reading the prompt: 46,959 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,959 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,959 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,959 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,959 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,959 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,959 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,959 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,959 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,959 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,959 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,959 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,959 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,959 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 46,959 tokens, 129 s so far
+[strata] reading the prompt: 46,954 of 46,959 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (31.6 tok/s) (length, cancel=False), expert cache 92.5% hit (+1.2% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,813 tokens, 11 s so far
+[strata] reading the prompt: 46,813 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,813 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,813 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,813 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,813 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,813 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,813 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,813 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,813 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,813 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,813 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,813 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,813 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,813 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 46,813 tokens, 129 s so far
+[strata] reading the prompt: 46,808 of 46,813 tokens, 137 s so far
+[strata] done: 16 tokens in 138 s (37.6 tok/s) (length, cancel=False), expert cache 93.5% hit (+0.9% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,045 tokens, 11 s so far
+[strata] reading the prompt: 47,045 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,045 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,045 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,045 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,045 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,045 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,045 tokens, 129 s so far
+[strata] reading the prompt: 47,040 of 47,045 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (38.4 tok/s) (length, cancel=False), expert cache 88.0% hit (+2.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,102 tokens, 11 s so far
+[strata] reading the prompt: 47,102 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,102 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,102 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,102 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,102 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,102 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,102 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,102 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,102 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,102 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,102 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,102 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,102 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,102 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,102 tokens, 129 s so far
+[strata] reading the prompt: 47,097 of 47,102 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (40.0 tok/s) (length, cancel=False), expert cache 90.3% hit (+1.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,099 tokens, 11 s so far
+[strata] reading the prompt: 47,099 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,099 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,099 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,099 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,099 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,099 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,099 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,099 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,099 tokens, 129 s so far
+[strata] reading the prompt: 47,094 of 47,099 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (43.0 tok/s) (length, cancel=False), expert cache 90.7% hit (+1.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,270 tokens, 11 s so far
+[strata] reading the prompt: 47,270 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,270 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,270 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,270 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,270 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,270 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,270 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,270 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,270 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,270 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,270 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,270 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,270 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,270 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,270 tokens, 129 s so far
+[strata] reading the prompt: 47,265 of 47,270 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (33.4 tok/s) (length, cancel=False), expert cache 89.2% hit (+1.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,182 tokens, 11 s so far
+[strata] reading the prompt: 47,182 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,182 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,182 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,182 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,182 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,182 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,182 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,182 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,182 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,182 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,182 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,182 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,182 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,182 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,182 tokens, 129 s so far
+[strata] reading the prompt: 47,177 of 47,182 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (42.8 tok/s) (length, cancel=False), expert cache 90.8% hit (+1.2% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,005 tokens, 11 s so far
+[strata] reading the prompt: 47,005 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,005 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,005 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,005 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,005 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,005 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,005 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,005 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,005 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,005 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,005 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,005 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,005 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,005 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,005 tokens, 129 s so far
+[strata] reading the prompt: 47,000 of 47,005 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (41.4 tok/s) (length, cancel=False), expert cache 92.3% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,110 tokens, 11 s so far
+[strata] reading the prompt: 47,110 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,110 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,110 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,110 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,110 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,110 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,110 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,110 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,110 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,110 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,110 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,110 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,110 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,110 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,110 tokens, 129 s so far
+[strata] reading the prompt: 47,105 of 47,110 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (32.0 tok/s) (length, cancel=False), expert cache 90.7% hit (+1.0% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,034 tokens, 11 s so far
+[strata] reading the prompt: 47,034 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,034 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,034 tokens, 130 s so far
+[strata] reading the prompt: 47,029 of 47,034 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (42.8 tok/s) (length, cancel=False), expert cache 90.7% hit (+1.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,280 tokens, 11 s so far
+[strata] reading the prompt: 47,280 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,280 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,280 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,280 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,280 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,280 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,280 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,280 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,280 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,280 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,280 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,280 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,280 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,280 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,280 tokens, 129 s so far
+[strata] reading the prompt: 47,275 of 47,280 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.9 tok/s) (length, cancel=False), expert cache 92.5% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,991 tokens, 11 s so far
+[strata] reading the prompt: 46,991 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,991 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 46,991 tokens, 130 s so far
+[strata] reading the prompt: 46,986 of 46,991 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (41.5 tok/s) (length, cancel=False), expert cache 93.9% hit (+0.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,929 tokens, 11 s so far
+[strata] reading the prompt: 46,929 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,929 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,929 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,929 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,929 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,929 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,929 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,929 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,929 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,929 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,929 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,929 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,929 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,929 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 46,929 tokens, 130 s so far
+[strata] reading the prompt: 46,924 of 46,929 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (42.7 tok/s) (length, cancel=False), expert cache 90.1% hit (+1.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,181 tokens, 11 s so far
+[strata] reading the prompt: 47,181 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,181 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,181 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,181 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,181 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,181 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,181 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,181 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,181 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,181 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,181 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,181 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,181 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,181 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,181 tokens, 130 s so far
+[strata] reading the prompt: 47,176 of 47,181 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (42.3 tok/s) (length, cancel=False), expert cache 94.1% hit (+0.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,077 tokens, 11 s so far
+[strata] reading the prompt: 47,077 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,077 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,077 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,077 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,077 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,077 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,077 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,077 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,077 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,077 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,077 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,077 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,077 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,077 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,077 tokens, 130 s so far
+[strata] reading the prompt: 47,072 of 47,077 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (44.6 tok/s) (length, cancel=False), expert cache 94.0% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,184 tokens, 11 s so far
+[strata] reading the prompt: 47,184 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,184 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,184 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,184 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,184 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,184 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,184 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,184 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,184 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,184 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,184 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,184 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,184 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,184 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,184 tokens, 130 s so far
+[strata] reading the prompt: 47,179 of 47,184 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (43.1 tok/s) (length, cancel=False), expert cache 90.6% hit (+1.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,088 tokens, 11 s so far
+[strata] reading the prompt: 47,088 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,088 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,088 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,088 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,088 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,088 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,088 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,088 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,088 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,088 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,088 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,088 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,088 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,088 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,088 tokens, 130 s so far
+[strata] reading the prompt: 47,083 of 47,088 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (32.7 tok/s) (length, cancel=False), expert cache 92.5% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,192 tokens, 11 s so far
+[strata] reading the prompt: 47,192 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,192 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,192 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,192 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,192 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,192 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,192 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,192 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,192 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,192 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,192 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,192 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,192 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,192 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,192 tokens, 130 s so far
+[strata] reading the prompt: 47,187 of 47,192 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (36.0 tok/s) (length, cancel=False), expert cache 93.2% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,065 tokens, 11 s so far
+[strata] reading the prompt: 47,065 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,065 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,065 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,065 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,065 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,065 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,065 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,065 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,065 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,065 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,065 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,065 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,065 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,065 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,065 tokens, 129 s so far
+[strata] reading the prompt: 47,060 of 47,065 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (44.8 tok/s) (length, cancel=False), expert cache 94.0% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,094 tokens, 11 s so far
+[strata] reading the prompt: 47,094 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,094 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,094 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,094 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,094 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,094 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,094 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,094 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,094 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,094 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,094 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,094 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,094 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,094 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,094 tokens, 130 s so far
+[strata] reading the prompt: 47,089 of 47,094 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.7 tok/s) (length, cancel=False), expert cache 92.8% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,038 tokens, 11 s so far
+[strata] reading the prompt: 47,038 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,038 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,038 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,038 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,038 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,038 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,038 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,038 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,038 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,038 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,038 tokens, 95 s so far
+[strata] done: 0 tokens in 120 s (no speed) (cancel, cancel=True)
+[strata] reading the prompt: 47,006 tokens, 10 s so far
+[strata] reading the prompt: 47,006 tokens, 20 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 23 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 33 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 43 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 46 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 70 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 80 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 90 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 94 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,006 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,006 tokens, 129 s so far
+[strata] reading the prompt: 47,001 of 47,006 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (32.1 tok/s) (length, cancel=False), expert cache 93.1% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,293 tokens, 11 s so far
+[strata] reading the prompt: 47,293 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,293 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,293 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,293 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,293 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,293 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,293 tokens, 130 s so far
+[strata] reading the prompt: 47,288 of 47,293 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (43.3 tok/s) (length, cancel=False), expert cache 94.0% hit (+0.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,056 tokens, 11 s so far
+[strata] reading the prompt: 47,056 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,056 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,056 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,056 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,056 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,056 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,056 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,056 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,056 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,056 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,056 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,056 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,056 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,056 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,056 tokens, 130 s so far
+[strata] reading the prompt: 47,051 of 47,056 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (42.0 tok/s) (length, cancel=False), expert cache 94.4% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,046 tokens, 11 s so far
+[strata] reading the prompt: 47,046 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,046 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,046 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,046 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,046 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,046 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,046 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,046 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,046 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,046 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,046 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,046 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,046 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,046 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,046 tokens, 130 s so far
+[strata] reading the prompt: 47,041 of 47,046 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (36.4 tok/s) (length, cancel=False), expert cache 93.9% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,282 tokens, 11 s so far
+[strata] reading the prompt: 47,282 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,282 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,282 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,282 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,282 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,282 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,282 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,282 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,282 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,282 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,282 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,282 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,282 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,282 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,282 tokens, 130 s so far
+[strata] reading the prompt: 47,277 of 47,282 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (31.7 tok/s) (length, cancel=False), expert cache 93.1% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,073 tokens, 11 s so far
+[strata] reading the prompt: 47,073 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,073 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,073 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,073 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,073 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,073 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,073 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,073 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,073 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,073 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,073 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,073 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,073 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,073 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,073 tokens, 130 s so far
+[strata] reading the prompt: 47,068 of 47,073 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (39.2 tok/s) (length, cancel=False), expert cache 94.1% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,993 tokens, 11 s so far
+[strata] reading the prompt: 46,993 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,993 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,993 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,993 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,993 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,993 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,993 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,993 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,993 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,993 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,993 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,993 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,993 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,993 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 46,993 tokens, 130 s so far
+[strata] reading the prompt: 46,988 of 46,993 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (41.5 tok/s) (length, cancel=False), expert cache 93.3% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,014 tokens, 11 s so far
+[strata] reading the prompt: 47,014 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,014 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,014 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,014 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,014 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,014 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,014 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,014 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,014 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,014 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,014 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,014 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,014 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,014 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,014 tokens, 130 s so far
+[strata] reading the prompt: 47,009 of 47,014 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (42.0 tok/s) (length, cancel=False), expert cache 94.2% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,971 tokens, 11 s so far
+[strata] reading the prompt: 46,971 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,971 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,971 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,971 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,971 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,971 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,971 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,971 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,971 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,971 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,971 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,971 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,971 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,971 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 46,971 tokens, 130 s so far
+[strata] reading the prompt: 46,966 of 46,971 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (40.6 tok/s) (length, cancel=False), expert cache 90.3% hit (+1.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,104 tokens, 11 s so far
+[strata] reading the prompt: 47,104 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,104 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,104 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,104 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,104 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,104 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,104 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,104 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,104 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,104 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,104 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,104 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,104 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,104 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,104 tokens, 129 s so far
+[strata] reading the prompt: 47,099 of 47,104 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (36.0 tok/s) (length, cancel=False), expert cache 93.1% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,129 tokens, 11 s so far
+[strata] reading the prompt: 47,129 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,129 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,129 tokens, 130 s so far
+[strata] reading the prompt: 47,124 of 47,129 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (32.7 tok/s) (length, cancel=False), expert cache 88.5% hit (+2.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,011 tokens, 11 s so far
+[strata] reading the prompt: 47,011 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,011 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,011 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,011 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,011 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,011 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,011 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,011 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,011 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,011 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,011 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,011 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,011 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,011 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,011 tokens, 130 s so far
+[strata] reading the prompt: 47,006 of 47,011 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (33.9 tok/s) (length, cancel=False), expert cache 92.9% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,129 tokens, 11 s so far
+[strata] reading the prompt: 47,129 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,129 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,129 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,129 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,129 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,129 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,129 tokens, 130 s so far
+[strata] reading the prompt: 47,124 of 47,129 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (37.1 tok/s) (length, cancel=False), expert cache 93.1% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,055 tokens, 11 s so far
+[strata] reading the prompt: 47,055 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,055 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,055 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,055 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,055 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,055 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,055 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,055 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,055 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,055 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,055 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,055 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,055 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,055 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,055 tokens, 130 s so far
+[strata] reading the prompt: 47,050 of 47,055 tokens, 139 s so far
+[strata] done: 16 tokens in 139 s (38.1 tok/s) (length, cancel=False), expert cache 89.9% hit (+1.9% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,021 tokens, 11 s so far
+[strata] reading the prompt: 47,021 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,021 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,021 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,021 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,021 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,021 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,021 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,021 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,021 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,021 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,021 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,021 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,021 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,021 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,021 tokens, 130 s so far
+[strata] reading the prompt: 47,016 of 47,021 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (38.1 tok/s) (length, cancel=False), expert cache 94.4% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] done: 0 tokens in 24 s (no speed) (cancel, cancel=True)
+[strata] reading the prompt: 47,311 tokens, 10 s so far
+[strata] reading the prompt: 47,311 tokens, 20 s so far
+[strata] reading the prompt: 8,192 of 47,311 tokens, 23 s so far
+[strata] reading the prompt: 8,192 of 47,311 tokens, 33 s so far
+[strata] reading the prompt: 8,192 of 47,311 tokens, 43 s so far
+[strata] reading the prompt: 16,384 of 47,311 tokens, 46 s so far
+[strata] reading the prompt: 16,384 of 47,311 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,311 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,311 tokens, 70 s so far
+[strata] reading the prompt: 24,576 of 47,311 tokens, 80 s so far
+[strata] reading the prompt: 24,576 of 47,311 tokens, 90 s so far
+[strata] reading the prompt: 32,768 of 47,311 tokens, 94 s so far
+[strata] reading the prompt: 32,768 of 47,311 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,311 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,311 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,311 tokens, 129 s so far
+[strata] reading the prompt: 47,306 of 47,311 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.7 tok/s) (length, cancel=False), expert cache 93.5% hit (+0.8% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,001 tokens, 11 s so far
+[strata] reading the prompt: 47,001 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,001 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,001 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,001 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,001 tokens, 48 s so far
+[strata] reading the prompt: 16,384 of 47,001 tokens, 58 s so far
+[strata] reading the prompt: 16,384 of 47,001 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,001 tokens, 72 s so far
+[strata] reading the prompt: 24,576 of 47,001 tokens, 82 s so far
+[strata] reading the prompt: 24,576 of 47,001 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,001 tokens, 97 s so far
+[strata] reading the prompt: 32,768 of 47,001 tokens, 107 s so far
+[strata] reading the prompt: 32,768 of 47,001 tokens, 117 s so far
+[strata] reading the prompt: 40,960 of 47,001 tokens, 122 s so far
+[strata] reading the prompt: 40,960 of 47,001 tokens, 132 s so far
+[strata] reading the prompt: 46,996 of 47,001 tokens, 142 s so far
+[strata] done: 16 tokens in 142 s (41.6 tok/s) (length, cancel=False), expert cache 94.7% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,072 tokens, 11 s so far
+[strata] reading the prompt: 47,072 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,072 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,072 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,072 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,072 tokens, 48 s so far
+[strata] reading the prompt: 16,384 of 47,072 tokens, 58 s so far
+[strata] reading the prompt: 16,384 of 47,072 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,072 tokens, 72 s so far
+[strata] reading the prompt: 24,576 of 47,072 tokens, 82 s so far
+[strata] reading the prompt: 24,576 of 47,072 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,072 tokens, 96 s so far
+[strata] reading the prompt: 32,768 of 47,072 tokens, 106 s so far
+[strata] reading the prompt: 32,768 of 47,072 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,072 tokens, 120 s so far
+[strata] done: 0 tokens in 140 s (no speed) (cancel, cancel=True)
+[strata] reading the prompt: 47,125 tokens, 11 s so far
+[strata] reading the prompt: 47,125 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,125 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 47,125 tokens, 130 s so far
+[strata] reading the prompt: 47,120 of 47,125 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (44.4 tok/s) (length, cancel=False), expert cache 95.1% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,869 tokens, 11 s so far
+[strata] reading the prompt: 46,869 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,869 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,869 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,869 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,869 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,869 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,869 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,869 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,869 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,869 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,869 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,869 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,869 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,869 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 46,869 tokens, 130 s so far
+[strata] reading the prompt: 46,864 of 46,869 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (40.7 tok/s) (length, cancel=False), expert cache 91.6% hit (+1.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 46,991 tokens, 11 s so far
+[strata] reading the prompt: 46,991 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 46,991 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 46,991 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 46,991 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 46,991 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 46,991 tokens, 119 s so far
+[strata] reading the prompt: 40,960 of 46,991 tokens, 130 s so far
+[strata] reading the prompt: 46,986 of 46,991 tokens, 138 s so far
+[strata] done: 16 tokens in 139 s (41.8 tok/s) (length, cancel=False), expert cache 94.5% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,188 tokens, 11 s so far
+[strata] reading the prompt: 47,188 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,188 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,188 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,188 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,188 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,188 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,188 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,188 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,188 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,188 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,188 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,188 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,188 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,188 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,188 tokens, 130 s so far
+[strata] reading the prompt: 47,183 of 47,188 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (32.2 tok/s) (length, cancel=False), expert cache 92.9% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,032 tokens, 11 s so far
+[strata] reading the prompt: 47,032 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,032 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,032 tokens, 130 s so far
+[strata] reading the prompt: 47,027 of 47,032 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (41.8 tok/s) (length, cancel=False), expert cache 91.3% hit (+1.3% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,023 tokens, 11 s so far
+[strata] reading the prompt: 47,023 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,023 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,023 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,023 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,023 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,023 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,023 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,023 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,023 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,023 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,023 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,023 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,023 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,023 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,023 tokens, 130 s so far
+[strata] reading the prompt: 47,018 of 47,023 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.3 tok/s) (length, cancel=False), expert cache 94.3% hit (+0.5% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,034 tokens, 11 s so far
+[strata] reading the prompt: 47,034 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,034 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,034 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,034 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,034 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,034 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,034 tokens, 130 s so far
+[strata] reading the prompt: 47,029 of 47,034 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (36.9 tok/s) (length, cancel=False), expert cache 94.1% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,137 tokens, 11 s so far
+[strata] reading the prompt: 47,137 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,137 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,137 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,137 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,137 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,137 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,137 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,137 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,137 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,137 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,137 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,137 tokens, 106 s so far
+[strata] reading the prompt: 32,768 of 47,137 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,137 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,137 tokens, 130 s so far
+[strata] reading the prompt: 47,132 of 47,137 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (41.2 tok/s) (length, cancel=False), expert cache 94.6% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,145 tokens, 11 s so far
+[strata] reading the prompt: 47,145 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,145 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,145 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,145 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,145 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,145 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,145 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,145 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,145 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,145 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,145 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,145 tokens, 106 s so far
+[strata] reading the prompt: 32,768 of 47,145 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,145 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,145 tokens, 130 s so far
+[strata] reading the prompt: 47,140 of 47,145 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.4 tok/s) (length, cancel=False), expert cache 94.5% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,006 tokens, 11 s so far
+[strata] reading the prompt: 47,006 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,006 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,006 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,006 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 106 s so far
+[strata] reading the prompt: 32,768 of 47,006 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,006 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,006 tokens, 130 s so far
+[strata] reading the prompt: 47,001 of 47,006 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (33.5 tok/s) (length, cancel=False), expert cache 92.9% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,132 tokens, 11 s so far
+[strata] reading the prompt: 47,132 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,132 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,132 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,132 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,132 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,132 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,132 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,132 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,132 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,132 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,132 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,132 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,132 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,132 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,132 tokens, 130 s so far
+[strata] reading the prompt: 47,127 of 47,132 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (34.8 tok/s) (length, cancel=False), expert cache 94.5% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,060 tokens, 11 s so far
+[strata] reading the prompt: 47,060 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,060 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,060 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,060 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,060 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,060 tokens, 58 s so far
+[strata] reading the prompt: 16,384 of 47,060 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,060 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,060 tokens, 82 s so far
+[strata] reading the prompt: 24,576 of 47,060 tokens, 92 s so far
+[strata] reading the prompt: 32,768 of 47,060 tokens, 96 s so far
+[strata] reading the prompt: 32,768 of 47,060 tokens, 106 s so far
+[strata] reading the prompt: 32,768 of 47,060 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,060 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,060 tokens, 130 s so far
+[strata] reading the prompt: 47,055 of 47,060 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (41.6 tok/s) (length, cancel=False), expert cache 94.2% hit (+0.6% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,177 tokens, 11 s so far
+[strata] reading the prompt: 47,177 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,177 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,177 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,177 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,177 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,177 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,177 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,177 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,177 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,177 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,177 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,177 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,177 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,177 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,177 tokens, 130 s so far
+[strata] reading the prompt: 47,172 of 47,177 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (35.0 tok/s) (length, cancel=False), expert cache 93.8% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,054 tokens, 11 s so far
+[strata] reading the prompt: 47,054 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,054 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,054 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,054 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,054 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,054 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,054 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,054 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,054 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,054 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,054 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,054 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,054 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,054 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,054 tokens, 130 s so far
+[strata] reading the prompt: 47,049 of 47,054 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (36.1 tok/s) (length, cancel=False), expert cache 94.6% hit (+0.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,258 tokens, 11 s so far
+[strata] reading the prompt: 47,258 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,258 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,258 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,258 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,258 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,258 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,258 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,258 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,258 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,258 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,258 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,258 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,258 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,258 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,258 tokens, 130 s so far
+[strata] reading the prompt: 47,253 of 47,258 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (39.9 tok/s) (length, cancel=False), expert cache 90.6% hit (+2.0% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,009 tokens, 11 s so far
+[strata] reading the prompt: 47,009 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,009 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,009 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,009 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,009 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,009 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,009 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,009 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,009 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,009 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,009 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,009 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,009 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,009 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,009 tokens, 130 s so far
+[strata] reading the prompt: 47,004 of 47,009 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (33.1 tok/s) (length, cancel=False), expert cache 89.0% hit (+3.1% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,172 tokens, 11 s so far
+[strata] reading the prompt: 47,172 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,172 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,172 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,172 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,172 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,172 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,172 tokens, 68 s so far
+[strata] reading the prompt: 24,576 of 47,172 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,172 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,172 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,172 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,172 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,172 tokens, 116 s so far
+[strata] reading the prompt: 40,960 of 47,172 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,172 tokens, 130 s so far
+[strata] reading the prompt: 47,167 of 47,172 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (36.2 tok/s) (length, cancel=False), expert cache 94.2% hit (+1.0% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,125 tokens, 11 s so far
+[strata] reading the prompt: 47,125 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,125 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,125 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,125 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,125 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,125 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,125 tokens, 130 s so far
+[strata] reading the prompt: 47,120 of 47,125 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (46.7 tok/s) (length, cancel=False), expert cache 94.6% hit (+0.7% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,032 tokens, 11 s so far
+[strata] reading the prompt: 47,032 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,032 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,032 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 81 s so far
+[strata] reading the prompt: 24,576 of 47,032 tokens, 91 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 95 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 105 s so far
+[strata] reading the prompt: 32,768 of 47,032 tokens, 115 s so far
+[strata] reading the prompt: 40,960 of 47,032 tokens, 120 s so far
+[strata] reading the prompt: 40,960 of 47,032 tokens, 130 s so far
+[strata] reading the prompt: 47,027 of 47,032 tokens, 139 s so far
+[strata] done: 16 tokens in 140 s (33.6 tok/s) (length, cancel=False), expert cache 90.1% hit (+1.4% of the routed experts over PCIe)
+[strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
+[strata] reading the prompt: 47,099 tokens, 11 s so far
+[strata] reading the prompt: 47,099 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,099 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,099 tokens, 67 s so far
+[strata] reading the prompt: 24,576 of 47,099 tokens, 71 s so far
+[strata] reading the prompt: 24,576 of 47,099 tokens, 81 s so far

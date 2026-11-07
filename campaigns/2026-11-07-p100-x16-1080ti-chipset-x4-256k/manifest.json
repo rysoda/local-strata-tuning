@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-07-p100-x16-1080ti-chipset-x4-256k",
+  "title": "Cooled P100 x16 + GTX 1080 Ti chipset x4 tuning at 256K",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "GPU 0 Tesla P100-PCIE-16GB; GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999; TCC; 01:00.0",
+      "GPU 1 GTX 1080 Ti 11GB; GPU-7d8ccb39-60d5-bc52-5e38-1cb26b742a23; WDDM/display; 03:00.0"
+    ],
+    "cpu": "Intel Core i5-11400F; 6 cores / 12 threads",
+    "ram_gib": 64,
+    "motherboard": "MSI MEG Z490 UNIFY (MS-7C71)",
+    "pcie": "Verified PCIe 3.0 P100 CPU x16 / 1080 Ti chipset x4; no card relocation permitted",
+    "cooling": "User-confirmed open case, intake + exhaust; 75 C target; intake limited to 45% for noise. Hold unchanged throughout comparison; actual RPM and ambient unmeasured",
+    "future_hardware_excluded": "Second P100 / CPU x8+x8 requires a separate campaign"
+  },
+  "software": {
+    "engine": "0.1.57 CUDA12",
+    "control": "0.1.57",
+    "betterbench": "0.6.1",
+    "os": "Windows 11 Pro 10.0.26300; NVIDIA driver 582.66"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 262144,
+    "kv": "int8",
+    "kv_resident": 32768,
+    "routing": "full experts",
+    "speed_projection": false,
+    "drafting": "MTP spec 4 / min-p 0.5"
+  },
+  "workload": "../../workloads/betterbench-16k.json",
+  "workload_flags": "--quick --decode --categories code --prefill --no-concurrency",
+  "report": "REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 17,
+  "rejected_configurations": 0,
+  "recommended_profile": "recommended-256k.json",
+  "resume_script": "scripts/run.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": [
+    "2026-11-01-p100-1080ti-x16-x4",
+    "2026-11-02-p100-1080ti-x8-x8",
+    "2026-11-07-p100-server-fan-intake-exhaust",
+    "2026-11-07-p100-x16-1080ti-chipset-x4-retune"
+  ]
+}

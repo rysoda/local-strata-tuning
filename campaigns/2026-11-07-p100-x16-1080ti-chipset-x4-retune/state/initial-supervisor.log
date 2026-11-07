@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\ai\tuning\campaigns\2026-11-07-p100-x16-1080ti-chipset-x4-retune\scripts\run.py", line 205, in <module>
+    main()
+  File "C:\ai\tuning\campaigns\2026-11-07-p100-x16-1080ti-chipset-x4-retune\scripts\run.py", line 183, in main
+    raise RuntimeError('Failed/invalid run; paused for review: ' + item['id'])
+RuntimeError: Failed/invalid run; paused for review: r01-quality-reference-layout

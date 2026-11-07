@@ -1,0 +1,37 @@
+# Work log — 256K topology tuning
+
+## 2026-11-07 — explicit context correction
+
+User interrupted the initial 128K experiment and explicitly requested **256K = 262144 context**. Existing authorization to test worthwhile options remains in force. Cooling stays **open case, intake + exhaust, 75°C target, intake capped at 45% for noise**. Same P100 CPU x16 / 1080 Ti chipset x4 slots; no card moves or other quality/settings changes.
+
+Created a fresh campaign with tools/new_campaign.py, reusing only the predecessor's preparation plan/scripts and read-only installation/hardware snapshots. The predecessor is 2026-11-07-p100-x16-1080ti-chipset-x4-retune. Its first BetterBench attempt r01-quality-reference-layout was intentionally interrupted after verifying the live benchmark command/output path, not rejected as a slow result. Its supervisor cleaned up its owned server/sampler, removed its lock and recorded failure. Preserved all partial logs/state and marked that campaign superseded-context-change with a STOP flag. No 128K run data or queue state is copied into this campaign.
+
+This campaign starts fresh with context 262144; resident KV remains 32768, int8 KV, same IQ3_S target weights, full experts, MTP spec4/min-p0.5, no speed projection and engine/Control 0.1.57 / BetterBench 0.6.1. Baseline scientific fingerprint regenerated for the explicit context and campaign log-path change. Engine/Control/expert-profile/tool hashes and model size/mtime inventory remain unchanged. Original installed profiles remain untouched; exact original bytes remain privately archived in predecessor; a redacted as-found profile is also copied here. Preserved provenance snapshots are labeled as earlier-today discovery, not new performance evidence.
+
+Initial five quality-preserving reference/placement screens remain the first phase, then mandatory startup/memory/thermal review. No numerical comparison with interrupted 128K attempt. Standard functional/tool/32K/~119K checks alone cannot validate 256K use; a separate above-128K actual-token smoke is required before a 256K recommendation. No generated code execution. No fan/controller/clock/power/page-file/software installation changes.
+
+Seven synthetic safety/profile tests, frozen-input/UUID/link --check and live idle check passed; repository privacy/layout validation passed for nine campaigns and 648 unchanged archived artifacts. Confirmed old Strata/benchmark tree gone and port free before launching fresh 256K supervisor. Historical identifiers: supervisor PID 4648, first Control PID 8412; verify live commands before action. Runtime config and actual engine startup command both confirm --max-context 262144. First baseline is loading, not yet a completed measurement. Receipt/log: state/initial-launch.json and state/initial-supervisor.log. No 128K speed used as a baseline.
+
+## Initial screens reviewed — continuation resumed
+
+All five initial 256K screens completed, not the campaign. The initial supervisor intentionally exited at its review checkpoint; no background review agent existed to advance it. User asked why testing stopped. Acknowledged this communication gap and performed the required review, then launched a continuation that proceeds through approved follow-ups and automatic nearby confirmations/smokes without another planned idle checkpoint. Errors/incomplete evidence/thermal anomalies still pause for safety.
+
+Initial medians (decode / prefill tok/s): trimmed32 40.40 / 316.33; P100-only 34.00 / 333.90; 1080-only 23.71 / 250.64; auto1080Main 38.58 / 329.85; autoP100Main 35.41 / 312.45. Five code/eight prefill samples valid in every arm. Full engine/server logs reviewed: no fatal/non-finite/watchdog-restart errors, MTP present, exact target/context retained. P100 maxima 76–77°C, 1080 maxima 55–59°C on used runs, no sampled thermal slowdown flags. Raw per-run minima include P100 445–562 MiB free, so low-reserve leaders are not deployment-ready. Review saved as results/initial-review.json.
+
+Important installed behavior: r04 auto1080Main automatically enabled stage-dense trim and selected K=35 due its memory preflight. It is NOT an untrimmed auto control, even though no trim flag was requested. This preserves layers/experts but changes the planned isolation; retained evidence is relabeled rather than discarded. Reverse auto chose K=14 without that automatic trim.
+
+Nine justified follow-ups: increase only P100 reserve to 1400 on trim32; then display reserve to 2304; safe trim28 and trim36 neighbors; explicit reverse14 then same reverse14+trim; safe trim32 with mmap PLE; safe trim32 with prefill-pipe1; fresh safe P100 reference. Reserve changes are individually named, not hidden baseline edits. The runner ranks eligible same-quality/headroom candidates by predeclared 55/45 decode/prefill preference, then runs candidate–P100–candidate confirmations. First candidate and intervening reference each run six standard functional/tool/recall checks plus a separate ~230K actual-token recall smoke. No generated code execution. Standard tools/sanity.py and shared benchmark.py remain unchanged/frozen; a campaign-local subprocess adapter substitutes the extended smoke entry point only.
+
+Pipeline/peer and PLE-in-RAM remain intentionally deferred: earlier instability/OOM, no fresh evidence of benefit, constrained RAM/commit. Automatic finish writes a provisional ready profile/report after review and checks the launcher without launching. It does not claim significance, inference-throughput gains from clocks or comprehensive quality equivalence. All actual performance samples preserved.
+
+Seven original and five continuation tests passed, live frozen-input/idle checks passed, privacy/layout validation passed before resume. Historical supervisor PID 14932, first follow-up Control PID 4844; verify live commands before any action. Queue confirmed followup-running/r06-trim32-p100-headroom loading. Receipt/log: state/continuation-launch.json and state/continuation-supervisor.log. Five initial results remain intact. Cooling/hardware/software/quality unchanged; test binding localhost only.
+
+## Automatic final checkpoint
+
+Completed all reviewed screens and nearby confirmations. Selected f03-candidate-repeat; preference-score ratio 1.0391. Candidate/reference each passed 7/7 smoke checks including above-128K recall. No active owned test server remains. Raw evidence and limitations are in REPORT/RESULTS/state.
+
+## User-requested Windows Startup deployment
+
+Updated shell:startup/strata-start.bat to selected P100 CPU x16 / 1080 Ti chipset x4 placement: GPU 0 layers 0–35, GPU 1 layers 36–47/Main, trim, context 256K, physical reserves 1400/2304 MiB. Preserved the existing preset, credentials/network behavior, terminal monitor, 30-second delay, MTP/vision/tuning settings and experimental speed-projection vector exactly (scale 1.0, layer range 4–44, project/per-layer), as explicitly requested by user. Projection file existence verified. Only launch arguments changed were split and reserves; comments updated.
+
+Original startup bytes backed up to ignored configs/private/strata-start-before-20261107T220318Z.bat; deployed copy saved privately. No launch performed and no installed preset rewritten. The projection-enabled deployment is a user-requested deviation: campaign benchmarks and 7/7 smoke checks were performed WITHOUT that projection and do not validate this combination. Archived recommended benchmark profiles/results remain unchanged.

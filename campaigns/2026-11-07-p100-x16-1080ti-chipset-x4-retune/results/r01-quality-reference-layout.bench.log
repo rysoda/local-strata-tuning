@@ -1,0 +1,7 @@
+BetterBench 0.6.1 · corpus v1.0 · 4 prompts in 1 categories
+phases: decode, prefill
+1 warmup + 5 measured passes per category  (quick mode — smoke check, not a publishable result)
+model max context: unknown — will skip any depth the server rejects (pass --max-model-len to skip up front)
+output: C:\ai\tuning\campaigns\2026-11-07-p100-x16-1080ti-chipset-x4-retune\results\r01-quality-reference-layout.json
+[single] code: warmup 1 + 5 runs
+[prefill] depth ~16384 tok: warmup 2 + 8

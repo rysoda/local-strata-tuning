@@ -1,0 +1,725 @@
+{
+  "phase": "complete",
+  "current": null,
+  "runs": {
+    "r01-quality-reference-layout": {
+      "phase": "complete",
+      "server_pid": 8412,
+      "started": "2026-11-07 15:54:47",
+      "benchmark_pid": 12788,
+      "metrics": {
+        "decode": 40.399392449288804,
+        "prefill": 316.3340069810189,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 16:07:04"
+    },
+    "r02-p100-only": {
+      "phase": "complete",
+      "server_pid": 10828,
+      "started": "2026-11-07 16:07:18",
+      "benchmark_pid": 7676,
+      "metrics": {
+        "decode": 34.0006578388136,
+        "prefill": 333.90457651673887,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 16:17:02"
+    },
+    "r03-1080-only": {
+      "phase": "complete",
+      "server_pid": 13728,
+      "started": "2026-11-07 16:17:16",
+      "benchmark_pid": 11232,
+      "metrics": {
+        "decode": 23.711086345451783,
+        "prefill": 250.64369974729118,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 16:29:30"
+    },
+    "r04-auto-1080-main": {
+      "phase": "complete",
+      "server_pid": 4248,
+      "started": "2026-11-07 16:29:44",
+      "benchmark_pid": 2492,
+      "metrics": {
+        "decode": 38.57794621645984,
+        "prefill": 329.8501505628192,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 16:39:04"
+    },
+    "r05-auto-p100-main": {
+      "phase": "complete",
+      "server_pid": 3460,
+      "started": "2026-11-07 16:39:17",
+      "benchmark_pid": 3712,
+      "metrics": {
+        "decode": 35.411228476612884,
+        "prefill": 312.4469489004768,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 16:48:54"
+    },
+    "r06-trim32-p100-headroom": {
+      "phase": "complete",
+      "server_pid": 4844,
+      "started": "2026-11-07 19:32:38",
+      "benchmark_pid": 448,
+      "metrics": {
+        "decode": 37.00902957919005,
+        "prefill": 321.49490061941066,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 19:41:35"
+    },
+    "r07-trim32-both-headroom": {
+      "phase": "complete",
+      "server_pid": 1720,
+      "started": "2026-11-07 19:41:48",
+      "benchmark_pid": 2272,
+      "metrics": {
+        "decode": 37.55573208828559,
+        "prefill": 313.5367819684468,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 19:51:10"
+    },
+    "r08-trim28-safe": {
+      "phase": "complete",
+      "server_pid": 14916,
+      "started": "2026-11-07 19:51:24",
+      "benchmark_pid": 6560,
+      "metrics": {
+        "decode": 32.83484531426073,
+        "prefill": 299.41344322770334,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:00:56"
+    },
+    "r09-trim36-safe": {
+      "phase": "complete",
+      "server_pid": 12008,
+      "started": "2026-11-07 20:01:09",
+      "benchmark_pid": 6020,
+      "metrics": {
+        "decode": 38.76856944667587,
+        "prefill": 325.86025546733265,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:10:03"
+    },
+    "r10-reverse14-explicit": {
+      "phase": "complete",
+      "server_pid": 14736,
+      "started": "2026-11-07 20:10:17",
+      "benchmark_pid": 8036,
+      "metrics": {
+        "decode": 31.902336570464996,
+        "prefill": 306.84758595243903,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:19:44"
+    },
+    "r11-reverse14-trim": {
+      "phase": "complete",
+      "server_pid": 13112,
+      "started": "2026-11-07 20:19:57",
+      "benchmark_pid": 9420,
+      "metrics": {
+        "decode": 37.03258775945576,
+        "prefill": 306.8251977868125,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:29:18"
+    },
+    "r12-trim32-mmap": {
+      "phase": "complete",
+      "server_pid": 15284,
+      "started": "2026-11-07 20:29:32",
+      "benchmark_pid": 4692,
+      "metrics": {
+        "decode": 36.92941612765856,
+        "prefill": 315.0470785603716,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:38:43"
+    },
+    "r13-trim32-prefill-pipe": {
+      "phase": "complete",
+      "server_pid": 11220,
+      "started": "2026-11-07 20:38:57",
+      "benchmark_pid": 9020,
+      "metrics": {
+        "decode": 36.37872411764669,
+        "prefill": 324.8392941274103,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:47:55"
+    },
+    "r14-p100-safe-reference": {
+      "phase": "complete",
+      "server_pid": 14572,
+      "started": "2026-11-07 20:48:08",
+      "benchmark_pid": 15172,
+      "metrics": {
+        "decode": 32.87755942181199,
+        "prefill": 333.6555457729312,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 20:56:26"
+    },
+    "f01-candidate": {
+      "phase": "complete",
+      "server_pid": 11676,
+      "started": "2026-11-07 20:56:39",
+      "benchmark_pid": 2012,
+      "metrics": {
+        "decode": 37.4713126230583,
+        "prefill": 325.60061139132904,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-07 21:22:44"
+    },
+    "f02-p100-reference": {
+      "phase": "complete",
+      "server_pid": 11208,
+      "started": "2026-11-07 21:22:58",
+      "benchmark_pid": 5180,
+      "metrics": {
+        "decode": 33.2737774066693,
+        "prefill": 333.9841110580072,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-07 21:51:57"
+    },
+    "f03-candidate-repeat": {
+      "phase": "complete",
+      "server_pid": 7464,
+      "started": "2026-11-07 21:52:11",
+      "benchmark_pid": 13832,
+      "metrics": {
+        "decode": 35.321400809261,
+        "prefill": 326.3109577358742,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-07 22:00:50"
+    }
+  },
+  "cooling_note": "Open case; intake + exhaust; 75 C target; intake capped at 45% for noise; fixed throughout comparison",
+  "runner_pid": 14932,
+  "updated_utc": "2026-11-07T21:01:03.398595+00:00",
+  "experiment_definitions": [
+    {
+      "id": "r01-quality-reference-layout",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "32",
+      "trim": true,
+      "reason": "Quality-restored installed layout at 256K; no speed projection from the as-found profile"
+    },
+    {
+      "id": "r02-p100-only",
+      "gpu": 0,
+      "reason": "Fresh x16 P100 fallback; determine whether x4 helper is worthwhile"
+    },
+    {
+      "id": "r03-1080-only",
+      "gpu": 1,
+      "reason": "Fresh x4 display-card reference, no physical move"
+    },
+    {
+      "id": "r04-auto-1080-main",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "auto",
+      "reason": "Per-link automatic split with 1080 Ti last/Main"
+    },
+    {
+      "id": "r05-auto-p100-main",
+      "gpu": [
+        1,
+        0
+      ],
+      "split": "auto",
+      "reason": "Reverse Main order; P100 hosts head/MTP"
+    },
+    {
+      "id": "r06-trim32-p100-headroom",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "32",
+      "trim": true,
+      "p100_reserve": 1400,
+      "reason": "Only raise physical P100 reserve after low-memory warnings"
+    },
+    {
+      "id": "r07-trim32-both-headroom",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "32",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Then raise display-card reserve; isolate second budget"
+    },
+    {
+      "id": "r08-trim28-safe",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "28",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Neighbor split: 28 P100 / 20 display Main"
+    },
+    {
+      "id": "r09-trim36-safe",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "36",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Neighbor split: 36 P100 / 12 display Main"
+    },
+    {
+      "id": "r10-reverse14-explicit",
+      "gpu": [
+        1,
+        0
+      ],
+      "split": "14",
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Explicit reverse auto boundary, full dense copies if feasible"
+    },
+    {
+      "id": "r11-reverse14-trim",
+      "gpu": [
+        1,
+        0
+      ],
+      "split": "14",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Isolate trim at same reverse boundary"
+    },
+    {
+      "id": "r12-trim32-mmap",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "32",
+      "trim": true,
+      "args": [
+        "--ple-io",
+        "mmap"
+      ],
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "One I/O change motivated by slow direct PLE probe"
+    },
+    {
+      "id": "r13-trim32-prefill-pipe",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "32",
+      "trim": true,
+      "args": [
+        "--prefill-pipe",
+        "1"
+      ],
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "One chunk-balancing change for decode/prefill tradeoff"
+    },
+    {
+      "id": "r14-p100-safe-reference",
+      "gpu": 0,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Fresh headroom-safe single-P100 reference for selection"
+    },
+    {
+      "id": "f01-candidate",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "36",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Neighbor split: 36 P100 / 12 display Main",
+      "sanity": true
+    },
+    {
+      "id": "f02-p100-reference",
+      "gpu": 0,
+      "sanity": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304
+    },
+    {
+      "id": "f03-candidate-repeat",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "36",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Neighbor split: 36 P100 / 12 display Main",
+      "sanity": false
+    }
+  ],
+  "reviews": {
+    "r01-quality-reference-layout": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 562.0
+        },
+        "1": {
+          "max_temp_c": 56.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1037.0
+        }
+      },
+      "low_vram_warning": true,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r02-p100-only": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 445.0
+        }
+      },
+      "low_vram_warning": true,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r03-1080-only": {
+      "auto_trim": false,
+      "hardware": {
+        "1": {
+          "max_temp_c": 59.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 607.0
+        }
+      },
+      "low_vram_warning": true,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r04-auto-1080-main": {
+      "auto_trim": true,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 558.0
+        },
+        "1": {
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1090.0
+        }
+      },
+      "low_vram_warning": true,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r05-auto-p100-main": {
+      "auto_trim": false,
+      "hardware": {
+        "1": {
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1956.0
+        },
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 515.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r06-trim32-p100-headroom": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1262.0
+        },
+        "1": {
+          "max_temp_c": 56.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1014.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r07-trim32-both-headroom": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1262.0
+        },
+        "1": {
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1756.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r08-trim28-safe": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1272.0
+        },
+        "1": {
+          "max_temp_c": 56.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1737.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r09-trim36-safe": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1260.0
+        },
+        "1": {
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1742.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r10-reverse14-explicit": {
+      "auto_trim": false,
+      "hardware": {
+        "1": {
+          "max_temp_c": 54.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 2600.0
+        },
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1215.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r11-reverse14-trim": {
+      "auto_trim": false,
+      "hardware": {
+        "1": {
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 2488.0
+        },
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1214.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r12-trim32-mmap": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1262.0
+        },
+        "1": {
+          "max_temp_c": 56.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1796.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r13-trim32-prefill-pipe": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1262.0
+        },
+        "1": {
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1768.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "r14-p100-safe-reference": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 79.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1145.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "f01-candidate": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 78.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1260.0
+        },
+        "1": {
+          "max_temp_c": 57.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1780.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "f02-p100-reference": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1143.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    },
+    "f03-candidate-repeat": {
+      "auto_trim": false,
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1260.0
+        },
+        "1": {
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0,
+          "min_free_mib": 1902.0
+        }
+      },
+      "low_vram_warning": false,
+      "caveat": "Observed sample minima include loading/graph/prefill buffers; not a guarantee beside other GPU apps"
+    }
+  },
+  "provisional_selection": {
+    "source_id": "r09-trim36-safe",
+    "score": 1.0833005986621054,
+    "candidate": {
+      "id": "r09-trim36-safe",
+      "gpu": [
+        0,
+        1
+      ],
+      "split": "36",
+      "trim": true,
+      "p100_reserve": 1400,
+      "ti_reserve": 2304,
+      "reason": "Neighbor split: 36 P100 / 12 display Main"
+    }
+  },
+  "selected_run": "f03-candidate-repeat"
+}

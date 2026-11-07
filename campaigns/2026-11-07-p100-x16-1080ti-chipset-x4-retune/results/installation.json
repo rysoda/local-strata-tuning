@@ -1,0 +1,12 @@
+{
+  "captured_utc": "2026-11-07T14:31:32.416000+00:00",
+  "active_control": {
+    "version": "0.1.57",
+    "folder": "0.1.57",
+    "sha256": "e93caba92fd69398fa18e4e698c21e798e2e488c2d7ddb77b5272bec6d347d8f"
+  },
+  "frozen_engine": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe",
+  "engine_sha256": "2e6485bd6ce9779da51f4dfa292ea84f197d89b66e76145d8426c20ca129c2d8",
+  "help_exit_code": 0,
+  "original_profile_sha256": "d06290149f8ff7459f0c57bdea2a4ea7d1f747e54d362eb76da33bb4efcce74f"
+}

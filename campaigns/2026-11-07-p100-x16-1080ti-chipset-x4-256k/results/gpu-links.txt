@@ -1,0 +1,4 @@
+index, name, uuid, pci.bus_id, pcie.link.gen.current, pcie.link.gen.max, pcie.link.width.current, pcie.link.width.max, memory.total [MiB], memory.used [MiB], temperature.gpu, power.limit [W], driver_version, driver_model.current
+0, Tesla P100-PCIE-16GB, GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, 00000000:01:00.0, 3, 3, 16, 16, 16384 MiB, 9 MiB, 50, 250.00 W, 582.66, TCC
+1, NVIDIA GeForce GTX 1080 Ti, GPU-7d8ccb39-60d5-bc52-5e38-1cb26b742a23, 00000000:03:00.0, 3, 3, 4, 16, 11264 MiB, 1081 MiB, 22, 280.00 W, 582.66, WDDM
+

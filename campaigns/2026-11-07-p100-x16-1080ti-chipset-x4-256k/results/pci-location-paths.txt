@@ -1,0 +1,41 @@
+[
+    {
+        "FriendlyName":  "NVIDIA Tesla P100-PCIE-16GB",
+        "InstanceId":  "PCI\\VEN_10DE\u0026DEV_15F8\u0026SUBSYS_118F10DE\u0026REV_A1\\4\u0026282DEF4E\u00260\u00260008"
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_LocationPaths",
+        "Data":  [
+                     "PCIROOT(0)#PCI(0100)#PCI(0000)",
+                     "ACPI(_SB_)#ACPI(PCI0)#ACPI(PEG1)#ACPI(PEGP)"
+                 ]
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_LocationInfo",
+        "Data":  "PCI bus 1, device 0, function 0"
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_Parent",
+        "Data":  "PCI\\VEN_8086\u0026DEV_4C01\u0026SUBSYS_7C711462\u0026REV_01\\3\u002611583659\u00260\u002608"
+    },
+    {
+        "FriendlyName":  "NVIDIA GeForce GTX 1080 Ti",
+        "InstanceId":  "PCI\\VEN_10DE\u0026DEV_1B06\u0026SUBSYS_36041462\u0026REV_A1\\4\u00267368FA\u00260\u002600DC"
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_LocationPaths",
+        "Data":  [
+                     "PCIROOT(0)#PCI(1B04)#PCI(0000)",
+                     "ACPI(_SB_)#ACPI(PCI0)#ACPI(RP21)#ACPI(PXSX)"
+                 ]
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_LocationInfo",
+        "Data":  "PCI bus 3, device 0, function 0"
+    },
+    {
+        "KeyName":  "DEVPKEY_Device_Parent",
+        "Data":  "PCI\\VEN_8086\u0026DEV_06AC\u0026SUBSYS_72708086\u0026REV_F0\\3\u002611583659\u00260\u0026DC"
+    }
+]
+

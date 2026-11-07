@@ -1,0 +1,27 @@
+{
+    "Name":  "11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz",
+    "NumberOfCores":  6,
+    "NumberOfLogicalProcessors":  12
+}
+{
+    "TotalPhysicalMemory":  68602007552
+}
+{
+    "Manufacturer":  "Micro-Star International Co., Ltd.",
+    "Product":  "MEG Z490 UNIFY (MS-7C71)"
+}
+{
+    "Caption":  "Microsoft Windows 11 Pro",
+    "Version":  "10.0.26300",
+    "BuildNumber":  "26300",
+    "FreePhysicalMemory":  61251720,
+    "TotalVirtualMemorySize":  85868516,
+    "FreeVirtualMemory":  77462460
+}
+{
+    "Name":  "C:\\pagefile.sys",
+    "AllocatedBaseSize":  18432,
+    "CurrentUsage":  134,
+    "PeakUsage":  897
+}
+

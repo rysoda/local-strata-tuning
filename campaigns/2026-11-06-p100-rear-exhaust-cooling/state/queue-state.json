@@ -1,9 +1,66 @@
 {
-  "phase": "server-ready",
-  "current": "p100-server",
-  "runs": {},
-  "started_utc": "2026-11-06T17:18:34.498813+00:00",
-  "server_pid": 14848,
+  "phase": "server-stopped",
+  "current": null,
+  "started_utc": "2026-11-07T11:43:23.675376+00:00",
+  "previous_launch": {
+    "phase": "server-ready",
+    "current": "p100-server",
+    "runs": {},
+    "started_utc": "2026-11-06T17:18:34.498813+00:00",
+    "server_pid": 14848,
+    "command": [
+      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe",
+      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py",
+      "--engine",
+      "strata",
+      "--config",
+      "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json",
+      "--host",
+      "0.0.0.0",
+      "--port",
+      "8080"
+    ],
+    "health": {
+      "status": "ok",
+      "max_context": 131072,
+      "model": "qwen3.8-flash-next-iq3_s",
+      "loaded": true
+    },
+    "stress_workload_started": false,
+    "previous_launch": {
+      "phase": "server-ready",
+      "current": "p100-server",
+      "runs": {},
+      "started_utc": "2026-11-06T17:15:25.118809+00:00",
+      "server_pid": 13944,
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe",
+        "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py",
+        "--engine",
+        "strata",
+        "--config",
+        "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8080"
+      ],
+      "health": {
+        "status": "ok",
+        "max_context": 131072,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "loaded": true
+      },
+      "stress_workload_started": false
+    },
+    "network_binding": "0.0.0.0",
+    "restart_reason": "User requested usual LAN access; usual API key verified unchanged",
+    "network_health_verified": true
+  },
+  "restart_reason": "User requested P100-only 128K with usual network/API; verified no inference processes or port listener before launch",
+  "network_binding": "0.0.0.0",
+  "stress_workload_started": false,
+  "server_pid": 5624,
   "command": [
     "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe",
     "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py",
@@ -20,36 +77,13 @@
     "status": "ok",
     "max_context": 131072,
     "model": "qwen3.8-flash-next-iq3_s",
-    "loaded": true
+    "images": true,
+    "api_key": true,
+    "image_generation": false,
+    "loaded": true,
+    "service": "strata"
   },
-  "stress_workload_started": false,
-  "previous_launch": {
-    "phase": "server-ready",
-    "current": "p100-server",
-    "runs": {},
-    "started_utc": "2026-11-06T17:15:25.118809+00:00",
-    "server_pid": 13944,
-    "command": [
-      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe",
-      "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py",
-      "--engine",
-      "strata",
-      "--config",
-      "C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json",
-      "--host",
-      "127.0.0.1",
-      "--port",
-      "8080"
-    ],
-    "health": {
-      "status": "ok",
-      "max_context": 131072,
-      "model": "qwen3.8-flash-next-iq3_s",
-      "loaded": true
-    },
-    "stress_workload_started": false
-  },
-  "network_binding": "0.0.0.0",
-  "restart_reason": "User requested usual LAN access; usual API key verified unchanged",
-  "network_health_verified": true
+  "network_health_verified": true,
+  "stopped_utc": "2026-11-07T14:26:05.496458+00:00",
+  "stop_reason": "User requested stop; live server command verified before stopping owned process tree"
 }

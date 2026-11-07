@@ -1,0 +1,12 @@
+{
+  "phase": "launched",
+  "started_utc": "2026-11-07T18:32:31.232593+00:00",
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-x16-1080ti-chipset-x4-256k\\scripts\\continue.py",
+    "--run"
+  ],
+  "scope": "Nine reviewed follow-ups, automatic safe selection, three nearby confirmation benchmarks, candidate/reference standard plus above-128K smokes; errors pause",
+  "supervisor_pid": 14932
+}

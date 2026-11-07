@@ -352,3 +352,10 @@ ready: http://127.0.0.1:8080/v1  (OpenAI: /v1/chat/completions, Anthropic: /v1/m
 [strata] the reply reached max tokens while still thinking, so it has no answer: a thinking budget (reasoning_budget_tokens, in the request or in strata-<model>.json for every request) leaves room to answer
 [strata] reading the prompt: 47,261 tokens, 11 s so far
 [strata] reading the prompt: 47,261 tokens, 21 s so far
+[strata] reading the prompt: 8,192 of 47,261 tokens, 24 s so far
+[strata] reading the prompt: 8,192 of 47,261 tokens, 34 s so far
+[strata] reading the prompt: 8,192 of 47,261 tokens, 44 s so far
+[strata] reading the prompt: 16,384 of 47,261 tokens, 47 s so far
+[strata] reading the prompt: 16,384 of 47,261 tokens, 57 s so far
+[strata] reading the prompt: 16,384 of 47,261 tokens, 67 s so far
+[strata] done: 0 tokens in 72 s (no speed) (cancel, cancel=True)

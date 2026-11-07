@@ -188,3 +188,5 @@ strata serve: decode expert cache hit rate: 92.6% (10180 hits / 10996 lookups); 
 strata serve: KV streaming: 87.13% of 166392 block reads hit VRAM, 86.3 MiB read from RAM
 strata serve: suffix drafts: 1 windows, 3 of 3 drafts accepted
 strata serve: conversation cache: parked 47103 tokens in 400.0 ms; parked=1 bytes=1191827480 evictions=15 snapshot_bytes=1191827480 reused_kv_bytes=0
+strata serve: prompt 47261 tokens = 0 reused + 24576 of 47261 read in 71902 ms (341.8 tok/s), 0 generated in 0 ms (0.0 tok/s), drafts accepted 0 of 0, 1 checkpoints (cancelled)
+strata serve: KV streaming: 100.00% of 0 block reads hit VRAM, 0.0 MiB read from RAM
