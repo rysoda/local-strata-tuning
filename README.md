@@ -2,6 +2,21 @@
 
 Hardware-specific tuning of **Qwen3.8-Flash-Next IQ3_S at 131072 context**, using the existing Windows Strata installation and BetterBench. Each campaign keeps its own reports, configurations, raw evidence and resumable state.
 
+## P100 cooling quick summary
+
+All selected runs are 10 minutes. Temperature and SM clock show **mean / sampled maximum**; power is **mean GPU board power**, excluding fan power.
+
+| Setup | Date | Runs | Temperature °C | SM clock MHz | Mean power W |
+|---|---|---:|---:|---:|---:|
+| **New server intake + exhaust** | Nov 7 | 3 | **67.39 / 77** | **1322.92 / 1328** | **194.76** |
+| New server intake only | Nov 7 | 3 | 73.49 / 77 | 1319.94 / 1328 | 196.95 |
+| Previous rear-pull setup | Nov 6 | 3 | 76.38 / 77 | 1318.21 / 1328 | 197.54 |
+| Older open-case one-fan setup | Nov 3 | 2 | 78.92 / 80 | 1231.20 / 1328 | 171.78 |
+
+**New exhaust comparison:** mean temperature **−6.10°C**, mean clock **+0.23%** versus intake alone. Both groups reached 77°C. The third both-fan run drifted warmer; historical rows have unmatched conditions and old fan orientation is undocumented. These are cooling measurements, not inference-speed gains.
+
+[Full comparison, run-by-run tables and caveats](campaigns/2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md)
+
 ## Campaign index
 
 | Campaign | Hardware / links | Engine / Control | Status | Decode (tok/s) | Prefill (tok/s) | Main finding |
