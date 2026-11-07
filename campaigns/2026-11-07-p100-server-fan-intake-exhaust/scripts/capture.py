@@ -75,12 +75,15 @@ def main():
     parser.add_argument('--ready', action='store_true', help='Confirm physical setup and ongoing steady stress workload')
     parser.add_argument('--workload', required=True, help='Exact workload/command/settings, same for both groups; no credentials')
     parser.add_argument('--setup-notes', required=True, help='Case/shroud, fan placement, curve and exhaust speed; no credentials')
-    parser.add_argument('--warmup-minutes', type=float, required=True, help='User-observed continuous warm-up after this fan setup')
+    parser.add_argument('--warmup-minutes', type=float, help='User-observed continuous warm-up after this fan setup')
+    parser.add_argument('--heat-soaked', action='store_true', help='User explicitly reports heat soaked; duration may be unknown')
     parser.add_argument('--ambient-c', type=float, help='Measured room temperature; omit if unknown')
     args = parser.parse_args()
     import math
-    if not args.ready or not math.isfinite(args.warmup_minutes) or args.warmup_minutes < 5:
-        parser.error('Confirm --ready and at least five minutes of continuous warm-up; prefer a stable temperature/clock plateau')
+    if args.warmup_minutes is not None and (not math.isfinite(args.warmup_minutes) or args.warmup_minutes < 5):
+        parser.error('If supplied, --warmup-minutes must be finite and at least five')
+    if not args.ready or (args.warmup_minutes is None and not args.heat_soaked):
+        parser.error('Confirm --ready and either observed --warmup-minutes or explicit --heat-soaked declaration')
     if args.ambient_c is not None and not math.isfinite(args.ambient_c):
         parser.error('Ambient must be finite')
     state = json.loads(STATE.read_text())

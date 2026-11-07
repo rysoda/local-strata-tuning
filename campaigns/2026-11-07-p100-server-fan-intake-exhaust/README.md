@@ -2,9 +2,9 @@
 
 [Campaign index](../../README.md) · [Manifest](manifest.json) · [Plan](PLAN.md) · [Work log](NOTES.md) · [Results table](REPORT.md)
 
-**0/6 new captures at launch authorization. User authorized measurement after commit/push, reporting 15 minutes of heat soak.**
+**Complete: 6/6 new captures.** [Final comparison with historical results](COMPARISON.md): new intake + exhaust **67.39°C / 1322.92 MHz / 194.76 W**, versus intake alone **73.49°C / 1319.94 MHz / 196.95 W** (means). November 6 rear pull: **76.38°C / 1318.21 MHz / 197.54 W**; older one-fan reference: **78.92°C / 1231.20 MHz / 171.78 W**. Adding exhaust coincided with lower mean temperature; third both-fan run drifted warmer, so the final report flags uncertainty rather than claiming a clean causal gain. No inference-throughput measurement.
 
-User update: **case open, prefill-only stress workload, both intake and exhaust fans currently installed**. Exact prefill command/settings and exhaust details remain unconfirmed. **Revised order: B (both fans) first, then A (intake only)**, matching the installed setup at authorization. The supervisor enforces that order. Removing the exhaust and confirming fresh warm-up requires user action before A.
+Physical sequence: **case open, prefill-only stress workload; both fans first, then exhaust removed for intake-only**. Exact prefill command/settings and exhaust details remain unconfirmed. **Revised order: B (both fans) first, then A (intake only)**, matching the installed setup at authorization. The supervisor enforces that order. User subsequently confirmed exhaust removal and heat soak; A completed after B. No active campaign monitors remain; existing server/workload was not stopped.
 
 **[Yesterday’s full results tables](YESTERDAY_RESULTS.md)** summarize the three 2026-11-06 rear-pull-fan captures separately. Historical evidence is unchanged; these results are not pooled with this campaign.
 

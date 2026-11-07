@@ -16,7 +16,7 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 ## Cooling measurements (separate from inference tuning)
 
-- [P100 120×38 mm server intake + exhaust comparison](campaigns/2026-11-07-p100-server-fan-intake-exhaust/README.md): **planned, 0/6 captures**. Three intake-only and three intake + exhaust runs; nominal 4000 RPM intake curve reaches 100% at 75°C. [Full telemetry tables](campaigns/2026-11-07-p100-server-fan-intake-exhaust/REPORT.md) populate as captures complete.
+- [P100 120×38 mm server intake + exhaust comparison](campaigns/2026-11-07-p100-server-fan-intake-exhaust/README.md): **Complete, 6/6 captures**. Intake + exhaust averaged **67.39°C / 1322.92 MHz / 194.76 W**, versus intake-only **73.49°C / 1319.94 MHz / 196.95 W**. Nominal 4000 RPM intake curve reaches 100% at 75°C. [Final report and historical comparisons](campaigns/2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md) include the ~172 W old one-fan reference and a third-run drift caveat.
 
 - [P100 rear pull fan](campaigns/2026-11-06-p100-rear-exhaust-cooling/README.md): new user-requested setup; P100-only Strata at **131072 context**. Three 10-minute reference captures completed: **197.54 W** mean board power; no controlled comparison yet.
 

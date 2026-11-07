@@ -48,9 +48,9 @@ def main():
             raise ValueError('State/evidence mismatch: ' + label)
         with (path.parent / meta['csv_file']).open(newline='') as f:
             stats = metrics(list(csv.DictReader(f)), meta['duration_seconds'])
-        runs.append(dict(label=label, group=entry['group'], result=entry['result'], **stats))
+        runs.append(dict(label=label, group=entry['group'], result=path.relative_to(ROOT).as_posix(), **stats))
     text = ['# Server intake fan: cooling comparison', '',
-            f'Completed captures: **{len(runs)}/6**. No comparative conclusion until both groups have three valid runs.', '',
+            f'Completed captures: **{len(runs)}/6**.' + (' Both groups complete; see [final comparison and historical references](COMPARISON.md).' if len(runs) == 6 else ' No comparative conclusion until both groups have three valid runs.'), '',
             'A = 120×38 mm nominal 4000 RPM intake only. B = same intake plus exhaust. Intake curve reaches 100% at 75°C (user-reported; actual RPM not measured).', '',
             'Means/within-run SD are time-weighted sample-and-hold. Max/min are observed samples, not continuous extrema. Board power excludes external fan power. All temperatures are absolute GPU temperatures; ambient-adjusted comparisons require ambient measurements.', '']
     headers = ['Run']

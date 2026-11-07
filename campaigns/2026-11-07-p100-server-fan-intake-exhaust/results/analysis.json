@@ -1,1 +1,200 @@
-[]
+[
+  {
+    "label": "intake-exhaust-1",
+    "group": "intake-exhaust",
+    "result": "results/20261107T115851.337003Z-intake-exhaust-1.json",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.405999999999949,
+    "temperature_c": {
+      "mean": 66.003515,
+      "min": 62.0,
+      "max": 67.0,
+      "sd": 0.44542411786408775
+    },
+    "sm_clock_mhz": {
+      "mean": 1323.5643483333333,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 5.841969356190088
+    },
+    "power_w": {
+      "mean": 194.02536800000001,
+      "min": 47.48,
+      "max": 253.08,
+      "sd": 27.74649471849692
+    },
+    "utilization_percent": {
+      "mean": 99.43324333333332,
+      "min": 6.0,
+      "max": 100.0,
+      "sd": 6.217829488451421
+    },
+    "energy_wh": 32.33756133333333
+  },
+  {
+    "label": "intake-exhaust-2",
+    "group": "intake-exhaust",
+    "result": "results/20261107T120852.836431Z-intake-exhaust-2.json",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.0790000000001783,
+    "temperature_c": {
+      "mean": 66.038815,
+      "min": 63.0,
+      "max": 67.0,
+      "sd": 0.3791328647167591
+    },
+    "sm_clock_mhz": {
+      "mean": 1323.77745,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 5.879321516765319
+    },
+    "power_w": {
+      "mean": 195.11613941666667,
+      "min": 53.41,
+      "max": 253.81,
+      "sd": 25.619673779507885
+    },
+    "utilization_percent": {
+      "mean": 99.955745,
+      "min": 78.0,
+      "max": 100.0,
+      "sd": 0.9292899592206151
+    },
+    "energy_wh": 32.51935656944445
+  },
+  {
+    "label": "intake-exhaust-3",
+    "group": "intake-exhaust",
+    "result": "results/20261107T121854.305605Z-intake-exhaust-3.json",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.0790000000001783,
+    "temperature_c": {
+      "mean": 70.11516333333333,
+      "min": 64.0,
+      "max": 77.0,
+      "sd": 3.955551466819204
+    },
+    "sm_clock_mhz": {
+      "mean": 1321.4273283333334,
+      "min": 1278.0,
+      "max": 1328.0,
+      "sd": 8.357172896910987
+    },
+    "power_w": {
+      "mean": 195.15259663333347,
+      "min": 50.98,
+      "max": 255.1,
+      "sd": 23.82778591846423
+    },
+    "utilization_percent": {
+      "mean": 99.73056500000001,
+      "min": 35.0,
+      "max": 100.0,
+      "sd": 3.4992303602517265
+    },
+    "energy_wh": 32.525432772222246
+  },
+  {
+    "label": "intake-1",
+    "group": "intake",
+    "result": "results/20261107T125314.991061Z-intake-1.json",
+    "duration_seconds": 600.0,
+    "samples": 565,
+    "max_gap_s": 1.094000000000051,
+    "temperature_c": {
+      "mean": 73.38961666666667,
+      "min": 69.0,
+      "max": 77.0,
+      "sd": 1.8410519238709426
+    },
+    "sm_clock_mhz": {
+      "mean": 1319.9378550000001,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 9.4202538712592
+    },
+    "power_w": {
+      "mean": 198.27671808333344,
+      "min": 51.97,
+      "max": 255.49,
+      "sd": 25.398500521347017
+    },
+    "utilization_percent": {
+      "mean": 99.87066833333331,
+      "min": 27.0,
+      "max": 100.0,
+      "sd": 3.0699324075074994
+    },
+    "energy_wh": 33.04611968055558
+  },
+  {
+    "label": "intake-2",
+    "group": "intake",
+    "result": "results/20261107T130316.492069Z-intake-2.json",
+    "duration_seconds": 600.0,
+    "samples": 565,
+    "max_gap_s": 1.094000000000051,
+    "temperature_c": {
+      "mean": 73.69496333333333,
+      "min": 67.0,
+      "max": 77.0,
+      "sd": 1.566499057981052
+    },
+    "sm_clock_mhz": {
+      "mean": 1320.0534966666667,
+      "min": 1290.0,
+      "max": 1328.0,
+      "sd": 9.478160762510255
+    },
+    "power_w": {
+      "mean": 195.86376530000007,
+      "min": 50.72,
+      "max": 254.9,
+      "sd": 26.955731981408007
+    },
+    "utilization_percent": {
+      "mean": 99.43659833333331,
+      "min": 2.0,
+      "max": 100.0,
+      "sd": 6.23194273310232
+    },
+    "energy_wh": 32.64396088333334
+  },
+  {
+    "label": "intake-3",
+    "group": "intake",
+    "result": "results/20261107T131317.971244Z-intake-3.json",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.1089999999994689,
+    "temperature_c": {
+      "mean": 73.38172333333333,
+      "min": 69.0,
+      "max": 77.0,
+      "sd": 1.795369218328705
+    },
+    "sm_clock_mhz": {
+      "mean": 1319.8235183333334,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 9.41862353113939
+    },
+    "power_w": {
+      "mean": 196.71360988333333,
+      "min": 54.39,
+      "max": 258.5,
+      "sd": 24.96080058892195
+    },
+    "utilization_percent": {
+      "mean": 99.87157499999998,
+      "min": 66.0,
+      "max": 100.0,
+      "sd": 1.9203451129182774
+    },
+    "energy_wh": 32.78560164722222
+  }
+]

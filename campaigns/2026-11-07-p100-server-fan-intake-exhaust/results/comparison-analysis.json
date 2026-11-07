@@ -1,0 +1,553 @@
+{
+  "groups": {
+    "New intake only": [
+      {
+        "group": "New intake only",
+        "label": "intake-1",
+        "started_utc": "2026-11-07T12:53:14.991061+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T125314.991061Z-intake-1.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T125314.991061Z-intake-1.csv",
+        "json_sha256": "3d23b12e45b71f92c951099bc6a27efd34614438f1ae97fadf76dadfe71408c6",
+        "csv_sha256": "feba68e06dcdbee5c381bebc0f8a3aa64cf48ae3ef444e10c4cb8c047346cb18",
+        "duration_seconds": 600.0,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 73.38961666666667,
+          "min": 69.0,
+          "max": 77.0,
+          "sd": 1.8410519238709426
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.9378550000001,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 9.4202538712592
+        },
+        "power_w": {
+          "mean": 198.27671808333344,
+          "min": 51.97,
+          "max": 255.49,
+          "sd": 25.398500521347017
+        },
+        "utilization_percent": {
+          "mean": 99.87066833333331,
+          "min": 27.0,
+          "max": 100.0,
+          "sd": 3.0699324075074994
+        },
+        "energy_wh": 33.04611968055558
+      },
+      {
+        "group": "New intake only",
+        "label": "intake-2",
+        "started_utc": "2026-11-07T13:03:16.492069+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T130316.492069Z-intake-2.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T130316.492069Z-intake-2.csv",
+        "json_sha256": "6043a15b94b233b6e063ce5b98044ceb75e7f213b7deb127e544ad211d28b30f",
+        "csv_sha256": "0f189f7a19b4bf84e772c1f6128a2e6ce72dd7d4047f41a25963f975eae96c98",
+        "duration_seconds": 600.0,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 73.69496333333333,
+          "min": 67.0,
+          "max": 77.0,
+          "sd": 1.566499057981052
+        },
+        "sm_clock_mhz": {
+          "mean": 1320.0534966666667,
+          "min": 1290.0,
+          "max": 1328.0,
+          "sd": 9.478160762510255
+        },
+        "power_w": {
+          "mean": 195.86376530000007,
+          "min": 50.72,
+          "max": 254.9,
+          "sd": 26.955731981408007
+        },
+        "utilization_percent": {
+          "mean": 99.43659833333331,
+          "min": 2.0,
+          "max": 100.0,
+          "sd": 6.23194273310232
+        },
+        "energy_wh": 32.64396088333334
+      },
+      {
+        "group": "New intake only",
+        "label": "intake-3",
+        "started_utc": "2026-11-07T13:13:17.971244+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T131317.971244Z-intake-3.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T131317.971244Z-intake-3.csv",
+        "json_sha256": "0bc1dd023a318d174c73f9fb6248ea5dd3cd0a50719f1486b1f96687df310c83",
+        "csv_sha256": "73437b0db332033d602813126855cd9981507ffb2eb7f5ec73e0f334dd022a9c",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.1089999999994689,
+        "temperature_c": {
+          "mean": 73.38172333333333,
+          "min": 69.0,
+          "max": 77.0,
+          "sd": 1.795369218328705
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.8235183333334,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 9.41862353113939
+        },
+        "power_w": {
+          "mean": 196.71360988333333,
+          "min": 54.39,
+          "max": 258.5,
+          "sd": 24.96080058892195
+        },
+        "utilization_percent": {
+          "mean": 99.87157499999998,
+          "min": 66.0,
+          "max": 100.0,
+          "sd": 1.9203451129182774
+        },
+        "energy_wh": 32.78560164722222
+      }
+    ],
+    "New intake + exhaust": [
+      {
+        "group": "New intake + exhaust",
+        "label": "intake-exhaust-1",
+        "started_utc": "2026-11-07T11:58:51.337003+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T115851.337003Z-intake-exhaust-1.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T115851.337003Z-intake-exhaust-1.csv",
+        "json_sha256": "324cd73779fc49990feb411f7ac829a908465d1921d1f3f19f109f3bc2f9ab7d",
+        "csv_sha256": "b4c2921937576a289255a4d3246f7312cbd9136d70fe78f2c103f94b35fab52f",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.405999999999949,
+        "temperature_c": {
+          "mean": 66.003515,
+          "min": 62.0,
+          "max": 67.0,
+          "sd": 0.44542411786408775
+        },
+        "sm_clock_mhz": {
+          "mean": 1323.5643483333333,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 5.841969356190088
+        },
+        "power_w": {
+          "mean": 194.02536800000001,
+          "min": 47.48,
+          "max": 253.08,
+          "sd": 27.74649471849692
+        },
+        "utilization_percent": {
+          "mean": 99.43324333333332,
+          "min": 6.0,
+          "max": 100.0,
+          "sd": 6.217829488451421
+        },
+        "energy_wh": 32.33756133333333
+      },
+      {
+        "group": "New intake + exhaust",
+        "label": "intake-exhaust-2",
+        "started_utc": "2026-11-07T12:08:52.836431+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T120852.836431Z-intake-exhaust-2.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T120852.836431Z-intake-exhaust-2.csv",
+        "json_sha256": "3b694bdee7b4904d3db341967597c9dec3c34921fec914854e92f3c0801920ef",
+        "csv_sha256": "f7c71dddb251370ce7383889fc6462e3086473e01cde6a413f5f4d86560830ce",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0790000000001783,
+        "temperature_c": {
+          "mean": 66.038815,
+          "min": 63.0,
+          "max": 67.0,
+          "sd": 0.3791328647167591
+        },
+        "sm_clock_mhz": {
+          "mean": 1323.77745,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 5.879321516765319
+        },
+        "power_w": {
+          "mean": 195.11613941666667,
+          "min": 53.41,
+          "max": 253.81,
+          "sd": 25.619673779507885
+        },
+        "utilization_percent": {
+          "mean": 99.955745,
+          "min": 78.0,
+          "max": 100.0,
+          "sd": 0.9292899592206151
+        },
+        "energy_wh": 32.51935656944445
+      },
+      {
+        "group": "New intake + exhaust",
+        "label": "intake-exhaust-3",
+        "started_utc": "2026-11-07T12:18:54.305605+00:00",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T121854.305605Z-intake-exhaust-3.json",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T121854.305605Z-intake-exhaust-3.csv",
+        "json_sha256": "1bafeba21f93ae137a4edda2f1ee3aac1869efa0cf010e14ea6712bd8004fab0",
+        "csv_sha256": "6f95e851b2a07fe2ed1465d7e424e2d14b32f59f39ab2a7c348e66efcb72c930",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0790000000001783,
+        "temperature_c": {
+          "mean": 70.11516333333333,
+          "min": 64.0,
+          "max": 77.0,
+          "sd": 3.955551466819204
+        },
+        "sm_clock_mhz": {
+          "mean": 1321.4273283333334,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 8.357172896910987
+        },
+        "power_w": {
+          "mean": 195.15259663333347,
+          "min": 50.98,
+          "max": 255.1,
+          "sd": 23.82778591846423
+        },
+        "utilization_percent": {
+          "mean": 99.73056500000001,
+          "min": 35.0,
+          "max": 100.0,
+          "sd": 3.4992303602517265
+        },
+        "energy_wh": 32.525432772222246
+      }
+    ],
+    "Nov 6 rear pull": [
+      {
+        "group": "Nov 6 rear pull",
+        "label": "rear-pull-reference-1",
+        "started_utc": "2026-11-06T17:25:51.928683+00:00",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.json",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.csv",
+        "json_sha256": "8cdc7f3850f51577655795376ac4dd95ff84171eddccdb396d53695d467074bd",
+        "csv_sha256": "3bd4934a8d5e6d6d8ebef667d876d85a40f9798e87b0161857d8fe29afce04ca",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0939999999998236,
+        "temperature_c": {
+          "mean": 76.116745,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6239462623562525
+        },
+        "sm_clock_mhz": {
+          "mean": 1318.1629500000001,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 10.112235029779523
+        },
+        "power_w": {
+          "mean": 197.94553305000002,
+          "min": 53.42,
+          "max": 258.5,
+          "sd": 26.217925898524644
+        },
+        "utilization_percent": {
+          "mean": 99.57545499999995,
+          "min": 11.0,
+          "max": 100.0,
+          "sd": 5.189132863620998
+        },
+        "energy_wh": 32.990922175
+      },
+      {
+        "group": "Nov 6 rear pull",
+        "label": "rear-pull-reference-2",
+        "started_utc": "2026-11-06T17:35:52.530002+00:00",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.json",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.csv",
+        "json_sha256": "2f2d8372aec5a9761f346a03b9790527de991a787d9417373b5fa72053cb8e13",
+        "csv_sha256": "c108981dd05df07257b3d2ff3a868503b0ca5d12d0d110c77b5239f7effe1072",
+        "duration_seconds": 600.0,
+        "samples": 567,
+        "max_gap_s": 1.0939999999998236,
+        "temperature_c": {
+          "mean": 76.48925,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6585674636410972
+        },
+        "sm_clock_mhz": {
+          "mean": 1318.545735,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 10.387188181109224
+        },
+        "power_w": {
+          "mean": 196.4932158666667,
+          "min": 52.96,
+          "max": 256.97,
+          "sd": 27.002491369634907
+        },
+        "utilization_percent": {
+          "mean": 99.38145500000002,
+          "min": 3.0,
+          "max": 100.0,
+          "sd": 7.22242990617705
+        },
+        "energy_wh": 32.748869311111115
+      },
+      {
+        "group": "Nov 6 rear pull",
+        "label": "rear-pull-reference-3",
+        "started_utc": "2026-11-06T17:45:53.143168+00:00",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.json",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.csv",
+        "json_sha256": "41fa398b422d7fb6ce37d9908b0d1344be684f3d6ca6446005b59a081f29a8e3",
+        "csv_sha256": "95ed9eaf4b87430fe9d89ec44ffc658f8182534cfbc5c207160ecfba616e8a88",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 76.52287666666666,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6608554996786805
+        },
+        "sm_clock_mhz": {
+          "mean": 1317.9311183333332,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 10.598541266734005
+        },
+        "power_w": {
+          "mean": 198.1776684499999,
+          "min": 52.92,
+          "max": 261.65,
+          "sd": 27.245263395197913
+        },
+        "utilization_percent": {
+          "mean": 99.43138166666668,
+          "min": 4.0,
+          "max": 100.0,
+          "sd": 6.037442741563975
+        },
+        "energy_wh": 33.02961140833332
+      }
+    ],
+    "Nov 3 old one fan": [
+      {
+        "group": "Nov 3 old one fan",
+        "label": "open-1fan-1.json",
+        "started_utc": "2026-11-03T15:00:15.811323+00:00",
+        "json_file": "2026-11-03-p100-open-case-cooling/results/20261103T150015.811323Z-open-1fan-1-json.json",
+        "csv_file": "2026-11-03-p100-open-case-cooling/results/20261103T150015.811323Z-open-1fan-1-json.csv",
+        "json_sha256": "bca6f75adc5bbb907c50f1fc3114877ebc7cef3693947cc99ad7659ddaf694a1",
+        "csv_sha256": "a64bc7922f28c0ee81771b00b7bfaa4668ed7d486827e2f7095c2857f5d260cc",
+        "duration_seconds": 600,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 78.955675,
+          "min": 76.0,
+          "max": 80.0,
+          "sd": 0.3421212665732367
+        },
+        "sm_clock_mhz": {
+          "mean": 1229.3215166666666,
+          "min": 1088.0,
+          "max": 1328.0,
+          "sd": 62.22889985395123
+        },
+        "power_w": {
+          "mean": 172.01009816666684,
+          "min": 54.66,
+          "max": 253.32,
+          "sd": 24.625412660265567
+        },
+        "utilization_percent": {
+          "mean": 99.61603499999995,
+          "min": 28.0,
+          "max": 100.0,
+          "sd": 4.88045754809718
+        },
+        "energy_wh": 28.668349694444473
+      },
+      {
+        "group": "Nov 3 old one fan",
+        "label": "open-1fan-2.json",
+        "started_utc": "2026-11-03T15:22:07.850774+00:00",
+        "json_file": "2026-11-03-p100-open-case-cooling/results/20261103T152207.850774Z-open-1fan-2-json.json",
+        "csv_file": "2026-11-03-p100-open-case-cooling/results/20261103T152207.850774Z-open-1fan-2-json.csv",
+        "json_sha256": "40a621c6f84f93af52120523a7cf3468f89c3b080e2a01addb3f03374ee4cb8f",
+        "csv_sha256": "1c5df57a0d2db3c014cf187c0b998c2926bc18880295bc2c5f89ba045a0645d4",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 78.89202833333334,
+          "min": 71.0,
+          "max": 80.0,
+          "sd": 0.7265446436367043
+        },
+        "sm_clock_mhz": {
+          "mean": 1233.0783049999995,
+          "min": 1025.0,
+          "max": 1328.0,
+          "sd": 63.08769032064523
+        },
+        "power_w": {
+          "mean": 171.54443094999968,
+          "min": 43.88,
+          "max": 250.65,
+          "sd": 27.632005497179684
+        },
+        "utilization_percent": {
+          "mean": 98.7961433333333,
+          "min": 0.0,
+          "max": 100.0,
+          "sd": 10.445770872756365
+        },
+        "energy_wh": 28.590738491666613
+      }
+    ]
+  },
+  "summaries": {
+    "New intake only": {
+      "runs": 3,
+      "energy_wh": 98.47568221111115,
+      "sample_count": 1696,
+      "temperature_c": {
+        "mean": 73.48876777777778,
+        "max": 77.0,
+        "min": 67.0,
+        "run_sd": 0.17861419743661638,
+        "run_mean_range": 0.3132400000000075
+      },
+      "sm_clock_mhz": {
+        "mean": 1319.93829,
+        "max": 1328.0,
+        "min": 1290.0,
+        "run_sd": 0.11498978376116595,
+        "run_mean_range": 0.22997833333329254
+      },
+      "power_w": {
+        "mean": 196.95136442222227,
+        "max": 258.5,
+        "min": 50.72,
+        "run_sd": 1.2239202176697555,
+        "run_mean_range": 2.412952783333367
+      },
+      "utilization_percent": {
+        "mean": 99.72628055555553,
+        "max": 100.0,
+        "min": 2.0,
+        "run_sd": 0.25087257306213495,
+        "run_mean_range": 0.434976666666671
+      }
+    },
+    "New intake + exhaust": {
+      "runs": 3,
+      "energy_wh": 97.38235067500003,
+      "sample_count": 1698,
+      "temperature_c": {
+        "mean": 67.3858311111111,
+        "max": 77.0,
+        "min": 62.0,
+        "run_sd": 2.3637369369169163,
+        "run_mean_range": 4.111648333333335
+      },
+      "sm_clock_mhz": {
+        "mean": 1322.9230422222222,
+        "max": 1328.0,
+        "min": 1278.0,
+        "run_sd": 1.2997011610925233,
+        "run_mean_range": 2.3501216666666096
+      },
+      "power_w": {
+        "mean": 194.76470135000005,
+        "max": 255.1,
+        "min": 47.48,
+        "run_sd": 0.6405408917301703,
+        "run_mean_range": 1.1272286333334591
+      },
+      "utilization_percent": {
+        "mean": 99.70651777777778,
+        "max": 100.0,
+        "min": 6.0,
+        "run_sd": 0.2620795672879065,
+        "run_mean_range": 0.5225016666666704
+      }
+    },
+    "Nov 6 rear pull": {
+      "runs": 3,
+      "energy_wh": 98.76940289444443,
+      "sample_count": 1699,
+      "temperature_c": {
+        "mean": 76.37629055555556,
+        "max": 77.0,
+        "min": 72.0,
+        "run_sd": 0.22540099763368338,
+        "run_mean_range": 0.406131666666667
+      },
+      "sm_clock_mhz": {
+        "mean": 1318.2132677777777,
+        "max": 1328.0,
+        "min": 1278.0,
+        "run_sd": 0.3103825394678149,
+        "run_mean_range": 0.6146166666667341
+      },
+      "power_w": {
+        "mean": 197.53880578888888,
+        "max": 261.65,
+        "min": 52.92,
+        "run_sd": 0.9129158915654342,
+        "run_mean_range": 1.6844525833332114
+      },
+      "utilization_percent": {
+        "mean": 99.46276388888889,
+        "max": 100.0,
+        "min": 3.0,
+        "run_sd": 0.10073546001133894,
+        "run_mean_range": 0.19399999999993156
+      }
+    },
+    "Nov 3 old one fan": {
+      "runs": 2,
+      "energy_wh": 57.259088186111086,
+      "sample_count": 1131,
+      "temperature_c": {
+        "mean": 78.92385166666668,
+        "max": 80.0,
+        "min": 71.0,
+        "run_sd": 0.045004989599912545,
+        "run_mean_range": 0.06364666666665642
+      },
+      "sm_clock_mhz": {
+        "mean": 1231.199910833333,
+        "max": 1328.0,
+        "min": 1025.0,
+        "run_sd": 2.656450505982206,
+        "run_mean_range": 3.7567883333329064
+      },
+      "power_w": {
+        "mean": 171.77726455833326,
+        "max": 253.32,
+        "min": 43.88,
+        "run_sd": 0.32927644668161193,
+        "run_mean_range": 0.46566721666715694
+      },
+      "utilization_percent": {
+        "mean": 99.20608916666663,
+        "max": 100.0,
+        "min": 0.0,
+        "run_sd": 0.579750957338328,
+        "run_mean_range": 0.8198916666666491
+      }
+    }
+  }
+}

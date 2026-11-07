@@ -1,16 +1,18 @@
 {
   "id": "2026-11-07-p100-server-fan-intake-exhaust",
   "title": "P100 120x38 mm 4000 RPM intake: exhaust comparison",
-  "status": "planned",
+  "status": "complete",
   "hardware": {
-    "gpu": ["Tesla P100-PCIE-16GB; GPU 0; GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999; TCC"],
+    "gpu": [
+      "Tesla P100-PCIE-16GB; GPU 0; GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999; TCC"
+    ],
     "cpu": null,
     "ram_gib": null,
     "pcie": null,
     "intake": "User-reported 120x38 mm nominal 4000 RPM server fan; curve reaches 100% at 75 C",
     "exhaust": "Model, location, speed awaiting confirmation",
     "case_shroud": "Case open; shroud arrangement unconfirmed",
-    "current_setup": "Both intake and exhaust installed; user authorized measurement after commit/push; reports 15-minute heat soak"
+    "current_setup": "Exhaust removed; intake only. All six captures complete; user-managed server/workload left untouched."
   },
   "software": {
     "engine": "0.1.55",
@@ -26,13 +28,17 @@
   },
   "workload": null,
   "workload_description": "User-managed prefill-only stress; exact command/settings not captured. User reports 15-minute heat soak and authorizes passive capture.",
-  "capture_order": ["intake-exhaust", "intake"],
+  "capture_order": [
+    "intake-exhaust",
+    "intake"
+  ],
   "historical_report": "YESTERDAY_RESULTS.md",
-  "report": "REPORT.md",
+  "report": "COMPARISON.md",
+  "detailed_report": "REPORT.md",
   "state": "state/queue-state.json",
-  "completed_phase": null,
+  "completed_phase": "complete",
   "completed_benchmarks": 0,
-  "completed_captures": 0,
+  "completed_captures": 6,
   "planned_captures": 6,
   "capture_seconds": 600,
   "sampling_interval_seconds": 1,
@@ -40,5 +46,9 @@
   "recommended_profile": null,
   "resume_script": "scripts/capture.py",
   "pause_file": "state/STOP",
-  "related_campaigns": ["2026-11-06-p100-rear-exhaust-cooling", "2026-11-03-p100-open-case-cooling", "2026-11-03-p100-closed-case-shroud-cooling"]
+  "related_campaigns": [
+    "2026-11-06-p100-rear-exhaust-cooling",
+    "2026-11-03-p100-open-case-cooling",
+    "2026-11-03-p100-closed-case-shroud-cooling"
+  ]
 }

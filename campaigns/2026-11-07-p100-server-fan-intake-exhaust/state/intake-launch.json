@@ -1,0 +1,17 @@
+{
+  "phase": "launched",
+  "started_utc": "2026-11-07T12:53:12.833342+00:00",
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py",
+    "intake",
+    "--ready",
+    "--heat-soaked",
+    "--workload",
+    "User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups",
+    "--setup-notes",
+    "Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed."
+  ],
+  "supervisor_pid": 1868
+}

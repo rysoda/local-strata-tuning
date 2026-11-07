@@ -1,5 +1,490 @@
 {
-  "phase": "planned",
+  "phase": "complete",
   "current": null,
-  "runs": {}
+  "runs": {
+    "intake-exhaust-1": {
+      "group": "intake-exhaust",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-exhaust-1",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 13740,
+            "ParentProcessId": 6100,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake-exhaust --ready --warmup-minutes 15 --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; both fans installed. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. Exhaust model/speed, lower-temperature curve and shroud unconfirmed. User reports heat soaked after 15 minutes. Ambient unknown.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 66, 100 %, 1328 MHz\n"
+      },
+      "monitor_pid": 11504,
+      "result": "results\\20261107T115851.337003Z-intake-exhaust-1.json",
+      "exit_code": 0
+    },
+    "intake-exhaust-2": {
+      "group": "intake-exhaust",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-exhaust-2",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 13740,
+            "ParentProcessId": 6100,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake-exhaust --ready --warmup-minutes 15 --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; both fans installed. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. Exhaust model/speed, lower-temperature curve and shroud unconfirmed. User reports heat soaked after 15 minutes. Ambient unknown.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 66, 100 %, 1328 MHz\n"
+      },
+      "monitor_pid": 13484,
+      "result": "results\\20261107T120852.836431Z-intake-exhaust-2.json",
+      "exit_code": 0
+    },
+    "intake-exhaust-3": {
+      "group": "intake-exhaust",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-exhaust-3",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 13740,
+            "ParentProcessId": 6100,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake-exhaust --ready --warmup-minutes 15 --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; both fans installed. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. Exhaust model/speed, lower-temperature curve and shroud unconfirmed. User reports heat soaked after 15 minutes. Ambient unknown.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 66, 100 %, 1328 MHz\n"
+      },
+      "monitor_pid": 4420,
+      "result": "results\\20261107T121854.305605Z-intake-exhaust-3.json",
+      "exit_code": 0
+    },
+    "intake-1": {
+      "group": "intake",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-1",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 1868,
+            "ParentProcessId": 14748,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake --ready --heat-soaked --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 71, 100 %, 1328 MHz\n"
+      },
+      "monitor_pid": 3736,
+      "result": "results\\20261107T125314.991061Z-intake-1.json",
+      "exit_code": 0
+    },
+    "intake-2": {
+      "group": "intake",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-2",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 1868,
+            "ParentProcessId": 14748,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake --ready --heat-soaked --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 73, 100 %, 1328 MHz\n"
+      },
+      "monitor_pid": 8020,
+      "result": "results\\20261107T130316.492069Z-intake-2.json",
+      "exit_code": 0
+    },
+    "intake-3": {
+      "group": "intake",
+      "status": "complete",
+      "command": [
+        "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "C:\\ai\\tuning\\campaigns\\2026-11-03-p100-open-case-cooling\\scripts\\monitor_power.py",
+        "--label",
+        "intake-3",
+        "--gpu",
+        "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+        "--seconds",
+        "600",
+        "--interval",
+        "1",
+        "--output-dir",
+        "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\results"
+      ],
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 1868,
+            "ParentProcessId": 14748,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake --ready --heat-soaked --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 71, 100 %, 1316 MHz\n"
+      },
+      "monitor_pid": 5144,
+      "result": "results\\20261107T131317.971244Z-intake-3.json",
+      "exit_code": 0
+    }
+  },
+  "comparison": {
+    "workload": "User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups",
+    "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e"
+  },
+  "sessions": [
+    {
+      "group": "intake-exhaust",
+      "declarations": {
+        "group": "intake-exhaust",
+        "ready": true,
+        "workload": "User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups",
+        "setup_notes": "Case open; both fans installed. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. Exhaust model/speed, lower-temperature curve and shroud unconfirmed. User reports heat soaked after 15 minutes. Ambient unknown.",
+        "warmup_minutes": 15.0,
+        "ambient_c": null
+      },
+      "provenance": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 13740,
+            "ParentProcessId": 6100,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake-exhaust --ready --warmup-minutes 15 --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; both fans installed. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. Exhaust model/speed, lower-temperature curve and shroud unconfirmed. User reports heat soaked after 15 minutes. Ambient unknown.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 66, 100 %, 1316 MHz\n"
+      },
+      "started_utc": "2026-11-07T11:58:50.264667+00:00"
+    },
+    {
+      "group": "intake",
+      "declarations": {
+        "group": "intake",
+        "ready": true,
+        "workload": "User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups",
+        "setup_notes": "Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed.",
+        "warmup_minutes": null,
+        "heat_soaked": true,
+        "ambient_c": null
+      },
+      "provenance": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "inference_config_sha256": "4414da4abc08525b9fd8be3d2d4b5a2f161b4717041a9864cd78a30484c0246e",
+        "processes": [
+          {
+            "ProcessId": 5624,
+            "ParentProcessId": 13768,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-06-p100-rear-exhaust-cooling\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 10888,
+            "ParentProcessId": 5624,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 4676,
+            "ParentProcessId": 5624,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.55-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 1868,
+            "ParentProcessId": 14748,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-07-p100-server-fan-intake-exhaust\\scripts\\capture.py intake --ready --heat-soaked --workload \"User-managed prefill-only stress; exact invocation/settings not captured; keep unchanged across groups\" --setup-notes \"Case open; exhaust fan removed by user, intake only. P100 intake 120x38 mm nominal 4000 RPM; curve 100% at 75 C. User reports plenty heat soaked; elapsed warm-up duration unspecified. Continuing user-managed prefill-only stress. Ambient, actual RPM, lower-temperature curve and shroud unconfirmed.\""
+          }
+        ],
+        "gpu_telemetry": "uuid, name, driver_version, power.limit [W], temperature.gpu, utilization.gpu [%], clocks.current.sm [MHz]\nGPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, Tesla P100-PCIE-16GB, 582.66, 250.00 W, 72, 100 %, 1316 MHz\n"
+      },
+      "started_utc": "2026-11-07T12:53:13.878307+00:00"
+    }
+  ],
+  "updated_utc": "2026-11-07T13:23:18.269966+00:00"
 }
