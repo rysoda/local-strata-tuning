@@ -1,0 +1,110 @@
+[
+  {
+    "label": "rear-pull-reference-1",
+    "started_utc": "2026-11-06T17:25:51.928683+00:00",
+    "source_json": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.json",
+    "source_csv": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.csv",
+    "json_sha256": "8cdc7f3850f51577655795376ac4dd95ff84171eddccdb396d53695d467074bd",
+    "csv_sha256": "3bd4934a8d5e6d6d8ebef667d876d85a40f9798e87b0161857d8fe29afce04ca",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.0939999999998236,
+    "temperature_c": {
+      "mean": 76.116745,
+      "min": 72.0,
+      "max": 77.0,
+      "sd": 0.6239462623562525
+    },
+    "sm_clock_mhz": {
+      "mean": 1318.1629500000001,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 10.112235029779523
+    },
+    "power_w": {
+      "mean": 197.94553305000002,
+      "min": 53.42,
+      "max": 258.5,
+      "sd": 26.217925898524644
+    },
+    "utilization_percent": {
+      "mean": 99.57545499999995,
+      "min": 11.0,
+      "max": 100.0,
+      "sd": 5.189132863620998
+    },
+    "energy_wh": 32.990922175
+  },
+  {
+    "label": "rear-pull-reference-2",
+    "started_utc": "2026-11-06T17:35:52.530002+00:00",
+    "source_json": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.json",
+    "source_csv": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.csv",
+    "json_sha256": "2f2d8372aec5a9761f346a03b9790527de991a787d9417373b5fa72053cb8e13",
+    "csv_sha256": "c108981dd05df07257b3d2ff3a868503b0ca5d12d0d110c77b5239f7effe1072",
+    "duration_seconds": 600.0,
+    "samples": 567,
+    "max_gap_s": 1.0939999999998236,
+    "temperature_c": {
+      "mean": 76.48925,
+      "min": 72.0,
+      "max": 77.0,
+      "sd": 0.6585674636410972
+    },
+    "sm_clock_mhz": {
+      "mean": 1318.545735,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 10.387188181109224
+    },
+    "power_w": {
+      "mean": 196.4932158666667,
+      "min": 52.96,
+      "max": 256.97,
+      "sd": 27.002491369634907
+    },
+    "utilization_percent": {
+      "mean": 99.38145500000002,
+      "min": 3.0,
+      "max": 100.0,
+      "sd": 7.22242990617705
+    },
+    "energy_wh": 32.748869311111115
+  },
+  {
+    "label": "rear-pull-reference-3",
+    "started_utc": "2026-11-06T17:45:53.143168+00:00",
+    "source_json": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.json",
+    "source_csv": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.csv",
+    "json_sha256": "41fa398b422d7fb6ce37d9908b0d1344be684f3d6ca6446005b59a081f29a8e3",
+    "csv_sha256": "95ed9eaf4b87430fe9d89ec44ffc658f8182534cfbc5c207160ecfba616e8a88",
+    "duration_seconds": 600.0,
+    "samples": 566,
+    "max_gap_s": 1.094000000000051,
+    "temperature_c": {
+      "mean": 76.52287666666666,
+      "min": 72.0,
+      "max": 77.0,
+      "sd": 0.6608554996786805
+    },
+    "sm_clock_mhz": {
+      "mean": 1317.9311183333332,
+      "min": 1278.0,
+      "max": 1328.0,
+      "sd": 10.598541266734005
+    },
+    "power_w": {
+      "mean": 198.1776684499999,
+      "min": 52.92,
+      "max": 261.65,
+      "sd": 27.245263395197913
+    },
+    "utilization_percent": {
+      "mean": 99.43138166666668,
+      "min": 4.0,
+      "max": 100.0,
+      "sd": 6.037442741563975
+    },
+    "energy_wh": 33.02961140833332
+  }
+]
