@@ -1,0 +1,31 @@
+# Performance plan — reserve neighborhood
+
+## Question and prior evidence
+
+The previous campaign deliberately minimized explicit reserve, not workload time. Its 0/0 confirmations improved decode but lost ~20% prefill. Independent 512 screens (P100 38.92/325.13; Ti 40.29/323.23 decode/prefill tok/s) warrant a performance search rather than recommending the allocation floor. Prior results are motivation only, not pooled into new measurements. User requests independent card tuning followed by joint tests, autonomously and sequentially, with a report within roughly ten hours.
+
+## Fixed conditions / research
+
+Same actual P100 GPU0 TCC CPU x16 and 1080 Ti GPU1 WDDM chipset x4; UUID/order/links checked before every run. Trimmed 36/12 split, IQ3_S, **262144 context** inherited from the explicitly requested 256K campaigns, int8 KV/resident32768, full expert routing, existing MTP/speculation and reasoning. Engine/Control0.1.57 CUDA12, BetterBench0.6.1 and frozen workload/model files unchanged. No projections, precision changes, context reduction, expert skipping, fan/clock/power/page-file/software changes. Original profiles/Startup remain untouched. Cooling remains the user-established open-case intake/exhaust with45% intake cap; software does not control fans.
+
+Read preceding README/manifest/report/plan/notes/state. Existing installed-commit provenance and frozen inventory copied byte-for-byte into this new campaign; validated against the live files. Installed help and fresh nvidia-smi captured before execution. Historical source submodule is not evidence for 0.1.57. Upstream reserve issue493 was searched and reopened: https://github.com/Niko1221/Strata/issues/493 . Maintainer says explicit reserve reduces expert-cache room (default700). Actual startup logs, effective reserves and cache slots determine installed behavior. Prior installed-commit0bdcef4682c5 source review identifies separate late allocations/window/MTP budgeting. Zero explicit reserve does not mean zero internal reserve. No generated/community script is executed.
+
+## Sequential design (maximum46 performance runs)
+
+1. Fresh **1400/2304** reference, full exact benchmark plus seven functional/tool/long-context smokes. This is a conservative reference, not presumed optimum.
+2. P100 reserves **256,384,512,640,768,896,1024**, Ti fixed2304; two independent starts each, ascending then descending. Fresh reference after this phase.
+3. Ti same reserves, P100 fixed1400; two starts each, descending then ascending. Fresh reference after this phase. The reversed order reduces simple time/warm-up confounding; it does not eliminate it.
+4. Rank each independently. Eligible only if mean prefill >=98% of mean nearby reference. Among eligible values, maximize normalized geometric score **(decode/reference)^0.6 × (prefill/reference)^0.4**. Within0.5% of best score, prefer greater reserve/headroom. This implements slightly greater decode weight without accepting the previous prefill regression. Reference is eligible as a conservative fallback. No significance claim for these quick comparisons.
+5. Joint tests: independently selected pair, explicit **512/512** hypothesis, selected P100 +/-128 with Ti fixed, selected Ti +/-128 with P100 fixed, and intersection of independent second-place values. Deduplicate identical pairs. Bounds256..1400 P100 and256..2304 Ti; this is a targeted neighborhood, not brute force. Repeat the top two joint candidates before selecting final confirmation pair.
+6. **Candidate/reference ×3**, in alternating order. Seven smokes on first candidate, first nearby reference and third candidate. Evaluate final candidate mean against nearby references; require no more than2% loss in either throughput. If it fails to reproduce, issue the validated conservative reference with an explicit failed-gain caveat instead of claiming a win. Do not endlessly chase noise.
+7. Save separate private/redacted ready profile; write report with independent/joint rankings, every confirmation, mean changes, actual tokens/headroom and limitations. Validate launcher without inference and repository. Stop owned children, durable complete state and root index update. No Startup changes or projection arm.
+
+## Measurement and safety
+
+Every performance run: BetterBench **--quick --decode --categories code --prefill --no-concurrency --config <repo>/workloads/betterbench-16k.json**. Require five decode/eight prefill samples; preserve all raw JSON/HTML/logs and actual token counts.16384 is a corpus target. Telemetry every2s includes both UUIDs, memory, thermal flags, clocks and power; cache slots and actual effective reserve retained in state. Seven-check smoke uses standard functional/tool/32K/~119K plus above128K (~230K actual-token) recall, not generated-code execution or comprehensive quality equivalence.
+
+One server/benchmark at a time, localhost8080, presets disabled, exclusive reserve.lock. Preflight refuses competing queues/engines or occupied port; no unrelated process is killed. Previous completed queues remain closed. New campaign mechanics.py is a local snapshot of prior reviewed mechanics; the new run.py calls only measurement/inspection/configuration primitives, never the old floor-search main/finish.
+
+Checkpoint before/after each attempt; unique immutable labels. Resume skips accepted/reviewed attempts and refuses ambiguous incomplete/error evidence. state/STOP takes effect between runs. Expected allocation/stall boundary failures are preserved and classified, never blindly retried. Severe >25% loss is a rejected usability screen, not proof of paging. Unexpected quality/numerical/restart/thermal/topology/input changes stop safely with a durable error report, rather than an infinite retry. Guard: no-progress360s benchmark/1800s smoke; hard phase limits1200s loading,2400s benchmark,3600s smoke regardless of log activity. Only verified owned processes are stopped. Ordinary runs historically take9minutes; at most46 runs plus four smoke sets should fit approximately8–10hours, not a guaranteed deadline.
+
+No exhaustive/global-optimum or universal memory-reliability claim. WDDM/display activity may shift boundaries. Final nearby repeats—not discovery maxima—support the recommendation.

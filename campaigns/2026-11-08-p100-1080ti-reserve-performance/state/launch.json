@@ -1,0 +1,11 @@
+{
+  "pid": 10864,
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ai\\tuning\\campaigns\\2026-11-08-p100-1080ti-reserve-performance\\scripts\\run.py",
+    "--run"
+  ],
+  "started_utc": "2026-11-08T07:48:43.029829+00:00",
+  "log": "C:\\ai\\tuning\\campaigns\\2026-11-08-p100-1080ti-reserve-performance\\state\\performance-supervisor.log"
+}

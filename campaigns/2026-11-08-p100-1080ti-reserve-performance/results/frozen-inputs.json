@@ -1,0 +1,963 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe",
+      "sha256": "2e6485bd6ce9779da51f4dfa292ea84f197d89b66e76145d8426c20ca129c2d8"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe",
+      "sha256": "a1cabdc990910e8a2c1f3da26bf7c2e2ee2729d747931643ebb01e0561000b05"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py",
+      "sha256": "a0b9157f67d561db7dfdbfba6ce223b05cfc7cc70d534e1a80b46a2b328a7346"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe",
+      "sha256": "5d4228a6447fbd60653132ca692fbcf1da95c8229b05ad50176f5046b2401e90"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\BetterBench\\betterbench\\__init__.py",
+      "sha256": "06685368ea6b28a3bbdd3f92713ea9bfca062b17afb12f504f32e6201d98bdf0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\BetterBench\\betterbench\\cli.py",
+      "sha256": "1baceadb12075fdf176dcff07787063a61db53ff2d1562b1e523008355ed0a74"
+    },
+    {
+      "path": "C:\\ai\\tuning\\tools\\benchmark.py",
+      "sha256": "b6a97bc9d3ca81cfd9f3e5631e1901c40464ab1fc5f41b28063776fa5475f694"
+    },
+    {
+      "path": "C:\\ai\\tuning\\tools\\sanity.py",
+      "sha256": "76dc66e8948dcc6b39c04d18ef466035c447521db20b139fc0d66ad6442e62b6"
+    },
+    {
+      "path": "C:\\ai\\tuning\\workloads\\betterbench-16k.json",
+      "sha256": "b331bc1efa6af1a41e22a220a1991346037f96bdedc679e9bf1c2fd5aebbd0c3"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin",
+      "sha256": "8f59b4aa8873209dff11c11e37bcda9529a1335b724a1afeea37bf6388975baf"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\cache_drop.py",
+      "sha256": "49dbc6e301f5f4005d7a30ebc8a0ea16a5df42a40e969aa93fc8c8df8711d618"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\cpu_affinity.py",
+      "sha256": "2f0394b97d94404fafbfc59bf637fdfb32f2fa71010b9b994aa771286348e51c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\dsml.py",
+      "sha256": "27717ea9099dcdff1f61203d5104c9cab1a3e3b45962edcfa02d5586e723255d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\ds_pictures.py",
+      "sha256": "6ca33d871cdc39bb17daf6340df3c0f347523467956953960e3827b5f71f58a8"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\frontend.py",
+      "sha256": "063d2498bb3fb0339faa7a46ce079084d092855e81b7ac7e8158003db90e3194"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\images.py",
+      "sha256": "6dd08dcf94e83495cde0249e360cfa425d002334bfe3b2d870475c398c19ac8f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\keepawake.py",
+      "sha256": "874d33da4aff553c12da2ded297a6856dce48e09877167f9c387b667cd7b060f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\launch_identity.py",
+      "sha256": "d00c717832154c6eb4fafab5e5106f46b4347f10198ffc0ad91ae4e85dfdd21e"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\lifeline.py",
+      "sha256": "dab702abb92756296c14e7a11e0513b309c6013ea05e51bde043690bc5acfb96"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\loader_diag.py",
+      "sha256": "bcc91b73d37163dae7598c76c2029e7ae70bc8910179467bf0fdc5b9dde66480"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\logit_bias.py",
+      "sha256": "a914a2799246b4492b9b6f4252b6bb72f063aa713675084c5fa83f811ad10927"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\mcp.py",
+      "sha256": "cd91a0b760596a5af14cf189e780aae9d8ddf4f3eedf3eddaab8c00817c155d6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\mcp_fake_server.py",
+      "sha256": "ecc6afa3b44461e120d6901822a1b0db96bddf59324fefe8faa8f2cad48b7157"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\nonblocking_out.py",
+      "sha256": "05e3d46c38eeeaac4975591d4c2854d53db125f442e9fb6e5ac5529ade821c10"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\owner_guard.py",
+      "sha256": "4a098c3315d5efb65f2a20a08c59fa57f24cae05ee7122e10cd82e594a00be45"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\prometheus.py",
+      "sha256": "3b46bdfab7b02c063a54a041b457d7f15fc0f25c51addc67d63a1c147f3fd6d0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\ready.py",
+      "sha256": "028441f8a64dedee1d76530eae435222f79563b0562af052b3d9966a06a145b6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\replicas.py",
+      "sha256": "e6353436f9fa40018e1e3284517bd80e30657d5d56ed6174493d39e76bf8535c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\responses.py",
+      "sha256": "aba98b4aba933fe55cf699985add2e1014a66dacb55ed768ca9aa404c3fcb29b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\runconfig.py",
+      "sha256": "15eb3bec5a659aaa7efa45d4e27d366b884d7aa8392f795293d134ecb4719558"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\session_save_retry.py",
+      "sha256": "a474a0ae50fd22a24308298d5edfe9a47200bc7bdd0bae4f08957ed063a45977"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\split.py",
+      "sha256": "fa7ef8d8d77a3aad22720bda240c7ab506b1e37935dd48c439a7a13a638ccd05"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\structured.py",
+      "sha256": "80b272499fe6264bb818c5bc68cece27cfb495c1279f236558641b67f56a5f5c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\telemetry.py",
+      "sha256": "0be96f0bfda6e6daa46746ceded8ec28929ad3cd928d57171d3b56bff004ade7"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_abort_sync.py",
+      "sha256": "59dfe014a18552283d64133b5f108164c6c2aa9e454ee1009ef0c425e7082f98"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_admit_order.py",
+      "sha256": "e1940e98b8ba4c58b33b6ada3f2e0ce813f0c89d4c090f5361442222fedad80a"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_answer_speed.py",
+      "sha256": "0c4c4fdc45724cf90a415e7cf46aaf19ba5507ce7f47a2fefb6a5cfeb418f7d0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_anthropic_base_url.py",
+      "sha256": "5fbf8efdac47d18627044119c9404fb89422eff2e8f6b7f4334c6b6da4c58718"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_cache_drop.py",
+      "sha256": "8ffd7a0267fe839e652c58b1f896fcf176b0a8cda11226ef376b3b8a7a492a1b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_chat_tool_results.py",
+      "sha256": "cd3f40d70b723afb638cc5376b61a1d37d780bd0773dca105ec7ceb9f14966b5"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_chunked_body.py",
+      "sha256": "646627cf49a939c8660a6b264ead72df5f12eda589881d0d061c5065ab582f2f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_context_overflow.py",
+      "sha256": "712ff6876a2bce80512f61f871db58fd6ea0345d4006d8f43f255ffb656d381d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_control_cancel.py",
+      "sha256": "bf685446e4aee36483a7e530eaa1b51f751ecaf62fec280832d76692a551cc51"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_detok.py",
+      "sha256": "7a5bc54138daf95df6fb23b94e6ca939c21a80878164f0ac60b772a2081490f9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_drafting_retry.py",
+      "sha256": "96711003c2fb1e907bb4b3009a10b02cc3331422c8b30c6b757fc1e1db999b41"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_draft_layer.py",
+      "sha256": "2a901ca79ce38defb41600d9427f2bed00d9dd56d04c7a9b196eab72b1aedb6e"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_ds4_restore_points.py",
+      "sha256": "c84ab83a82999b9408eb34f05f68213d3409fc9786e4fb695f98a247a5ee4bfa"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_dsv41.py",
+      "sha256": "e858369c56eac47f8ca66a12e031a39333d4b71898690690ae5d7d798ea4d7ec"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_ds_parallel.py",
+      "sha256": "f48a19a9b78f16ef5cc424a938ee334b77a48d6e23b4af774421061ce53e524b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_ds_pictures.py",
+      "sha256": "c83aed9572c041cefe18a9bde14e382501c4611ecc05a5e700834ee312aef1ba"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_effort_paths.py",
+      "sha256": "5a3c80fdcf018a15afd88a4dc6e7de8252c381fcdedccea9c162e9ac3b656d3f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_engine_arch_note.py",
+      "sha256": "3b9ec89ca931f2c6ced0aa69ae05134cf3d67ee800e4e91a24e5aed3e4fd066a"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_env_to_user.py",
+      "sha256": "e78d8e973d72f39a6dc8977848543db9f104d0a7a9451b5ba2caa32e76ea123c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_exif_orientation.py",
+      "sha256": "b16c1662036ab5efc31984153a1c705866269cd6ddffe60f6d93a367645475f1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_family_name.py",
+      "sha256": "76f1049ca15b27a9c732dc0d9263dc4e81cc68663ed289f4c740d171ca767900"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_fatal_gpu_restart.py",
+      "sha256": "1aed7196ddbc44a5a5b26251aa39ec4ac73ef3c7829acf6496849f265da36613"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_fatal_recovery.py",
+      "sha256": "8796f18e9027226a830f85b6fccb4e76c9a2cfb840574cc29c848d57f1cfb06e"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_frontend.py",
+      "sha256": "6f4604ce8a28af3ab28020005d901c50154ba52264a71b52a63dfa67f2daaf08"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_gpu_roles_server.py",
+      "sha256": "008512387d2c583ab95dbb17921e3d707fa4094e1b2dcf6c873f3e1d2f2037d6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_history_tools.py",
+      "sha256": "d662736311c0e5cd853ba549171bff036fa460049ae72a0cc8f39099cfbd31af"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_images.py",
+      "sha256": "67b3bc408f1e4ffeb86471c5ad8b2212fbdd577661758669cda5e39c0d0b8bec"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_keepawake.py",
+      "sha256": "93ce569868f594cbe41252a19ff96812997994034f8ea4235d5255fa8e401f73"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_leftover_engines.py",
+      "sha256": "bec0b6fe2830c019d762810eb2af8b6b8f7896e426780b506d8114f3160d1b2b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_lifecycle.py",
+      "sha256": "4f14f16d85235441c4c1f01b8853e6b454bac5b24a96f4eb82c67abbdd26f103"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_lifeline.py",
+      "sha256": "7859ec508d283b1307fa15e974ffb32524a1d368911f5c61def085a2c1869cd1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_logit_bias.py",
+      "sha256": "ff27de6c27a3dfd6ee093686f5d36882004c700486c603277269bf734e0ce59d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_logprobs.py",
+      "sha256": "876cbff6fd4b747d68c7c64ea95589b6b2e50f4f97e0a1cd4a8fe13d612deaed"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_logprobs_parallel.py",
+      "sha256": "7f405251f95f204b9ee19012f9b1f5bf6fb87dbddcae1309da6c1b216d611d12"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_mcp.py",
+      "sha256": "3f3aba461458dbb2d1cdc05b1acd3fd16090948c2093811683b21c7ea9024a16"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_mcp_media.py",
+      "sha256": "a597edec3d02f3369bd140ffb9d3c9083a834c132043d8c988373b31289b6678"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_model_card_sampling.py",
+      "sha256": "38a90fe3d2339d1bca61b073a5e0bafae936c36ab1b1953ffdc6f756a06bf5f3"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_monitor.py",
+      "sha256": "ca092e640f7a9811a5e331734ed346670aab98b88e370483ed5425e713ac578e"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_native_tool_parser.py",
+      "sha256": "4cfbf309f50e7fa8c90d964670d160dde43bc2a66d2be21fee4d21929fb9c887"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parallel.py",
+      "sha256": "fd4639d8bc4f552a1c7e89fbfb95f4066e588ad70d66b4c9f5c99ac26bd687ef"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parallel_yield.py",
+      "sha256": "2b57075253d9df5387b02afad712052b9d669f1cc5d68b79d8c7b1fc86820a21"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_param_end_options.py",
+      "sha256": "73d86fc4d1877ce310ea63f7e25cf20684d84fcca2dd000bc5cd129c7d97da46"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parser_call_scan.py",
+      "sha256": "1941df659f18e7923414373c84477fd0bae8f8e9751a6b4b8627255b5e3dc6e9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parser_hold.py",
+      "sha256": "d50e799c0bbf003318b51938f09e0b40fb11b8d572a7377ddd4617b9ddf9d7cf"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parser_markdown_code.py",
+      "sha256": "8195e7c2c86bc8f7e97178e27f2c997eb65c8c9e5214134641ff6a52f7bda883"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_parser_track.py",
+      "sha256": "ea8620b3aa8945485e438fe48e1780c75d60159cfc3ff94b7996ba79a1c15b98"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_pool_cores.py",
+      "sha256": "cd56d76c78fe663734e011edb8c66098cc9c3d4bf2b8f630bd3c3a3cbbb64c7c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_prometheus.py",
+      "sha256": "6ff62b63c896842bbe60861a1c17940f846f0fb4134da86f734d18362803b6c9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_prompt_encoder.py",
+      "sha256": "02e7963bc05e07cc7c65b4d4022b98763da76bc613ae82a9c6496983967f08e1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_q36_config.py",
+      "sha256": "278dae2f526ad8cda6fe8a719e075456c71824bbd8b2362b87fe62139b6b0ea8"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_queue_keepalive.py",
+      "sha256": "17893b3f69667f1ad9dff1c0120775d668207d7ae62e2500ca143ede3fa90c62"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_quiet_cancel.py",
+      "sha256": "cd3c4b02180dbacaa4900cdfa5f692ef02ce6b5514c2f9c5dc8eaeb597315c5c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_quoted_call_values.py",
+      "sha256": "5cb9f27e79f113d83df7e250c9f410de685a480113f77d88d7300b0535baac33"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_reader_follows_engine.py",
+      "sha256": "1b66e1cb0551d931874dc7c0e32ad67ef33605ee43e32938bdef87fea9dd8c0d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_ready_timeout.py",
+      "sha256": "feff575a251d0dec745e1f61334ba7d8081d45405422f4b78645afae34c80342"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_reasoning_loop_recovery.py",
+      "sha256": "c448df0757ae1bffb0a4fe8b48f45ee57ae0f06e7056d6bc96885dc8b024bf7b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_reasoning_rescue.py",
+      "sha256": "d91252b93945465bce47bd3602d0c7a4fed36639d7cb5cc08b3153ac535a1d03"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_reasoning_tools.py",
+      "sha256": "a7703a25adfa46fb47053269cb0d1f8057a8de46f982fec906025c7344abded3"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_replicas.py",
+      "sha256": "c28d27715c3053da7b5f09745e117efe1d3cd0f29c2e88a4f9c979e9717c55bb"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_request_accounting.py",
+      "sha256": "2bcc37b137b8e03fbc9ebfe568913b10fa7c7cf0e0c538886bdf8abfc718a7ea"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_request_hardening.py",
+      "sha256": "5e9d4e904f48fe0224965fb1e43311d6175f404c687af225ccf96c48fc366f87"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_resource_warnings.py",
+      "sha256": "bd94c7e3484570745d6733500d967fa29faae30620aceb97c5800c2859ca18da"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_responses.py",
+      "sha256": "49e54abcce9fc0521597abf742b579ad3f7eb9a5f20f648e9020d95b2d16fb89"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_restart_waiters.py",
+      "sha256": "5c0a322fa2d8b92ad5543f582d0f06ac7116f755730d932a7f7511c184f6824c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_runconfig.py",
+      "sha256": "efa3712dd39d3367d156da606d2155cd2b1a6ec6894dc17b9210a11dde761650"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_security.py",
+      "sha256": "9e5ceab00ae038d66c6bb78728a0f72e6da164bf1a6f7130f54ec9f00cb6ae9b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_server.py",
+      "sha256": "3413e7c2253e9fec03669ec9ba3e02a8b1968591f18289ce1a9691b82f743cde"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_serve_robustness.py",
+      "sha256": "2fb67e49863259c35f9286cb9d39c884c7a5d729390f83c2d0ce5a5d4ba7e370"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_session_save_retry.py",
+      "sha256": "6ab00d066b380f652f8857280deab5f30d03bbecbe3d575f35c1d5a686a8ec35"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_slots.py",
+      "sha256": "55f72e4b4fc32948d3f4e848f7fd3da030d33d7e2aba9250ed41d716e77f9658"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_slot_alloc.py",
+      "sha256": "7ea0cb07ed01f95d720fb0ae1d945cee705a31a34213bd5ada22dfa35c68d40c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_speed_average.py",
+      "sha256": "b0ab5f8a50a71b7adbfd4f5b3524721dbbacf00a81831576e604da9067113924"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_split.py",
+      "sha256": "cba56422e9ff00d49a8e5d9cde9b5fed445d52e97668f1258f75ed1b07c45ed0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_split_fallback.py",
+      "sha256": "a983394ce871dcb4e63d85f5d339779a414ff8b7d0e93b9bb50bcf10f57ae1ce"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_stop_holdback.py",
+      "sha256": "9ac76b4246f1a78074c30c949d6f312f5a31866eba74f4c792f2eff2ba307f0f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_stream_ownership.py",
+      "sha256": "9df687fedf4df78fb7b1417152c3bbd5538d85269647b96b5700fae4fd5364f4"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_structured.py",
+      "sha256": "b7d41653794f21cd806d658384f16e6a05b0bb1888d0ab7fb5d1e46d7e013bf4"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_call_envelope.py",
+      "sha256": "05c571a838b1a2d199c813ca28b8048d16082c12e31f5aa9c8c919c214510e3c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_call_unclosed.py",
+      "sha256": "820bd209657d802305ba984dde791071d8eb1af73519d09d11eadf1ee3470882"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_corpus.py",
+      "sha256": "42526fe80c346f3aac5bffd0d53b3f0d69cc1040df1186ef400e97cb0ad295a1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_name_alias.py",
+      "sha256": "824fba928cb000743a244b9f06f55a56362c13a406ad36a9176b78f6112f01fc"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_name_space.py",
+      "sha256": "07cbe06fc7fd4f2b27c0477c2fa39b0ea06262e26cdf2eb718c383ecd44f5078"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_routes.py",
+      "sha256": "0667da9ef2d1c8f62d3364cb7ad8374ae33a66dd0730a9ccd35c7d36e474a2fb"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_tool_search.py",
+      "sha256": "9d8f22cefe585c641c541c5d58286b8fd7a3692d161f471907352aadbdd30da0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_busy.py",
+      "sha256": "878b8d216f3f05ec8635321f6cee47c4e44417060a63c6f86aafe95a898bede0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_elastic.py",
+      "sha256": "7086a0b6f0e3b03f0180698a8530f882806c00beb155a6ca0b598b8d3d75e441"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_elastic_http.py",
+      "sha256": "cba92ac4976b2b499b23a53e54c836eecccfdf01d89cdd443d348fddd038d4b0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_start_error.py",
+      "sha256": "b95645bcddfaa66c7470d0c6eca7da11e2167ea64b1c5e0ac87bf5cb1f50bcd6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_token_limit.py",
+      "sha256": "3843acb87a597d1956a499d501c5dbaf0ec52723bae0e9c3436491d4db6980db"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_tool_image.py",
+      "sha256": "b5877f7e95c57fc5399b732c2b86b39a0b0b594fcdb2eb6be93d17babe90a2f9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vision_workdir.py",
+      "sha256": "cd1367afd7b18c707bce3d824b9c42be611c39d2a56d16fcd5a89df3879f7578"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_vram.py",
+      "sha256": "40967f4970ff017ae43d58bb08c1df795fb71f3cecaea89ab4cb375c5f537ac6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_api_key.py",
+      "sha256": "c8cfe447a6b2a7fdf653402c26cb1e1a053c59d33726ab2efc34003cf527a70a"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_badges.py",
+      "sha256": "0437e36118688a98ae337636438435ab72e29e9ecf19655cacb269045d35aaa1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_follow.py",
+      "sha256": "3cfb7aabe2e3213a64985d1d89daf6caf397609d6a026b1bb2dfc389392a1d51"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_history.py",
+      "sha256": "b51cad04c92784a5b22270433f8ac034221b47603856c7efdebf714e6d6d3021"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_i18n.py",
+      "sha256": "6d992c126645bfd9c47b97785962c3697cfd275b6f1b123b8defa64cc0280aa5"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_load_unload.py",
+      "sha256": "1da9706cc734375c637e38118423369bcba554ee0a28d113ff07aec7540b8c68"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_math.py",
+      "sha256": "21500aa109898971de4fdf65d0867f52f6f3354522e531256b3259f646f5a3c5"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_preview.py",
+      "sha256": "45683af9a0bd2a1d60a8abc9cae37a0b3bc93fd639c0a44d95223a8172fafdba"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_sampling.py",
+      "sha256": "8e4e717aaab9049b99a1a44beff2bae1d48e6f60d08de98a28e2d875d2eba18d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_web_start_question.py",
+      "sha256": "be0ef36176e0b7006352bb2049f74f042128b1bb75efabe63bd363f525d2bdad"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\test_winjob.py",
+      "sha256": "069d5e28845b44ee1f1b34c63de6cd68b6d722609726f72a270f51ed7f7ee1a6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\webfiles.py",
+      "sha256": "fc9f671c043448d8be79866dff6cd3710aa45cbd8c977593db510a95121ebc04"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\winjob.py",
+      "sha256": "3afbd45aa7fdd2567f66d0a076f9c77180c1e0ada911c30ae6587358d5d25070"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\__init__.py",
+      "sha256": "7195d862b09ee0c290b6c28d5c1b6e7c5819212328ecbea7cd1422b4a5d4a3d6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\acquisition.py",
+      "sha256": "8bb91dc8e270c35fe5f74d7c83dab92519e9a78414485bdf698bd14303eadd05"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\amd_four_card.py",
+      "sha256": "5af6de94ef44c6b55747078dc4fd62aaf878ad5d4c6151882bf0ce8d80db7f18"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\arg_layers.py",
+      "sha256": "991972e58d0ad8003aa3bcbc26b3cd9e647dbe5b776b5ea34562025c38c4d407"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\atomic.py",
+      "sha256": "39ec0b180e6b256a6d129dd5ad9ae88fbbf27c1c1a082bf4e419f328e99babab"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\autotune.py",
+      "sha256": "51a9d2a3928c46b811274b4906f4d0743edd470f5b18265cda6f3946f90ad62c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\benchmarking.py",
+      "sha256": "97d0b61765ad88ecfdf8ef039f1d5faff2ef42ed9956d9c8b00c2ea5c551e514"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\calibration.py",
+      "sha256": "713abae851d3b2043a088002f1e16d52d182f9149e7ff9dcb7258a1f19b0331c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\calibration_jobs.py",
+      "sha256": "4d1236265d7ad3691f1011b1f2773017a5c1dbaa9b1c34abf39707309ceeb264"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\cfg_paths.py",
+      "sha256": "b536b1b8448bc2e097852b236475c9bd34a0cfd9791652df3bb604e0b9059ecb"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\components.py",
+      "sha256": "6092b5f684dcda64b44dec216e57895485a3b4c168ace7f1737ffdf3a08d678f"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\default_context.py",
+      "sha256": "d2fa04609716d366a42d5d210b99cbc4f15b9e52c6cb140faa485755ed7c00d9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\discovery.py",
+      "sha256": "162c285005730ffc57bf0de8fb722a91125facebf513720ce50c72dc064fbb92"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\doctor.py",
+      "sha256": "20641cd8e55645cb8165b2ca8f10a0f6be03276e5cbae0131a84f9ecdad29ff7"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\drafting.py",
+      "sha256": "2f237f446e2b9ed0cc35440632d4a37e69fadded0bb3009478568d0635fcb8a6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\drafting_fetch.py",
+      "sha256": "2efa8fb5071a3419450efc18478e44640320591a9ae5c500b61c587beb5695ba"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\draft_layer.py",
+      "sha256": "6cce070e84d97fc81a03a53b7235e121018973ca220b81407cc5774fee202dc8"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\driver_floor.py",
+      "sha256": "7cb11a065d4c328911cc36fe9fe808efe47233408b1cd0fbe24e20e278182cf0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_context.py",
+      "sha256": "cf403965da7964df219170b08c12a08f1e0ff6db9e1b1e8a2395c2a6f38745e1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_engine.py",
+      "sha256": "44da95e901d6d74cf8ed71b5214f84f0021b41b48f125949904d1a2cd169ce00"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_fit.py",
+      "sha256": "8b469f9c4a4226cddb9394e5f1b4a62aef83dd50b4cc42f578abb322399b7256"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_flags.py",
+      "sha256": "7f3badf9e91e38fc81aa727cfc024a54254957d577f4b8911e1d52afabdeb1e1"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_parallel.py",
+      "sha256": "7eee0db741c2e8ae10ccf1adc4bf1595fde8a3e7adc03f0107d0dab139389f5e"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_paths.py",
+      "sha256": "41c28cc0d2025c1fcefe16fa14d982912ae5601ece8799ef466224940efc620b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\dsv41_sets.py",
+      "sha256": "a8af2f6fd7797e96ae940bea0d1ce09d910f2b7cace7a5bc275b5b7471111662"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\engine_component.py",
+      "sha256": "88207164a06e507feb38a8aa82a92c219c7e7c285148b0d18cc95876e178fe55"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\engine_library.py",
+      "sha256": "6335041e7c39db57cfa3b771b0386efa5d1374114160cfe1207a14c4a8579992"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\engine_update.py",
+      "sha256": "06f9965656791e235d1e18d5f74638668bb63a05050da745b58cdb0898f687c6"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\feed.py",
+      "sha256": "64dedefefcaacf6e9003e1309ee6e237af16ae57a3a53b8b328a4b1a9cba7ca0"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\folders.py",
+      "sha256": "d8c560aa000f7e3d5f49e471f9d03e008de4c45e3f32ab5f6844247dabb13ccc"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\gguf_preflight.py",
+      "sha256": "ac4dac7747c2e4142be5085dff0eee6f3b11386195621519fa70c79af773b908"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\gpu_fit.py",
+      "sha256": "6a223049f8521eb247697b4ec36bbde122f0143b267f19b3fae94880edfc613d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\gpu_pick.py",
+      "sha256": "fad200e44d267fc7417aa7c3a9926f2e03ba62aaf53522b40519cb88fad671df"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\gpu_roles.py",
+      "sha256": "62eb49cc4cab9522e53f4df620d8977c78a5a95b644ce1e2cc8725d60703ab00"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\hipblaslt_tuning.py",
+      "sha256": "7edfc470bfa545d6080ad4c42f0326b377f19c970a58fb239ff04b842f3cb8d9"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\intel_spec.py",
+      "sha256": "93f1d359b2fa964ade7846d527ed1d2d6112e1726c032aa60457ce8f90c1cf0c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\journal.py",
+      "sha256": "03c08d8a03f4f42dea50b94cd3f7f608910cb4029a8adad6678c41a2ea818113"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\longpath.py",
+      "sha256": "b254e3bbfa9dba96bc7535f4408a5d534fe7a7287c607287f96fad5ad3f857ac"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\loopback.py",
+      "sha256": "cf59409efd924d2bb97d06a884d608f0d189c42337d981fbe9296cbc9a5e074d"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\mac_fit.py",
+      "sha256": "8f763ed8337f561cc770642f265cb2336fd7291049758872e48f4f26ece3f676"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\management.py",
+      "sha256": "99c9d3c3c646b4afd998ead200c39c48bc453b7aef86ed332237e76a2ac0712b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\models.py",
+      "sha256": "573010cce12016d3d23ac0ec4513d382657999984e54539132d6bb9a08f715bf"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\models_move.py",
+      "sha256": "0ff916e1317c868310973c213cec3b6dbacdb7ba41adab58b961271175398278"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\offline.py",
+      "sha256": "3dad5fe8029805fb5f80cdb7e4b9067d46f1ce4435a9543325758f358afabb55"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\owner_transport.py",
+      "sha256": "9487febd66872bead84b6f4368dd1ae5cf9ad76358dc04607919c3f31b8a32a8"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\paths.py",
+      "sha256": "0edf2231133a0d2db1031a23196d0924cbb6564331bc3704909e40e6e3bd09fc"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\pictures.py",
+      "sha256": "5c20616326a8869b3a534f93c3cdc40f1f09f006b2796c2f4b726c7cd8391caa"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\posix_owner.py",
+      "sha256": "c793ddb6812e801834924e31c861298e0ac55094bc3c3592aea2f62caecda43c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\presets.py",
+      "sha256": "be22a5dcc346838b6755ace08b23fda9496e2bbb60aae033b8f4d3a39a816601"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\preset_marks.py",
+      "sha256": "2fb9ef26839017652f05c2a766518aec2e2546ae455bc2219b771e4188ab9fc2"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\private_files.py",
+      "sha256": "0f71e981a7a3d0b4a076a76a278981ad1911b60d2c7bf2af77491eb3ef890c30"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\procs.py",
+      "sha256": "605cae5a7e6ffe555b743e02453ca349575a0478190fd3344a18a6b30a7333ae"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\profiles.py",
+      "sha256": "7dfb8ec6975571cf94e7909dd90a14f225922b4b3f95764c360802d95943e6ab"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\progress_words.py",
+      "sha256": "a7eb9871faa67e36238489a03973f4d01b89923316ab9043855f3a0b8ce80214"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\readiness.py",
+      "sha256": "599595f17a7d3c4f4681b9461d6a67ad7a27413baffa564e51c701e0d7241648"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\recipes.py",
+      "sha256": "ce1002f49d212fef733a48b269274cb6b776d730e791a5f020370ff1da95c366"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\replica_profile.py",
+      "sha256": "6f2888eb341e98145b3ef209f3760a13f21010eb5eff321d509b332b87145b3c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\runtime.py",
+      "sha256": "956879d6d4d4214f7426707e78cdeba9fd84c2d8a784498c25444f364307b8f7"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\signing.py",
+      "sha256": "c29105590c2f16cdd67ec689ad6fdf2931c8e79eb47d7437aa897fb806001d3b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\speed_switches.py",
+      "sha256": "f32365ad2fd384729cfb9cc12db18a401d70641c5248b5bc83db9eceb8008969"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\split_engine.py",
+      "sha256": "43c314c25243fc9107095e9f9522dafdbdb3f90e04fc962191430b9f635bb830"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\sysinfo.py",
+      "sha256": "dc1736e73bbec9d480c9682c45dd29b8e6bd75850baec7f20d748d20198c2d99"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\targets.py",
+      "sha256": "851d67d47b8f8e5e612af9bc4652af1566a4ccbf47064b785b2bb541975d540c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\time_skip.py",
+      "sha256": "9cd6760f6d52deddaa4716e93102fe63751aa1a9244db316d97b2e480d12d5b4"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tls.py",
+      "sha256": "c9bde669f81a02c3d7e7e73e2cfe7ed5cc91c5b3afee19deaa8712febbf5e551"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\transfer.py",
+      "sha256": "a9ac1b333aa53bafbd7782b5ae5a1585b75bf3765efc27c9e0d111a75c59a799"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_api.py",
+      "sha256": "984368a745bf609e78ca78f77ee60b3855e01973f1c515b47bb5d0ef1e55e65b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_apply.py",
+      "sha256": "c5624d0a143aec5243357052cc3c94a7b7a76bcfa69d0aaa72bd6fad7540c9cb"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_engine.py",
+      "sha256": "74096c4af4d0ca366163ad6bc6b0eab4d1a04056b43b3a1668e4d7eeed82c240"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_history.py",
+      "sha256": "fc790e3fe1a7d6ba05ad4cb20e801cfe591e938a344addf34b0aca689669a545"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_knobs.py",
+      "sha256": "ee8ca4ef336eaa47c03219d3e3eca8f6d8ea706883c227cbdc9aba78a507e1e4"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_machine.py",
+      "sha256": "60c223a5f0867faf51d5fe067111462785cf8f755fd40d0d0aadc4762e2d3ffb"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tune_session.py",
+      "sha256": "3a1d29f0604ad4c3a27a772037aac0aaee2815b1c0a0b862573603087f61957b"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\tuning.py",
+      "sha256": "993c87dd659907ca9e8fd484b44f85a95c917cc301b561ea48befb533760d66c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\uma_pool.py",
+      "sha256": "f6ca8f60baa64a97cb2ba6465dfd52e04cbb5ef9473062ac309e2baef951824c"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\updater.py",
+      "sha256": "495c540a6d3a577a83e13380c5bddb9a7e58819724bfa1fab99a77f24317e308"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\user_args.py",
+      "sha256": "b536b137d18fa5768f9cd9c4793aa1280f1a392b0394897db084b2186cc8d858"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\vision_reader.py",
+      "sha256": "ae35860afd307ac7728c5205eccfea3cd7682623eb0ada7b3d32cb6e35e5d628"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\vram_fit.py",
+      "sha256": "e6ffa4aa443ac9a161edeec6f25a8456b20819149e5939fbf8d2d3698c819473"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\winproc.py",
+      "sha256": "b4b82b5939113a9217c81a1243046e0ec4dc4905247a97a432966daf4ff2e573"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata_control\\__init__.py",
+      "sha256": "be37edabb7e19fa3a820bfd67a67fccf5453221beb607aaf8fac5f4c404fc4cd"
+    }
+  ],
+  "model_files": [
+    {
+      "path": "C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+      "size": 54817524224,
+      "mtime_ns": 1793097806997196900
+    },
+    {
+      "path": "C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+      "size": 28800138432,
+      "mtime_ns": 1792704719386664400
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\conversions.json",
+      "size": 322,
+      "mtime_ns": 1793097859463064700
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\dense.bin",
+      "size": 1538035200,
+      "mtime_ns": 1793097859461001600
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\index.txt",
+      "size": 93685,
+      "mtime_ns": 1793097859461001600
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\native_experts.txt",
+      "size": 3304,
+      "mtime_ns": 1793097861181112100
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\tokenizer\\chat_template.jinja",
+      "size": 9993,
+      "mtime_ns": 1793097861156231300
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\tokenizer\\merges.txt",
+      "size": 3600844,
+      "mtime_ns": 1793097860940638200
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\tokenizer\\tokenizer.json",
+      "size": 554,
+      "mtime_ns": 1793097860956460300
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\tokenizer\\token_type.json",
+      "size": 744960,
+      "mtime_ns": 1793097860956460300
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\tokenizer\\vocab.json",
+      "size": 5737005,
+      "mtime_ns": 1793097860839276600
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\dense.bin",
+      "size": 116099072,
+      "mtime_ns": 1792705156616752700
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\dense.txt",
+      "size": 1880,
+      "mtime_ns": 1792705156618760000
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\draft_vocab.bin",
+      "size": 425196,
+      "mtime_ns": 1792705156750593200
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\experts.bin",
+      "size": 707788800,
+      "mtime_ns": 1792705155418882100
+    }
+  ],
+  "baseline_scientific_sha256": "08b334284ff41b78ff496893daa3d1a278d5d621dc18650c2eebbe47c984bc33",
+  "model_fingerprint_method": "File size/mtime inventory, not full model content hashes; engine, Control Python sources, expert profile and benchmark tools use SHA-256"
+}

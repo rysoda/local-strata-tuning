@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "name": "recall-above-128k",
+      "input_content_tokens": 230094,
+      "expected": {
+        "KEY_1": "ALDER-628",
+        "KEY_2": "ASPEN-419",
+        "KEY_3": "WILLOW-853"
+      },
+      "prompt_sha256": "644207de3bad9fbc3178da68131028274191a5fad62ca3ca80272406b27a0b1e",
+      "passed": true,
+      "response": {
+        "id": "chatcmpl-ff3a82f1d0f34324b0a1c6e4",
+        "object": "chat.completion",
+        "created": 1794152010,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"KEY_1\": \"ALDER-628\",\n  \"KEY_2\": \"ASPEN-419\",\n  \"KEY_3\": \"WILLOW-853\"\n}",
+              "reasoning_content": "We need answer user's request. Need parse document: \"Document retrieval sanity check. Return only the three recorded KEY values as a JSON object.\n... The recorded value of KEY_1 is ALDER-628.\n... The recorded value of KEY_2 is ASPEN-419.\n... The recorded value of KEY_3 is WILLOW-853.\nReturn exactly a JSON object with keys KEY_1, KEY_2, KEY_3 and their recorded values.\"\nNeed output only JSON object. Ensure no extra. Final: {\"KEY_1\":\"ALDER-628\",\"KEY_2\":\"ASPEN-419\",\"KEY_3\":\"WILLOW-853\"}\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 230146,
+          "completion_tokens": 206,
+          "total_tokens": 230352,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 230146,
+          "prompt_ms": 611825.0,
+          "prompt_per_token_ms": 2.658,
+          "prompt_per_second": 376.2,
+          "predicted_n": 206,
+          "predicted_ms": 4924.6,
+          "predicted_per_token_ms": 23.906,
+          "predicted_per_second": 41.8,
+          "draft_n": 178,
+          "draft_n_accepted": 143
+        }
+      },
+      "elapsed_s": 616.9530000000086
+    }
+  ],
+  "passed": 1,
+  "total": 1
+}
