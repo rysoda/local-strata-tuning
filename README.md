@@ -1,6 +1,22 @@
 # Local Strata benchmark campaigns
 
-Hardware-specific tuning of **Qwen3.8-Flash-Next IQ3_S at 131072 context**, using the existing Windows Strata installation and BetterBench. Each campaign keeps its own reports, configurations, raw evidence and resumable state.
+Hardware-specific tuning of **Qwen3.8-Flash-Next IQ3_S**, using the existing Windows Strata installation and BetterBench. Current context is **256K (262144)**; older campaigns used 128K. Each campaign keeps its own reports, configurations, raw evidence and resumable state.
+
+## Current setup at a glance
+
+| Item | Current recommendation / result |
+|---|---|
+| Hardware / engine | P100 CPU PCIe x16 + 1080 Ti chipset x4; Strata 0.1.57 |
+| Model / quality settings | IQ3_S, 256K context, full experts, int8 KV; existing MTP/reasoning retained |
+| Placement | P100 layers 0–35; 1080 Ti layers 36–47/Main; trimmed stage weights |
+| **VRAM reserves: before → after** | **P100 1400 → 640 MiB; 1080 Ti 2304 → 896 MiB** |
+| **Decode: before → after** | **37.49 → 38.86 tok/s (+3.65%)** |
+| **Prefill: before → after** | **325.98 → 331.35 tok/s (+1.65%)** |
+| Validation | Three alternating candidate/reference confirmations; candidate passed both scheduled 7/7 smoke sets, including ~230K-token recall |
+| Startup | Updated to 640/896 MiB; existing experimental projection retained |
+| Read more | [Recommendation and before/after table](campaigns/2026-11-08-p100-1080ti-reserve-performance/README.md) · [Full report](campaigns/2026-11-08-p100-1080ti-reserve-performance/REPORT.md) · [Startup deployment](campaigns/2026-11-08-p100-1080ti-reserve-performance/STARTUP_UPDATE.md) |
+
+Speed figures are means of three per-run medians on the same workload **without projection**. Modest gains are not statistically proven; Startup's retained projection was not validated by this comparison. Older topology/software results below are historical, not directly comparable.
 
 ## P100 cooling quick summary
 
@@ -27,11 +43,11 @@ All selected runs are 10 minutes. Temperature and SM clock show **mean / sampled
 | [Cooled x16/x4 128K attempt](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-retune/) | P100 CPU x16; 1080 Ti chipset x4 | 0.1.57 / 0.1.57 | Superseded; first run intentionally interrupted | — | — | User requested 256K; partial 128K evidence preserved, excluded from new results |
 | **[Cooled P100 x16 + 1080 Ti chipset x4 — 256K](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-256k/)** | **Current slots; cards stay put** | 0.1.57 / 0.1.57 | **Complete: 17 benchmarks** | 35.32–37.47 | 325.60–326.31 | Nearby confirmations and 256K recall smoke complete; see report for memory/quality limits |
 | **[Minimum VRAM reserve — 256K](campaigns/2026-11-07-p100-x16-1080ti-x4-reserve-floor/)** | P100 CPU x16 / 1080 Ti chipset x4; fixed 36/12 split | 0.1.57 / 0.1.57 | **Complete: validated reserve floor** | 39.21–41.17 | 251.27–267.46 | P100 0 / 1080 Ti 0 MiB explicit reserve; see report for boundary/compatibility limits; Startup unchanged |
-| [Reserve performance around 512 MiB](campaigns/2026-11-08-p100-1080ti-reserve-performance/) | P100 CPU x16 / 1080 Ti chipset x4; fixed 36/12 | 0.1.57 / 0.1.57 | **Complete** | 38.86 | 331.35 | Selected 640/896 MiB; see report for nearby reference and caveats; Startup unchanged |
+| [Reserve performance around 512 MiB](campaigns/2026-11-08-p100-1080ti-reserve-performance/) | P100 CPU x16 / 1080 Ti chipset x4; fixed 36/12 | 0.1.57 / 0.1.57 | **Complete** | 38.86 | 331.35 | Selected 640/896 MiB; Startup updated afterward by user request; see report for reference and projection caveats |
 
 Speeds are ranges of per-run medians from final confirmation runs, not discovery maxima. The historical x16/x4 row covers the two repeated Main-card orders, not one selected configuration. Prefill uses the shared BetterBench 16K-target workload (roughly 12K actual model tokens).
 
-**Last completed inference recommendation (tested x8/x8 topology only):** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
+**Historical inference recommendation (tested x8/x8 topology only):** [x8/x8 final report](campaigns/2026-11-02-p100-1080ti-x8-x8/REPORT.md). Final confirmations measured **37.30–40.62 decode / 317.70–319.54 prefill tok/s**. Quick screening is not a significance claim or comprehensive quality proof. Do not rank campaigns by raw speed across changed hardware/software; read their reference and quality caveats.
 
 **Current topology retuning:** [new **256K** campaign and initial test plan](campaigns/2026-11-07-p100-x16-1080ti-chipset-x4-256k/README.md). Actual links verified x16/x4 after cooling changes; active installed software is now 0.1.57. **Complete: 17 benchmarks**. The selected 36/12 trimmed split averaged **36.40 decode / 325.96 prefill tok/s**, versus nearby P100-only **33.27 / 333.98**. Candidate/reference each passed **7/7** smokes including **230146 prompt tokens**. See the report for decode variability and headroom limits; the old x8/x8 results are not a same-condition reference. Installed profile snapshots are preserved; new tests use the explicitly requested **262144 context**, full experts and int8 KV, and exclude the as-found speed-projection vector. The interrupted 128K attempt is kept separate.
 
