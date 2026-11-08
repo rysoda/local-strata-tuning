@@ -1,0 +1,4 @@
+index, name, uuid, pcie.link.width.current, driver_version, memory.used [MiB], temperature.gpu, driver_model.current
+0, Tesla P100-PCIE-16GB, GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, 16, 582.66, 14826 MiB, 52, TCC
+1, NVIDIA GeForce GTX 1080 Ti, GPU-7d8ccb39-60d5-bc52-5e38-1cb26b742a23, 4, 582.66, 9095 MiB, 21, WDDM
+

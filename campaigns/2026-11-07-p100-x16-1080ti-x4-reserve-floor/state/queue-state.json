@@ -1,0 +1,892 @@
+{
+  "phase": "complete",
+  "current": null,
+  "runs": {
+    "control-original-reserves": {
+      "phase": "complete",
+      "server_pid": 2460,
+      "started": "2026-11-07 23:35:49",
+      "benchmark_pid": 2044,
+      "metrics": {
+        "decode": 34.22223145284989,
+        "prefill": 323.18090030772873,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 3512,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 00:02:00"
+    },
+    "reserve-p700-t2304": {
+      "phase": "complete",
+      "server_pid": 12008,
+      "started": "2026-11-08 00:02:14",
+      "benchmark_pid": 7276,
+      "metrics": {
+        "decode": 38.82676779182709,
+        "prefill": 324.92108419461067,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:11:11"
+    },
+    "reserve-p512-t2304": {
+      "phase": "complete",
+      "server_pid": 3620,
+      "started": "2026-11-08 00:11:24",
+      "benchmark_pid": 4812,
+      "metrics": {
+        "decode": 38.92019195926153,
+        "prefill": 325.1251392858313,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:19:58"
+    },
+    "reserve-p256-t2304": {
+      "phase": "complete",
+      "server_pid": 11060,
+      "started": "2026-11-08 00:20:12",
+      "benchmark_pid": 10904,
+      "metrics": {
+        "decode": 37.8475541728586,
+        "prefill": 325.17170753037817,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:29:06"
+    },
+    "reserve-p128-t2304": {
+      "phase": "complete",
+      "server_pid": 10880,
+      "started": "2026-11-08 00:29:20",
+      "benchmark_pid": 6048,
+      "metrics": {
+        "decode": 40.36887884235208,
+        "prefill": 315.4385261332362,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:38:20"
+    },
+    "reserve-p64-t2304": {
+      "phase": "complete",
+      "server_pid": 956,
+      "started": "2026-11-08 00:38:33",
+      "benchmark_pid": 14728,
+      "metrics": {
+        "decode": 37.93788948330848,
+        "prefill": 299.32850935294516,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:48:04"
+    },
+    "reserve-p0-t2304": {
+      "phase": "complete",
+      "server_pid": 2460,
+      "started": "2026-11-08 00:48:18",
+      "benchmark_pid": 14620,
+      "metrics": {
+        "decode": 39.25157302316976,
+        "prefill": 284.49819892704306,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 00:58:11"
+    },
+    "reserve-p1400-t700": {
+      "phase": "complete",
+      "server_pid": 3720,
+      "started": "2026-11-08 00:58:25",
+      "benchmark_pid": 2228,
+      "metrics": {
+        "decode": 38.857136432139136,
+        "prefill": 332.4833775453572,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:07:01"
+    },
+    "reserve-p1400-t512": {
+      "phase": "complete",
+      "server_pid": 14560,
+      "started": "2026-11-08 01:07:17",
+      "benchmark_pid": 4324,
+      "metrics": {
+        "decode": 40.285737509717336,
+        "prefill": 323.2271326053937,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:16:07"
+    },
+    "reserve-p1400-t256": {
+      "phase": "complete",
+      "server_pid": 14404,
+      "started": "2026-11-08 01:16:21",
+      "benchmark_pid": 5220,
+      "metrics": {
+        "decode": 38.117313713696205,
+        "prefill": 323.7778524071328,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:25:13"
+    },
+    "reserve-p1400-t128": {
+      "phase": "complete",
+      "server_pid": 12924,
+      "started": "2026-11-08 01:25:27",
+      "benchmark_pid": 7224,
+      "metrics": {
+        "decode": 36.0031346649105,
+        "prefill": 311.01417786887976,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:34:33"
+    },
+    "reserve-p1400-t64": {
+      "phase": "complete",
+      "server_pid": 2596,
+      "started": "2026-11-08 01:34:47",
+      "benchmark_pid": 13768,
+      "metrics": {
+        "decode": 37.779062425442284,
+        "prefill": 313.0068776738451,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:43:45"
+    },
+    "reserve-p1400-t0": {
+      "phase": "complete",
+      "server_pid": 15036,
+      "started": "2026-11-08 01:43:59",
+      "benchmark_pid": 200,
+      "metrics": {
+        "decode": 38.366152481019135,
+        "prefill": 306.8996177511202,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-08 01:53:19"
+    },
+    "extended-p0-t2304": {
+      "phase": "complete",
+      "server_pid": 9560,
+      "started": "2026-11-08 01:53:33",
+      "benchmark_pid": 15200,
+      "metrics": {
+        "decode": 37.07261762678886,
+        "prefill": 282.6793647503885,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 11200,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 02:23:30"
+    },
+    "extended-p0-t0": {
+      "phase": "complete",
+      "server_pid": 15244,
+      "started": "2026-11-08 02:23:43",
+      "benchmark_pid": 8600,
+      "metrics": {
+        "decode": 39.028058370972545,
+        "prefill": 267.94710581737456,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 14592,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 02:56:23"
+    },
+    "validated-joint-minimum": {
+      "phase": "complete",
+      "server_pid": 2752,
+      "started": "2026-11-08 02:56:37",
+      "benchmark_pid": 10156,
+      "metrics": {
+        "decode": 39.21293836016314,
+        "prefill": 251.2670588185374,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 13716,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 03:30:52"
+    },
+    "nearby-original-reserves": {
+      "phase": "complete",
+      "server_pid": 2044,
+      "started": "2026-11-08 03:31:06",
+      "benchmark_pid": 10916,
+      "metrics": {
+        "decode": 37.01204920452165,
+        "prefill": 324.54094249818456,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 14296,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 03:57:21"
+    },
+    "minimum-repeat": {
+      "phase": "complete",
+      "server_pid": 4128,
+      "started": "2026-11-08 03:57:35",
+      "benchmark_pid": 15024,
+      "metrics": {
+        "decode": 41.17412387992774,
+        "prefill": 267.45714756466384,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 2012,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 04:30:15"
+    },
+    "deployment-projection-check": {
+      "phase": "complete",
+      "server_pid": 5376,
+      "started": "2026-11-08 04:30:29",
+      "benchmark_pid": 13752,
+      "metrics": {
+        "decode": 39.6435584783445,
+        "prefill": 267.84998227214174,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 6436,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-08 05:03:00"
+    }
+  },
+  "runner_pid": 2244,
+  "definitions": {
+    "control-original-reserves": {
+      "p100": 1400,
+      "ti": 2304,
+      "sanity": true,
+      "projection": false
+    },
+    "reserve-p700-t2304": {
+      "p100": 700,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p512-t2304": {
+      "p100": 512,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p256-t2304": {
+      "p100": 256,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p128-t2304": {
+      "p100": 128,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p64-t2304": {
+      "p100": 64,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p0-t2304": {
+      "p100": 0,
+      "ti": 2304,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t700": {
+      "p100": 1400,
+      "ti": 700,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t512": {
+      "p100": 1400,
+      "ti": 512,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t256": {
+      "p100": 1400,
+      "ti": 256,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t128": {
+      "p100": 1400,
+      "ti": 128,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t64": {
+      "p100": 1400,
+      "ti": 64,
+      "sanity": false,
+      "projection": false
+    },
+    "reserve-p1400-t0": {
+      "p100": 1400,
+      "ti": 0,
+      "sanity": false,
+      "projection": false
+    },
+    "extended-p0-t2304": {
+      "p100": 0,
+      "ti": 2304,
+      "sanity": true,
+      "projection": false
+    },
+    "extended-p0-t0": {
+      "p100": 0,
+      "ti": 0,
+      "sanity": true,
+      "projection": false
+    },
+    "validated-joint-minimum": {
+      "p100": 0,
+      "ti": 0,
+      "sanity": true,
+      "projection": false
+    },
+    "nearby-original-reserves": {
+      "p100": 1400,
+      "ti": 2304,
+      "sanity": true,
+      "projection": false
+    },
+    "minimum-repeat": {
+      "p100": 0,
+      "ti": 0,
+      "sanity": true,
+      "projection": false
+    },
+    "deployment-projection-check": {
+      "p100": 0,
+      "ti": 0,
+      "sanity": true,
+      "projection": true
+    }
+  },
+  "updated_utc": "2026-11-08T04:03:13.603097+00:00",
+  "outcomes": {
+    "control-original-reserves": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1813.0,
+          "max_temp_c": 58.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p700-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 558.0,
+          "max_temp_c": 74.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1866.0,
+          "max_temp_c": 54.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 700,
+      "first_slots": [
+        "6006",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p512-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 370.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1805.0,
+          "max_temp_c": 54.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 512,
+      "first_slots": [
+        "6102",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p256-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 116.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1804.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 256,
+      "first_slots": [
+        "6235",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p128-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 10.0,
+          "max_temp_c": 75.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1802.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 128,
+      "first_slots": [
+        "6302",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p64-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1803.0,
+          "max_temp_c": 54.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 64,
+      "first_slots": [
+        "6334",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p0-t2304": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 1829.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "reserve-p1400-t700": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 220.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3114"
+      ],
+      "later_slots": [
+        "3114"
+      ]
+    },
+    "reserve-p1400-t512": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 145.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3201"
+      ],
+      "later_slots": [
+        "3201"
+      ]
+    },
+    "reserve-p1400-t256": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 111.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3327"
+      ],
+      "later_slots": [
+        "3327"
+      ]
+    },
+    "reserve-p1400-t128": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 75.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 99.0,
+          "max_temp_c": 52.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3392"
+      ],
+      "later_slots": [
+        "3392"
+      ]
+    },
+    "reserve-p1400-t64": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 74.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 94.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3424"
+      ],
+      "later_slots": [
+        "3424"
+      ]
+    },
+    "reserve-p1400-t0": {
+      "accepted": true,
+      "classification": "passed-screen",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 76.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 81.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "3453"
+      ],
+      "later_slots": [
+        "3453"
+      ]
+    },
+    "extended-p0-t2304": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 2169.0,
+          "max_temp_c": 55.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "extended-p0-t0": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 90.0,
+          "max_temp_c": 54.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "3453"
+      ],
+      "later_slots": [
+        "3453"
+      ]
+    },
+    "validated-joint-minimum": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 87.0,
+          "max_temp_c": 52.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "3453"
+      ],
+      "later_slots": [
+        "3453"
+      ]
+    },
+    "nearby-original-reserves": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 1260.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 2300.0,
+          "max_temp_c": 56.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 1400,
+      "first_slots": [
+        "5637",
+        "2340"
+      ],
+      "later_slots": [
+        "2340"
+      ]
+    },
+    "minimum-repeat": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 79.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "3453"
+      ],
+      "later_slots": [
+        "3453"
+      ]
+    },
+    "deployment-projection-check": {
+      "accepted": true,
+      "classification": "passed-extended",
+      "hardware": {
+        "0": {
+          "min_free_mib": 6.0,
+          "max_temp_c": 77.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "min_free_mib": 82.0,
+          "max_temp_c": 53.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "first_effective_reserve_mib": 0,
+      "first_slots": [
+        "6367",
+        "3453"
+      ],
+      "later_slots": [
+        "3453"
+      ]
+    }
+  },
+  "screen_floors": {
+    "p100_mib": 0,
+    "ti_mib": 0
+  },
+  "validated_pair": {
+    "p100_mib": 0,
+    "ti_mib": 0
+  },
+  "deployment_projection_passed": true
+}

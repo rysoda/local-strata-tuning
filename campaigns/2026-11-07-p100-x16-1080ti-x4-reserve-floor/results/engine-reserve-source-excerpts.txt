@@ -1,0 +1,183 @@
+3518:             o.expert_cache_remote[r] = v == "auto" ? std::numeric_limits<int>::max() : std::atoi(v.c_str());
+3519:         }
+3520:         else if (a == "--remote-expert-opt") o.remote_expert_opt = true;
+3521:         else if (a == "--expert-cache-remote-placement")
+3522:             o.expert_cache_remote_placement = next("--expert-cache-remote-placement");
+3523:         else if (a == "--vram-reserve-mib") { o.vram_reserve_mib = std::atoi(next("--vram-reserve-mib")); o.vram_reserve_given = true; }
+3524:         else if (a == "--vram-reserve-later-mib")
+3525:             o.vram_reserve_later_mib = std::atoi(next("--vram-reserve-later-mib"));
+3526:         else if (a == "--prefill") {
+3527:             const std::string v = next("--prefill");
+
+5988:     };
+5989:     static const bool place_with_reserve = [] {
+5990:         const char* v = std::getenv("STRATA_SPLIT_OWN_PLACE");
+5991:         return v != nullptr && std::string(v) == "reserve";
+5992:     }();
+5993:     auto stage_room = [&](int dev, bool later, bool drafter, bool search = false) -> int64_t {
+5994:         const strata::core::OnDevice on(dev);
+5995:         size_t fb = 0, tb = 0;
+5996:         if (const cudaError_t e = cudaMemGetInfo(&fb, &tb); e != cudaSuccess)
+5997:             std::fprintf(stderr, "strata generate: layer split: CUDA%d free memory: %s\n", dev < 0 ? 0 : dev,
+5998:                          cudaGetErrorString(e));
+5999:         const int64_t pf = search && split_own_auto && !place_with_reserve ? 0 : split_pf_mib;
+6000:         // what a later stage allocates after its cache and nothing prices (cuBLAS, the modules and the MMQ pool the prompt path warms up, ~250 MiB measured): the single card prices
+6001:         // it (kLateAllocMib, #4474); a stage did not, and two 16 GB cards ended a start with 131 MiB free and ran out of memory in the first long prompt.  Not under STRATA_DEFAULTS=026.
+6002:         const int64_t late_alloc = later && !strata::qwen_defaults_026() ? strata::program::split_walk::kStageLateAllocMib : 0;
+6003:         const int64_t base_reserve =
+6004:             (later && o.vram_reserve_later_mib >= 0 ? o.vram_reserve_later_mib : o.vram_reserve_mib) + late_alloc;
+6005:         strata::program::stage_reserve::Inputs rin;
+6006:         rin.base_reserve_mib = base_reserve;
+6007:         rin.prompt_buffers_mib = pf;
+6008:         rin.later = later;
+6009:         rin.drafter = drafter;
+6010:         rin.pipe_window_mib = kPipeWindowMib;
+6011:         rin.pipe_snap_mib = kPipeSnapMib;
+6012:         return strata::program::stage_reserve::room_bytes((int64_t) fb, rin);
+6013:     };
+6014:     if (multi_gpu && split_auto) {
+6015:         const auto& lay = strata::kernels::cpu::expert_layout();
+
+7848:         // (with borrowing - the default with a profile - the prompt path lends cache slots instead; `pf_borrow` is
+7849:         // the predicate a local `borrow` was here, hoisted above so both cache-size branches read the same one)
+7850:         // #1376: under WDDM the free figure read here runs high, and what is allocated after the cache (the verify
+7851:         // windows, the prompt path) comes out of the reserve.  0.1.40 ended a 20 GB RX 7900 XT with 2,170 MiB free
+7852:         // (its write-back check cut the cache); 0.1.40.2 passed that check with the default 700 MiB and ended with
+7853:         // 323 MiB, where Windows paged and decode fell from 52 to 21-25 tok/s.  --vram-reserve-mib 2600 fixed it.  So on
+7854:         // Windows HIP an auto cache on a card of 16 GB (15 GiB and up, #1709) keeps a floor of kWddmAutoReserveMib.  CUDA on Windows is
+7855:         // left as it was: the same 0.1.40 / 0.1.40.2 pair on an RTX 5070 ended with the same slots and free VRAM, and a
+7856:         // floor there would only cost 16 GB+ NVIDIA cards ~1.8 GiB of cache.  A reserve given on the command line is
+7857:         // kept as it is; a smaller card keeps its own sizing (#496 lowers the reserve further when the cache would not
+7858:         // fit); and this is said, never silent.  The cache size changes no output bit.
+7859:         constexpr int kWddmAutoReserveMib = 2560;
+7860:         if (!o.vram_reserve_given && o.vram_reserve_mib < kWddmAutoReserveMib) {
+7861: #if defined(_WIN32) && defined(STRATA_USE_HIP)
+7862:             size_t fb_now = 0, tb_now = 0;
+7863:             // #1709: a 16 GB card (RX 9070 XT, 7800 XT) reports 15.9 GiB, just under 16: the floor is for 15 GiB and up
+7864:             if (cudaMemGetInfo(&fb_now, &tb_now) == cudaSuccess && tb_now >= (15ull << 30)) {
+7865:                 std::fprintf(stderr, "strata generate: expert cache auto: Windows keeps %d MiB free after the cache on a card "
+7866:                                      "this size (the default %d MiB left 323 MiB on a 20 GB card and Windows paged, #1376); "
+7867:                                      "--vram-reserve-mib N sets it\n", kWddmAutoReserveMib, o.vram_reserve_mib);
+7868:                 o.vram_reserve_mib = kWddmAutoReserveMib;
+7869:             }
+7870: #endif
+7871:         }
+7872:         const int64_t prefill_mib = owned_prefill_mib();
+7873:         // the draft layer's head and logits are allocated when it binds, after this: 0.1.27's CJK subset made them
+7874:         // ~110-180 MiB larger, and out of the reserve they left 16 GB cards below the stall line (#199)
+7875:         int64_t mtp_bind = (!o.mtp.empty() && native_head.loaded())
+7876:                                ? (int64_t) mtp.bind_bytes(native_head.row_bytes(), n_vocab)
+7877:                                : (mtp_first && last_st->head.loaded()) ? (int64_t) mtp.bind_bytes(last_st->head.row_bytes(), n_vocab) : 0;
+7878:         // (with a layer split the slot drafters bind on the last stage, whose cache is sized from what is free there)
+7879:         if (stages.empty())
+7880:             for (const auto& d : slot_mtp)
+7881:                 mtp_bind += (int64_t) d->bind_bytes(native_head.row_bytes(), n_vocab);
+7882: #if defined(STRATA_HAVE_DFLASH2)
+7883:         if (use_df2 && native_head.loaded()) mtp_bind += df2_head_bytes() + (48 << 20) + (o.serve ? (112 << 20) : 0);   // DFlash2's own draft head and logits (serve: and the prompt staging), bound after this
+7884: #endif
+7885:         const int64_t reserve = (((int64_t) o.vram_reserve_mib + prefill_mib) << 20) + mtp_bind + pipe_first;
+7886:         const int64_t blob = (int64_t) nibble_max_slot_bytes();   // max_blob (STRATA_EXPERT_NIBBLE: or a larger 4-bit slot)
+7887:         // #496: the least a working cache needs (the verify window cannot start without one, #174): a cache too small to lend the prompt path a
+7888:         // 256-token chunk's buffers (plus the 128 slots a loan leaves; one slot without --prefill) makes it allocate its own on top
+7889:         int64_t min_slots = (o.prefill_chunk > 0 && pf_borrow)
+7890:             ? ((int64_t) strata::prefill::Prefill::bytes_needed(g, ss, 256) + blob - 1) / blob + g_lend_keep : 1;
+7891:         // #4474: what the load allocates after the cache that no setting prices (cuBLAS and the lazily loaded modules the prompt path and the
+7892:         // verifier warm up, ~245 MiB on every card measured) came out of the reserve, so a card ended 240 MiB under the reserve it was asked to
+7893:         // keep (459 MiB free at --vram-reserve-mib 700: under the 512 MiB line the serve check warns about, #2065).  The cache now leaves it too.
+7894:         // Not on a card that could not keep min_slots after it, and not under STRATA_DEFAULTS=026 (the v0.2.6 sizing).
+7895:         strata::core::AutoCacheSlots auto_slots = strata::core::auto_cache_slots(
+7896:             (int64_t) free_b, reserve, blob, min_slots, strata::qwen_defaults_026() ? 0 : strata::core::kLateAllocMib);
+7897:         int64_t slots = auto_slots.slots;
+7898:         if (!profile.empty()) slots = std::min<int64_t>(slots, (int64_t) profile.size());
+7899: #if defined(STRATA_GPU_METAL)
+7900:         // Metal: the decode window reads its experts from its own arena (metal/src/engine/window.cpp), and the device copies the shared host
+7901:         // code makes - this cache included - are given back before the arena is sized.  An auto cache of everything that is "free" (14.56 GiB on
+7902:         // a 32 GB Mac) only held the memory the arena and the prompt buffers need, left 85 MiB free at the first request, and was touched
+7903:         // again after it was given back.  1500 slots is the cache the identity gates run with; --expert-cache N sets another.
+7904:         constexpr int64_t kMetalAutoCacheSlots = 1500;
+7905:         if (slots > kMetalAutoCacheSlots) {
+7906:             std::fprintf(stderr, "strata generate: expert cache auto: %d slots, not %lld: on a Mac the engine reads its experts from its own arena and "
+7907:                                  "this cache would only hold memory the arena and the prompt buffers need (--expert-cache N sets it)\n",
+7908:                          (int) kMetalAutoCacheSlots, (long long) slots);
+7909:             slots = kMetalAutoCacheSlots;
+7910:         }
+7911: #endif
+7912:         o.expert_cache = (int) std::max<int64_t>(slots, 0);
+7913:         std::fprintf(stderr, "strata generate: expert cache auto: %.2f GiB free, %d MiB reserved (+%lld MiB for the "
+7914:                              "draft head%s) -> %d slots\n",
+7915:                      (double) free_b / 1073741824.0, o.vram_reserve_mib, (long long) (mtp_bind >> 20),
+7916:                      auto_slots.late_priced ? ", +256 MiB for what is allocated after the cache" : "", o.expert_cache);
+7917: #if defined(STRATA_USE_HIP) && !defined(_WIN32)
+7918:         // An APU's "VRAM" is system RAM: the device-free figure above counts the whole GPU-addressable pool and does not
+
+13592:         {
+13593:             // what is left once everything is allocated: under WDDM a GPU filled to the brim does not fail, it pages -
+13594:             // and a page-in while the verify graph spins on a host flag stalls the request for good
+13595:             size_t free_b = 0, total_b = 0;
+13596:             cudaMemGetInfo(&free_b, &total_b);
+13597:             // STRATA_VRAM_FREE=device: the whole card's figure when it is the smaller one (the same value otherwise)
+13598:             free_b = std::min(free_b, strata::core::device_free_bytes());
+13599:             // below ~256 MiB a later allocation (a first-used window's buffers, the desktop, another program) can make
+13600:             // the driver page GPU memory, and a verify graph spinning on a host flag then never finishes
+13601:             const int64_t free_mib = (int64_t) (free_b >> 20);
+13602:             if (free_mib >= 256) {
+13603:                 std::fprintf(stderr, "strata serve: %lld MiB of VRAM free with everything loaded\n", (long long) free_mib);
+13604: #ifdef _WIN32
+13605:                 if (free_mib < 512 && o.prefill_auto)   // #1275: said, never changed (the chunk is the operator's to cap)
+13606:                     std::fprintf(stderr, "strata serve: that is little room for the verify windows' buffers under WDDM; if the "
+13607:                                          "engine exits right after this line, --prefill auto:8192 (a smaller prompt chunk "
+13608:                                          "borrows fewer cache slots) or a larger --vram-reserve-mib leaves more\n");
+13609: #endif
+13610:                 rss_probe("serving");
+13611:             } else if (reserve_adapted) {
+13612:                 // #496: the reserve was already lowered to make the cache fit - a bigger one would leave it no room
+13613:                 std::fprintf(stderr, "strata serve: WARNING: %lld MiB of VRAM free with everything loaded - this card "
+13614:                                      "only just fits the model (the VRAM reserve was lowered to %d MiB so the expert "
+13615:                                      "cache fits): requests may stall. Close other programs that use the GPU, or lower "
+13616:                                      "--max-context\n", (long long) free_mib, o.vram_reserve_mib);
+13617:             } else {
+13618:                 std::fprintf(stderr, "strata serve: %lld MiB of VRAM free with everything loaded - LOW: requests may stall;"
+13619:                                      " add --vram-reserve-mib %lld to the config's args (or lower --max-context)\n",
+13620:                              (long long) free_mib, (long long) (o.vram_reserve_mib + 512 - free_mib));
+13621:                 // #781 / #831: an explicit --expert-cache N is a byte budget that is not checked against the VRAM once
+13622:                 // the slots are written (auto is), so on a card it fills a smaller N is the cure: a few hundred slots
+13623:                 // can be the difference between 14 and 100 tok/s under WDDM.  Said, never changed.
+13624:                 if (!auto_cache)
+13625:                     std::fprintf(stderr, "strata serve: the expert cache was set with --expert-cache (%lld slots): a "
+13626:                                          "smaller one - or --expert-cache auto, which checks the free VRAM once the "
+13627:                                          "slots are written - leaves room; decode can be several times slower with the "
+13628:                                          "card this full\n", (long long) xcache.slots());
+13629:             }
+13630:             // #2192: the same check on a layer split's later cards.  The line above reads CUDA0 alone: on 2x RTX 2080 Ti
+13631:             // (WDDM, --batch 4) CUDA0 had 740 MiB free while CUDA1 started its window captures at 153 MiB and fell to
+13632:             // 52, and the first batch window on it never finished (the host stuck in cudaGraphLaunch: a page-in while the
+13633:             // other card's graph spins on a host flag).  Said, never changed.
+13634:             for (const auto& stp : stages) {
+13635:                 const strata::core::OnDevice on(stp->dev);
+13636:                 size_t sf = 0, stot = 0;
+13637:                 if (cudaMemGetInfo(&sf, &stot) != cudaSuccess) { (void) cudaGetLastError(); continue; }
+13638:                 const int64_t sf_mib = (int64_t) (sf >> 20);
+13639:                 const int later_reserve = o.vram_reserve_later_mib >= 0 ? o.vram_reserve_later_mib : o.vram_reserve_mib;
+13640:                 if (sf_mib >= 512)
+13641:                     std::fprintf(stderr, "strata serve: CUDA%d: %lld MiB of VRAM free with everything loaded\n", stp->dev,
+13642:                                  (long long) sf_mib);
+13643:                 else
+13644:                     std::fprintf(stderr, "strata serve: CUDA%d: %lld MiB of VRAM free with everything loaded - LOW: its window "
+13645:                                          "graphs are captured on first use and need room too, and %s; add "
+13646:                                          "--vram-reserve-later-mib %lld to the config's args (or lower --max-context)\n",
+13647:                                  stp->dev, (long long) sf_mib,
+13648: #ifdef _WIN32
+13649:                                  "under WDDM a full card pages instead of failing, which can stall a request for good (#2192)",
+13650: #else
+13651:                                  "a full card can stall a request",
+13652: #endif
+13653:                                  (long long) (later_reserve + 768 - sf_mib));
+13654:                 if (sf_mib < 512) {   // #3702: how far the plan was off, so the reserve to ask for is not a guess
+13655:                     strata::program::stage_reserve::Inputs rin;
+13656:                     rin.base_reserve_mib = later_reserve;
+13657:                     rin.prompt_buffers_mib = split_pf_mib;
+13658:                     rin.later = true;
+13659:                     rin.pipe_window_mib = kPipeWindowMib;
+13660:                     const std::string why = strata::program::gpu_report::planned_vs_free_text(
+13661:                         strata::program::stage_reserve::reserve_mib(rin), sf_mib);
+13662:                     if (!why.empty()) std::fprintf(stderr, "strata serve: CUDA%d: %s\n", stp->dev, why.c_str());

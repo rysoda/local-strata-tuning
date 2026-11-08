@@ -1,0 +1,12 @@
+{
+  "phase": "launched",
+  "started_utc": "2026-11-07T22:35:42.280525+00:00",
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-u",
+    "C:\\ai\\tuning\\campaigns\\2026-11-07-p100-x16-1080ti-x4-reserve-floor\\scripts\\run.py",
+    "--run"
+  ],
+  "scope": "Fresh control, independent reserve descent through zero, integer boundary refinement, joint extended validation, minimum/control/minimum repeat, separate projected compatibility; Startup unchanged",
+  "supervisor_pid": 2244
+}

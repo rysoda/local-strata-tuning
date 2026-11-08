@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "name": "recall-above-128k",
+      "input_content_tokens": 230094,
+      "expected": {
+        "KEY_1": "ALDER-628",
+        "KEY_2": "ASPEN-419",
+        "KEY_3": "WILLOW-853"
+      },
+      "prompt_sha256": "644207de3bad9fbc3178da68131028274191a5fad62ca3ca80272406b27a0b1e",
+      "passed": true,
+      "response": {
+        "id": "chatcmpl-136af424ee094adab14c28c5",
+        "object": "chat.completion",
+        "created": 1794109775,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"KEY_1\": \"ALDER-628\",\n  \"KEY_2\": \"ASPEN-419\",\n  \"KEY_3\": \"WILLOW-853\"\n}",
+              "reasoning_content": "We need answer user's request. Need parse document: \"Document retrieval sanity check. Return only the three recorded KEY values as a JSON object.\nindex thread value ... The recorded value of KEY_1 is ALDER-628. ... The recorded value of KEY_2 is ASPEN-419. ... The recorded value of KEY_3 is WILLOW-853. ... Return exactly a JSON object with keys KEY_1, KEY_2, KEY_3 and their recorded values.\"\n\nNeed output only JSON object. Ensure no extra text. Values: KEY_1 ALDER-628, KEY_2 ASPEN-419, KEY_3 WILLOW-853. Need final only JSON.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 230146,
+          "completion_tokens": 209,
+          "total_tokens": 230355,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 230146,
+          "prompt_ms": 799843.3,
+          "prompt_per_token_ms": 3.475,
+          "prompt_per_second": 287.7,
+          "predicted_n": 209,
+          "predicted_ms": 4862.4,
+          "predicted_per_token_ms": 23.265,
+          "predicted_per_second": 43.0,
+          "draft_n": 175,
+          "draft_n_accepted": 147
+        }
+      },
+      "elapsed_s": 804.9370000000054
+    }
+  ],
+  "passed": 1,
+  "total": 1
+}

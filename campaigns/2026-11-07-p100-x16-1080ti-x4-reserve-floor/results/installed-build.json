@@ -1,0 +1,20 @@
+{
+ "version": "0.1.57",
+ "source": "f-0214-int",
+ "commit": "0bdcef4682c5",
+ "archs": [
+  60,
+  61,
+  70,
+  75,
+  80,
+  86,
+  89
+ ],
+ "ptx": true,
+ "cuda": "12.9",
+ "vision": "gpu-cuda12",
+ "portable": true,
+ "experimental_sm60": true,
+ "vision_archs": "60;61;70;75;80;86;89"
+}

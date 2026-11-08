@@ -1,0 +1,7 @@
+stable-unique True
+python-alias-trace True
+binary-search-trace True
+tool-call True
+recall-32000 True
+recall-119000 True
+Above-128K recall: True content tokens: 230094

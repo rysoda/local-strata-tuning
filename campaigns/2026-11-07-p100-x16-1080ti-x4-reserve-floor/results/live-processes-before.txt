@@ -1,0 +1,45 @@
+[
+    {
+        "ProcessId":  7636,
+        "ParentProcessId":  15296,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\terminal\\current\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\terminal\\current\\strata.py\" launch --preset \"IQ3_S 128K\" --yes --context 256k --kv int8 --vision cpu --mtp on --drafting mtp --tune skip --set prefill=auto --set kv-resident=32768 --set spec=4 --set spec-min-p=0.5 --set pool-tasks=36 --set adapt-every=1 --set STRATA_PCIE_BALANCE=1 --set STRATA_ROUTE_PRIOR=0 --set STRATA_ROUTE_TAIL_SKIP=0 --gpu 0,1 --set layer-split=36 --set trim-stage-weights=on --set vram-reserve-mib=1400 --set vram-reserve-later-mib=2304 --set \"control-vector-scaled=C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\experimental-speed-projection\\Qwen3.8-Flash-Next-experimental-speed-projection.gguf:1.0\" --set control-vector-layer-range=4,44 --set cvec-mode=project --set cvec-dir=per-layer"
+    },
+    {
+        "ProcessId":  14392,
+        "ParentProcessId":  7636,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata.py\" launch --preset \"IQ3_S 128K\" --yes --context 256k --kv int8 --vision cpu --mtp on --drafting mtp --tune skip --set prefill=auto --set kv-resident=32768 --set spec=4 --set spec-min-p=0.5 --set pool-tasks=36 --set adapt-every=1 --set STRATA_PCIE_BALANCE=1 --set STRATA_ROUTE_PRIOR=0 --set STRATA_ROUTE_TAIL_SKIP=0 --gpu 0,1 --set layer-split=36 --set trim-stage-weights=on --set vram-reserve-mib=1400 --set vram-reserve-later-mib=2304 --set \"control-vector-scaled=C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\experimental-speed-projection\\Qwen3.8-Flash-Next-experimental-speed-projection.gguf:1.0\" --set control-vector-layer-range=4,44 --set cvec-mode=project --set cvec-dir=per-layer"
+    },
+    {
+        "ProcessId":  2164,
+        "ParentProcessId":  14392,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" -m strata_control.runtime --host launch-iq3_s-128k --shutdown-timeout 30 --startup-wait 948"
+    },
+    {
+        "ProcessId":  7728,
+        "ParentProcessId":  2164,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" -m serve.server --engine strata --config \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\launch\\iq3_s-128k.json\" --host 0.0.0.0 --port 8080 --parallel 1 --ready-file \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\runtime\\launch-iq3_s-128k-d76af501f01d4e7a8345516d5c33c829.ready.json\" --shutdown-timeout 30.0 --owner-fd 0"
+    },
+    {
+        "ProcessId":  5280,
+        "ParentProcessId":  7728,
+        "Name":  "strata-vision.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+    },
+    {
+        "ProcessId":  12112,
+        "ParentProcessId":  7728,
+        "Name":  "strata.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --mtp C:\\Strata-data\\mtp\\rt --max-context 262144 --kv int8 --vision --adapt-every 1 --control-vector-layer-range 4 44 --control-vector-scaled \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\experimental-speed-projection\\Qwen3.8-Flash-Next-experimental-speed-projection.gguf:1.0\" --cvec-dir per-layer --cvec-mode project --kv-resident 32768 --layer-split 36 --pool-tasks 36 --prefill auto --spec 4 --spec-min-p 0.5 --trim-stage-weights --vram-reserve-later-mib 2304 --vram-reserve-mib 1400"
+    },
+    {
+        "ProcessId":  7032,
+        "ParentProcessId":  10260,
+        "Name":  "python.exe",
+        "CommandLine":  "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -"
+    }
+]
+

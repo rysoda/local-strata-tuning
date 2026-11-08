@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "name": "recall-above-128k",
+      "input_content_tokens": 230094,
+      "expected": {
+        "KEY_1": "ALDER-628",
+        "KEY_2": "ASPEN-419",
+        "KEY_3": "WILLOW-853"
+      },
+      "prompt_sha256": "644207de3bad9fbc3178da68131028274191a5fad62ca3ca80272406b27a0b1e",
+      "passed": true,
+      "response": {
+        "id": "chatcmpl-55806b088f1b4cd0b9c151b1",
+        "object": "chat.completion",
+        "created": 1794104193,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"KEY_1\": \"ALDER-628\",\n  \"KEY_2\": \"ASPEN-419\",\n  \"KEY_3\": \"WILLOW-853\"\n}",
+              "reasoning_content": "We need answer user's request. Need parse document retrieval sanity check. User provided huge text with statements:\n\"The recorded value of KEY_1 is ALDER-628.\"\n...\n\"The recorded value of KEY_2 is ASPEN-419.\"\n...\n\"The recorded value of KEY_3 is WILLOW-853.\"\nNeed return only three recorded KEY values as JSON object. Exactly JSON object with keys KEY_1, KEY_2, KEY_3 and values. Need final only JSON. Ensure no extra.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 230146,
+          "completion_tokens": 167,
+          "total_tokens": 230313,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 230146,
+          "prompt_ms": 854209.8,
+          "prompt_per_token_ms": 3.712,
+          "prompt_per_second": 269.4,
+          "predicted_n": 167,
+          "predicted_ms": 4359.5,
+          "predicted_per_token_ms": 26.105,
+          "predicted_per_second": 38.3,
+          "draft_n": 148,
+          "draft_n_accepted": 110
+        }
+      },
+      "elapsed_s": 858.7810000000027
+    }
+  ],
+  "passed": 1,
+  "total": 1
+}

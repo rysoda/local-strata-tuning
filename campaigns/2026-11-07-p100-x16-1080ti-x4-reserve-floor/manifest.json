@@ -1,0 +1,47 @@
+{
+  "id": "2026-11-07-p100-x16-1080ti-x4-reserve-floor",
+  "title": "Minimum reliable VRAM reserves: P100 x16 + 1080 Ti x4 at 256K",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "GPU 0 Tesla P100-PCIE-16GB; GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999; TCC; CPU PCIe 3 x16",
+      "GPU 1 GTX 1080 Ti 11GB; GPU-7d8ccb39-60d5-bc52-5e38-1cb26b742a23; WDDM/display; chipset PCIe 3 x4"
+    ],
+    "cpu": "Intel Core i5-11400F; 6 cores / 12 threads",
+    "ram_gib": 64,
+    "pcie": "P100 CPU x16 / 1080 Ti chipset x4; no card movement",
+    "cooling": "Open case, intake + exhaust; target75 C; intake capped45% for noise; unchanged",
+    "desktop": "User reports no browser or graphics applications; Windows display remains on 1080 Ti"
+  },
+  "software": {
+    "engine": "0.1.57 CUDA12",
+    "control": "0.1.57",
+    "betterbench": "0.6.1",
+    "os": "Windows 11 Pro; NVIDIA582.66"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 262144,
+    "kv": "int8",
+    "kv_resident": 32768,
+    "routing": "full experts",
+    "layer_split": "36",
+    "trim": true,
+    "speed_projection": false
+  },
+  "deployment_check": "Separate final compatibility arm retains user's existing experimental projection; not pooled with scientific comparison",
+  "workload": "../../workloads/betterbench-16k.json",
+  "workload_flags": "--quick --decode --categories code --prefill --no-concurrency",
+  "report": "REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 19,
+  "rejected_configurations": 0,
+  "recommended_profile": "recommended-minimum.json",
+  "resume_script": "scripts/run.py",
+  "pause_file": "state/STOP",
+  "startup_update": "Not performed by this campaign",
+  "related_campaigns": [
+    "2026-11-07-p100-x16-1080ti-chipset-x4-256k"
+  ]
+}
