@@ -53,6 +53,8 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 ## Cooling measurements (separate from inference tuning)
 
+- [Five-setup P100 fan comparison](campaigns/2026-11-09-p100-new-fan/README.md): **Complete**, including ARCTIC P12 Pro at 70% / ~2230 RPM + extractor, S12038-4K auto with/without extractor, and P9 PWM PST with/without extractor. Simple summary and all 14 runs: mean/max temperature and core clock, plus board power. [P12 detailed survey](campaigns/2026-11-09-p100-new-fan/REPORT.md).
+
 - [P100 120×38 mm server intake + exhaust comparison](campaigns/2026-11-07-p100-server-fan-intake-exhaust/README.md): **Complete, 6/6 captures**. Intake + exhaust averaged **67.39°C / 1322.92 MHz / 194.76 W**, versus intake-only **73.49°C / 1319.94 MHz / 196.95 W**. Nominal 4000 RPM intake curve reaches 100% at 75°C. [Final report and historical comparisons](campaigns/2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md) include the ~172 W old one-fan reference and a third-run drift caveat.
 
 - [P100 rear pull fan](campaigns/2026-11-06-p100-rear-exhaust-cooling/README.md): new user-requested setup; P100-only Strata at **131072 context**. Three 10-minute reference captures completed: **197.54 W** mean board power; no controlled comparison yet.

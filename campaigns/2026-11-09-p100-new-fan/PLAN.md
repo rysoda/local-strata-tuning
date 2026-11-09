@@ -1,0 +1,7 @@
+# Scope
+
+Start server only for the user's new-fan stress testing, not an inference-tuning comparison. Fixed installed engine/Control 0.1.57, IQ3_S, 131072 context, int8 KV and full experts. Use P100 GPU 0 exclusively; CPU vision and existing MTP behavior retained.
+
+Reuse the current known working recommendation with single-card automatic cache reserve, removing dual-card split/trim/reserve options. Installed terminal launch help inspected; direct Control server invocation follows prior cooling launch mechanics. Preserve installed credentials/network access and keep runtime isolated, presets disabled. Refuse occupied port, existing workloads and ambiguous restarts.
+
+User now authorizes three consecutive passive 10-minute surveys at 1-second intervals. Record ARCTIC P12 Pro at fixed 70% / approximately 2230 RPM and user-declared heat soak; ambient, case/shroud and exact user-managed workload remain unknown. Recheck live inference configuration between runs and retain a credential-free configuration digest. Record all samples/errors, time-weighted mean/min/max/SD and power/thermal throttle flags. Stop on measurement errors, pause on STOP between runs, skip completed captures, refuse ambiguous incomplete attempts and competing queues. Do not start or stop the existing workload/server. This is cooling telemetry, not BetterBench or an inference-speed comparison. Existing cooling campaigns stay closed; historical comparisons require explicit caveats for engine, workload, ambient and physical configuration differences.

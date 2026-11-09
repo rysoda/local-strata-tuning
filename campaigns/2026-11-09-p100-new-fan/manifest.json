@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-09-p100-new-fan",
+  "title": "P100 new fan: 128K network API server",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "Tesla P100-PCIE-16GB; GPU 0; TCC; new fan details unconfirmed"
+    ],
+    "cpu": null,
+    "ram_gib": null,
+    "pcie": null,
+    "fan": "ARCTIC P12 Pro; fixed 70%; approximately 2230 RPM (user reported)",
+    "heat_soaked": "User confirmed; duration unknown",
+    "extractor": "Present during all three captures, clarified by user after completion"
+  },
+  "software": {
+    "engine": "0.1.57",
+    "control": "0.1.57",
+    "betterbench": null,
+    "os": "Windows; NVIDIA driver 582.66"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 131072,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": null,
+  "report": "REPORT.md",
+  "state": "state/capture-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 0,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": "scripts/capture.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": [
+    "2026-11-07-p100-server-fan-intake-exhaust",
+    "2026-11-06-p100-rear-exhaust-cooling",
+    "2026-11-03-p100-open-case-cooling"
+  ],
+  "planned_captures": 3,
+  "completed_captures": 3,
+  "capture_seconds": 600,
+  "sampling_interval_seconds": 1,
+  "workload_description": "Existing user-managed Strata stress; command/settings unknown; unchanged.",
+  "comparison": "README.md"
+}

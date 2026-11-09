@@ -1,0 +1,19 @@
+{
+  "phase": "serving",
+  "current": "p100-server",
+  "runs": {},
+  "started_utc": "2026-11-09T10:01:18.913032+00:00",
+  "command": [
+    "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe",
+    "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py",
+    "--engine",
+    "strata",
+    "--config",
+    "C:\\ai\\tuning\\campaigns\\2026-11-09-p100-new-fan\\configs\\private\\p100.runtime.json",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "8080"
+  ],
+  "server_pid": 10460
+}
