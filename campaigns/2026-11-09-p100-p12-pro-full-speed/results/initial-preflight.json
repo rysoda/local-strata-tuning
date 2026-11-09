@@ -1,0 +1,48 @@
+{
+  "health": {
+    "status": "ok",
+    "max_context": 131072,
+    "model": "qwen3.8-flash-next-iq3_s",
+    "images": true,
+    "api_key": true,
+    "image_generation": false,
+    "loaded": true,
+    "service": "strata"
+  },
+  "processes": [
+    {
+      "ProcessId": 10460,
+      "ParentProcessId": 5092,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-09-p100-new-fan\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+    },
+    {
+      "ProcessId": 12148,
+      "ParentProcessId": 10460,
+      "Name": "strata-vision.exe",
+      "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+    },
+    {
+      "ProcessId": 3400,
+      "ParentProcessId": 10460,
+      "Name": "strata.exe",
+      "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+    }
+  ],
+  "telemetry": {
+    "power_w": 170.7,
+    "power_limit_w": 250.0,
+    "temperature_c": 65.0,
+    "utilization_percent": 100.0,
+    "memory_utilization_percent": 6.0,
+    "sm_clock_mhz": 1316.0,
+    "memory_clock_mhz": 715.0,
+    "memory_used_mib": 15768.0,
+    "pstate": "P0",
+    "sw_power_cap": "Active",
+    "sw_thermal_slowdown": "Not Active",
+    "hw_thermal_slowdown": "Not Active",
+    "hw_power_brake_slowdown": "Not Active"
+  },
+  "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b"
+}

@@ -1,0 +1,203 @@
+{
+  "phase": "complete",
+  "current": null,
+  "runs": {
+    "p12-pro-100pct-1": {
+      "status": "complete",
+      "started_utc": "2026-11-09T11:32:56.896707+00:00",
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "processes": [
+          {
+            "ProcessId": 10460,
+            "ParentProcessId": 5092,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-09-p100-new-fan\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 12148,
+            "ParentProcessId": 10460,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 3400,
+            "ParentProcessId": 10460,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 2940,
+            "ParentProcessId": 9180,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-09-p100-p12-pro-full-speed\\scripts\\capture.py"
+          }
+        ],
+        "telemetry": {
+          "power_w": 234.9,
+          "power_limit_w": 250.0,
+          "temperature_c": 64.0,
+          "utilization_percent": 100.0,
+          "memory_utilization_percent": 12.0,
+          "sm_clock_mhz": 1328.0,
+          "memory_clock_mhz": 715.0,
+          "memory_used_mib": 15768.0,
+          "pstate": "P0",
+          "sw_power_cap": "Not Active",
+          "sw_thermal_slowdown": "Not Active",
+          "hw_thermal_slowdown": "Not Active",
+          "hw_power_brake_slowdown": "Not Active"
+        },
+        "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b"
+      },
+      "result": "results\\20261109T113256.898720Z-p12-pro-100pct-1.json",
+      "finished_utc": "2026-11-09T11:42:57.371745+00:00"
+    },
+    "p12-pro-100pct-2": {
+      "status": "complete",
+      "started_utc": "2026-11-09T11:42:58.994232+00:00",
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "processes": [
+          {
+            "ProcessId": 10460,
+            "ParentProcessId": 5092,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-09-p100-new-fan\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 12148,
+            "ParentProcessId": 10460,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 3400,
+            "ParentProcessId": 10460,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 2940,
+            "ParentProcessId": 9180,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-09-p100-p12-pro-full-speed\\scripts\\capture.py"
+          }
+        ],
+        "telemetry": {
+          "power_w": 174.27,
+          "power_limit_w": 250.0,
+          "temperature_c": 65.0,
+          "utilization_percent": 100.0,
+          "memory_utilization_percent": 18.0,
+          "sm_clock_mhz": 1328.0,
+          "memory_clock_mhz": 715.0,
+          "memory_used_mib": 15768.0,
+          "pstate": "P0",
+          "sw_power_cap": "Not Active",
+          "sw_thermal_slowdown": "Not Active",
+          "hw_thermal_slowdown": "Not Active",
+          "hw_power_brake_slowdown": "Not Active"
+        },
+        "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b"
+      },
+      "result": "results\\20261109T114258.997259Z-p12-pro-100pct-2.json",
+      "finished_utc": "2026-11-09T11:52:59.489113+00:00"
+    },
+    "p12-pro-100pct-3": {
+      "status": "complete",
+      "started_utc": "2026-11-09T11:53:01.397008+00:00",
+      "preflight": {
+        "health": {
+          "status": "ok",
+          "max_context": 131072,
+          "model": "qwen3.8-flash-next-iq3_s",
+          "images": true,
+          "api_key": true,
+          "image_generation": false,
+          "loaded": true,
+          "service": "strata"
+        },
+        "processes": [
+          {
+            "ProcessId": 10460,
+            "ParentProcessId": 5092,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\python\\python.exe\" \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py\" --engine strata --config C:\\ai\\tuning\\campaigns\\2026-11-09-p100-new-fan\\configs\\private\\p100.runtime.json --host 0.0.0.0 --port 8080"
+          },
+          {
+            "ProcessId": 12148,
+            "ParentProcessId": 10460,
+            "Name": "strata-vision.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata-vision.exe\" --mmproj C:\\Strata-data\\models\\mmproj-Qwen3.8-Flash-Next-BF16.gguf --model C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --threads 6 --max-tokens 300"
+          },
+          {
+            "ProcessId": 3400,
+            "ParentProcessId": 10460,
+            "Name": "strata.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.57-windows-x86_64-cuda-cuda12\\strata.exe\" --serve --pack C:\\Strata-data\\packs\\iq3_s --native C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf --ple-gguf C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf --expert-profile \"C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin\" --expert-cache auto --prefill auto --spec 4 --spec-min-p 0.5 --mtp C:\\Strata-data\\mtp\\rt --max-context 131072 --kv int8 --vision --kv-resident 32768 --pool-tasks 36 --adapt-every 1"
+          },
+          {
+            "ProcessId": 2940,
+            "ParentProcessId": 9180,
+            "Name": "python.exe",
+            "CommandLine": "\"C:\\Users\\John Doe\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u C:\\ai\\tuning\\campaigns\\2026-11-09-p100-p12-pro-full-speed\\scripts\\capture.py"
+          }
+        ],
+        "telemetry": {
+          "power_w": 176.8,
+          "power_limit_w": 250.0,
+          "temperature_c": 66.0,
+          "utilization_percent": 100.0,
+          "memory_utilization_percent": 22.0,
+          "sm_clock_mhz": 1316.0,
+          "memory_clock_mhz": 715.0,
+          "memory_used_mib": 15768.0,
+          "pstate": "P0",
+          "sw_power_cap": "Not Active",
+          "sw_thermal_slowdown": "Not Active",
+          "hw_thermal_slowdown": "Not Active",
+          "hw_power_brake_slowdown": "Not Active"
+        },
+        "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b"
+      },
+      "result": "results\\20261109T115301.398021Z-p12-pro-100pct-3.json",
+      "finished_utc": "2026-11-09T12:03:02.477528+00:00"
+    }
+  },
+  "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b",
+  "declarations": {
+    "fan": "ARCTIC P12 Pro",
+    "fan_setting_percent": 100,
+    "fan_rpm_user_reported": 2900,
+    "extractor": "Continuing prior extractor setup; no other physical change reported",
+    "heat_soaked_user_confirmed": false,
+    "warmup_minutes": null,
+    "ambient_c": null,
+    "case_shroud": "unknown",
+    "workload": "Existing user-managed Strata stress; exact command/settings unknown; unchanged.",
+    "requested_captures": 3,
+    "capture_seconds": 600,
+    "interval_seconds": 1
+  },
+  "supervisor_pid": 2940,
+  "finished_utc": "2026-11-09T12:03:02.479531+00:00"
+}

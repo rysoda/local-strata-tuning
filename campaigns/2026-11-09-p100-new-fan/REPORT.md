@@ -1,5 +1,7 @@
 # ARCTIC P12 Pro — P100 cooling survey
 
+**This report retains the original 70% survey.** Subsequent [100% / ~2900 RPM findings](../2026-11-09-p100-p12-pro-full-speed/README.md): three more ten-minute runs averaged **65.69°C / 1324.09 MHz / 193.32 W**, peak **67°C**. Versus this 70% group: **−8.09°C**, **+4.89 MHz (+0.37%)**, **−3.22 W**. All six setups/all 17 runs are in the [comparison README](README.md). Original raw files and completed 70% checkpoint remain unchanged; separate full-speed state preserves the additional work. Historical, sequential-order, ambient and initial-settling caveats apply.
+
 Completed: 3/3 ten-minute captures.
 
 Fan fixed at 70%, approximately 2230 RPM; heat soaked (user reported). Fan RPM is not measured by NVIDIA telemetry. Ambient, case/shroud and exact stress settings unknown.

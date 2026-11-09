@@ -1,0 +1,644 @@
+[
+  {
+    "setup": "ARCTIC P12 Pro \u00b7 70% (~2230 RPM) + extractor",
+    "runs": [
+      {
+        "label": "p12-pro-70pct-1",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-new-fan/results/20261109T104033.csv",
+        "json_file": "2026-11-09-p100-new-fan/results/20261109T104033.json",
+        "csv_sha256": "3ca3fb8b2e3ca28aaf711824e8bc34951647510e1b4ac423457e26812cd1e561",
+        "json_sha256": "504113dccd288a1837386a84910c4914c6e4f438ffbc7581be5ed0421cb4ef7c",
+        "duration_seconds": 600.0,
+        "samples": 505,
+        "max_gap_s": 1.2340000000003783,
+        "temperature_c": {
+          "mean": 73.622265,
+          "min": 69.0,
+          "max": 74.0,
+          "sd": 0.5813529648802013
+        },
+        "sm_clock_mhz": {
+          "mean": 1318.8158766666666,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 9.801004638885589
+        },
+        "power_w": {
+          "mean": 195.36636676666666,
+          "min": 51.9,
+          "max": 257.99,
+          "sd": 25.447094996619
+        },
+        "utilization_percent": {
+          "mean": 99.66860333333331,
+          "min": 1.0,
+          "max": 100.0,
+          "sd": 4.829588276032511
+        },
+        "energy_wh": 32.561061127777776
+      },
+      {
+        "label": "p12-pro-70pct-2",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-new-fan/results/20261109T105035.csv",
+        "json_file": "2026-11-09-p100-new-fan/results/20261109T105035.json",
+        "csv_sha256": "053933efb79cfa70afabd9913529f527811365848a4991faa7ea3a462a732d8d",
+        "json_sha256": "93ec315f3b7944300bb5fc2e79bc8a30b311b4f3fe4bd9e98bc65bb2aba7f377",
+        "duration_seconds": 600.0,
+        "samples": 490,
+        "max_gap_s": 1.2659999999996217,
+        "temperature_c": {
+          "mean": 73.94096,
+          "min": 71.0,
+          "max": 75.0,
+          "sd": 0.38220973090699667
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.0625049999999,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 10.011622319000562
+        },
+        "power_w": {
+          "mean": 196.6428613166669,
+          "min": 54.08,
+          "max": 257.99,
+          "sd": 26.201149487609023
+        },
+        "utilization_percent": {
+          "mean": 99.71128999999999,
+          "min": 2.0,
+          "max": 100.0,
+          "sd": 4.558812330995232
+        },
+        "energy_wh": 32.773810219444485
+      },
+      {
+        "label": "p12-pro-70pct-3",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-new-fan/results/20261109T110036.csv",
+        "json_file": "2026-11-09-p100-new-fan/results/20261109T110036.json",
+        "csv_sha256": "0cec772beb32bf87cefacae43d59c011d936095894ee45ab75c9ac358ae5ec41",
+        "json_sha256": "f5e87fc003f0676ea1d5006872ad5b8a5684c29973c13a7bdc28adc222d5db11",
+        "duration_seconds": 600.0,
+        "samples": 473,
+        "max_gap_s": 1.3280000000004293,
+        "temperature_c": {
+          "mean": 73.77264833333335,
+          "min": 70.0,
+          "max": 75.0,
+          "sd": 0.526861353992245
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.7433966666665,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 9.474852227308057
+        },
+        "power_w": {
+          "mean": 197.616031783334,
+          "min": 52.37,
+          "max": 254.72,
+          "sd": 27.83530610509057
+        },
+        "utilization_percent": {
+          "mean": 99.47306166666672,
+          "min": 2.0,
+          "max": 100.0,
+          "sd": 5.933106914553606
+        },
+        "energy_wh": 32.93600529722233
+      }
+    ]
+  },
+  {
+    "setup": "ARCTIC P12 Pro \u00b7 100% (~2900 RPM) + extractor",
+    "runs": [
+      {
+        "label": "p12-pro-100pct-1",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T113256.898720Z-p12-pro-100pct-1.csv",
+        "json_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T113256.898720Z-p12-pro-100pct-1.json",
+        "csv_sha256": "97dc548e619092195f4096c9b9229a005e2ed2b9c2284e40f69f994792dec883",
+        "json_sha256": "79d568a2bde26882496ae007a324af0d2216e1b25614a09ea12d8441f3fd1fc0",
+        "duration_seconds": 600,
+        "samples": 456,
+        "max_gap_s": 1.360000000000582,
+        "temperature_c": {
+          "mean": 65.13028,
+          "min": 61.0,
+          "max": 66.0,
+          "sd": 0.674139294409304
+        },
+        "sm_clock_mhz": {
+          "mean": 1324.2498799999998,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 5.627258656361917
+        },
+        "power_w": {
+          "mean": 191.37163126666618,
+          "min": 47.93,
+          "max": 251.33,
+          "sd": 28.28998164604036
+        },
+        "utilization_percent": {
+          "mean": 99.70894999999999,
+          "min": 10.0,
+          "max": 100.0,
+          "sd": 4.439790148663325
+        },
+        "energy_wh": 31.895271877777695
+      },
+      {
+        "label": "p12-pro-100pct-2",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T114258.997259Z-p12-pro-100pct-2.csv",
+        "json_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T114258.997259Z-p12-pro-100pct-2.json",
+        "csv_sha256": "b65c487471569ee3ecc2b4e4faaee35e0d2edf9639bfbd22e3eb76d3c1cb6b15",
+        "json_sha256": "2aac30c5923b4762507e3522943c93ed738bc00782221c96a60f24546ba24648",
+        "duration_seconds": 600.0,
+        "samples": 441,
+        "max_gap_s": 1.4840000000003783,
+        "temperature_c": {
+          "mean": 65.92483999999999,
+          "min": 62.0,
+          "max": 67.0,
+          "sd": 0.41311536855137304
+        },
+        "sm_clock_mhz": {
+          "mean": 1324.3375,
+          "min": 1316.0,
+          "max": 1328.0,
+          "sd": 5.525947316976497
+        },
+        "power_w": {
+          "mean": 193.67435075000003,
+          "min": 47.71,
+          "max": 254.09,
+          "sd": 27.02562053279843
+        },
+        "utilization_percent": {
+          "mean": 99.71845499999998,
+          "min": 7.0,
+          "max": 100.0,
+          "sd": 4.489349701940042
+        },
+        "energy_wh": 32.27905845833334
+      },
+      {
+        "label": "p12-pro-100pct-3",
+        "date": "2026-11-09",
+        "csv_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T115301.398021Z-p12-pro-100pct-3.csv",
+        "json_file": "2026-11-09-p100-p12-pro-full-speed/results/20261109T115301.398021Z-p12-pro-100pct-3.json",
+        "csv_sha256": "ff4e2f779202666b253c400768032bc23a13fc1545068dad4d26b2cafb49462d",
+        "json_sha256": "e5ef4cdc606fc9b3eb6b7625a18a638a3348ce05b99583e43a1a76a1a00f5b99",
+        "duration_seconds": 600,
+        "samples": 426,
+        "max_gap_s": 1.4689999999991414,
+        "temperature_c": {
+          "mean": 66.01848999999999,
+          "min": 63.0,
+          "max": 67.0,
+          "sd": 0.370429642307439
+        },
+        "sm_clock_mhz": {
+          "mean": 1323.6975200000002,
+          "min": 1316.0,
+          "max": 1328.0,
+          "sd": 5.754861062580023
+        },
+        "power_w": {
+          "mean": 194.91357656666585,
+          "min": 50.41,
+          "max": 251.59,
+          "sd": 27.61024861258755
+        },
+        "utilization_percent": {
+          "mean": 99.77294833333336,
+          "min": 54.0,
+          "max": 100.0,
+          "sd": 2.536178070903179
+        },
+        "energy_wh": 32.485596094444304
+      }
+    ]
+  },
+  {
+    "setup": "ARCTIC S12038-4K \u00b7 auto (75\u00b0C target)",
+    "runs": [
+      {
+        "label": "intake-1",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T125314.991061Z-intake-1.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T125314.991061Z-intake-1.json",
+        "csv_sha256": "feba68e06dcdbee5c381bebc0f8a3aa64cf48ae3ef444e10c4cb8c047346cb18",
+        "json_sha256": "3d23b12e45b71f92c951099bc6a27efd34614438f1ae97fadf76dadfe71408c6",
+        "duration_seconds": 600.0,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 73.38961666666667,
+          "min": 69.0,
+          "max": 77.0,
+          "sd": 1.8410519238709426
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.9378550000001,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 9.4202538712592
+        },
+        "power_w": {
+          "mean": 198.27671808333344,
+          "min": 51.97,
+          "max": 255.49,
+          "sd": 25.398500521347017
+        },
+        "utilization_percent": {
+          "mean": 99.87066833333331,
+          "min": 27.0,
+          "max": 100.0,
+          "sd": 3.0699324075074994
+        },
+        "energy_wh": 33.04611968055558
+      },
+      {
+        "label": "intake-2",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T130316.492069Z-intake-2.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T130316.492069Z-intake-2.json",
+        "csv_sha256": "0f189f7a19b4bf84e772c1f6128a2e6ce72dd7d4047f41a25963f975eae96c98",
+        "json_sha256": "6043a15b94b233b6e063ce5b98044ceb75e7f213b7deb127e544ad211d28b30f",
+        "duration_seconds": 600.0,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 73.69496333333333,
+          "min": 67.0,
+          "max": 77.0,
+          "sd": 1.566499057981052
+        },
+        "sm_clock_mhz": {
+          "mean": 1320.0534966666667,
+          "min": 1290.0,
+          "max": 1328.0,
+          "sd": 9.478160762510255
+        },
+        "power_w": {
+          "mean": 195.86376530000007,
+          "min": 50.72,
+          "max": 254.9,
+          "sd": 26.955731981408007
+        },
+        "utilization_percent": {
+          "mean": 99.43659833333331,
+          "min": 2.0,
+          "max": 100.0,
+          "sd": 6.23194273310232
+        },
+        "energy_wh": 32.64396088333334
+      },
+      {
+        "label": "intake-3",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T131317.971244Z-intake-3.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T131317.971244Z-intake-3.json",
+        "csv_sha256": "73437b0db332033d602813126855cd9981507ffb2eb7f5ec73e0f334dd022a9c",
+        "json_sha256": "0bc1dd023a318d174c73f9fb6248ea5dd3cd0a50719f1486b1f96687df310c83",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.1089999999994689,
+        "temperature_c": {
+          "mean": 73.38172333333333,
+          "min": 69.0,
+          "max": 77.0,
+          "sd": 1.795369218328705
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.8235183333334,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 9.41862353113939
+        },
+        "power_w": {
+          "mean": 196.71360988333333,
+          "min": 54.39,
+          "max": 258.5,
+          "sd": 24.96080058892195
+        },
+        "utilization_percent": {
+          "mean": 99.87157499999998,
+          "min": 66.0,
+          "max": 100.0,
+          "sd": 1.9203451129182774
+        },
+        "energy_wh": 32.78560164722222
+      }
+    ]
+  },
+  {
+    "setup": "ARCTIC S12038-4K \u00b7 auto (75\u00b0C target) + extractor",
+    "runs": [
+      {
+        "label": "intake-exhaust-1",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T115851.337003Z-intake-exhaust-1.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T115851.337003Z-intake-exhaust-1.json",
+        "csv_sha256": "b4c2921937576a289255a4d3246f7312cbd9136d70fe78f2c103f94b35fab52f",
+        "json_sha256": "324cd73779fc49990feb411f7ac829a908465d1921d1f3f19f109f3bc2f9ab7d",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.405999999999949,
+        "temperature_c": {
+          "mean": 66.003515,
+          "min": 62.0,
+          "max": 67.0,
+          "sd": 0.44542411786408775
+        },
+        "sm_clock_mhz": {
+          "mean": 1323.5643483333333,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 5.841969356190088
+        },
+        "power_w": {
+          "mean": 194.02536800000001,
+          "min": 47.48,
+          "max": 253.08,
+          "sd": 27.74649471849692
+        },
+        "utilization_percent": {
+          "mean": 99.43324333333332,
+          "min": 6.0,
+          "max": 100.0,
+          "sd": 6.217829488451421
+        },
+        "energy_wh": 32.33756133333333
+      },
+      {
+        "label": "intake-exhaust-2",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T120852.836431Z-intake-exhaust-2.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T120852.836431Z-intake-exhaust-2.json",
+        "csv_sha256": "f7c71dddb251370ce7383889fc6462e3086473e01cde6a413f5f4d86560830ce",
+        "json_sha256": "3b694bdee7b4904d3db341967597c9dec3c34921fec914854e92f3c0801920ef",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0790000000001783,
+        "temperature_c": {
+          "mean": 66.038815,
+          "min": 63.0,
+          "max": 67.0,
+          "sd": 0.3791328647167591
+        },
+        "sm_clock_mhz": {
+          "mean": 1323.77745,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 5.879321516765319
+        },
+        "power_w": {
+          "mean": 195.11613941666667,
+          "min": 53.41,
+          "max": 253.81,
+          "sd": 25.619673779507885
+        },
+        "utilization_percent": {
+          "mean": 99.955745,
+          "min": 78.0,
+          "max": 100.0,
+          "sd": 0.9292899592206151
+        },
+        "energy_wh": 32.51935656944445
+      },
+      {
+        "label": "intake-exhaust-3",
+        "date": "2026-11-07",
+        "csv_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T121854.305605Z-intake-exhaust-3.csv",
+        "json_file": "2026-11-07-p100-server-fan-intake-exhaust/results/20261107T121854.305605Z-intake-exhaust-3.json",
+        "csv_sha256": "6f95e851b2a07fe2ed1465d7e424e2d14b32f59f39ab2a7c348e66efcb72c930",
+        "json_sha256": "1bafeba21f93ae137a4edda2f1ee3aac1869efa0cf010e14ea6712bd8004fab0",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0790000000001783,
+        "temperature_c": {
+          "mean": 70.11516333333333,
+          "min": 64.0,
+          "max": 77.0,
+          "sd": 3.955551466819204
+        },
+        "sm_clock_mhz": {
+          "mean": 1321.4273283333334,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 8.357172896910987
+        },
+        "power_w": {
+          "mean": 195.15259663333347,
+          "min": 50.98,
+          "max": 255.1,
+          "sd": 23.82778591846423
+        },
+        "utilization_percent": {
+          "mean": 99.73056500000001,
+          "min": 35.0,
+          "max": 100.0,
+          "sd": 3.4992303602517265
+        },
+        "energy_wh": 32.525432772222246
+      }
+    ]
+  },
+  {
+    "setup": "ARCTIC P9 PWM PST \u00b7 alone",
+    "runs": [
+      {
+        "label": "open-1fan-1.json",
+        "date": "2026-11-03",
+        "csv_file": "2026-11-03-p100-open-case-cooling/results/20261103T150015.811323Z-open-1fan-1-json.csv",
+        "json_file": "2026-11-03-p100-open-case-cooling/results/20261103T150015.811323Z-open-1fan-1-json.json",
+        "csv_sha256": "a64bc7922f28c0ee81771b00b7bfaa4668ed7d486827e2f7095c2857f5d260cc",
+        "json_sha256": "bca6f75adc5bbb907c50f1fc3114877ebc7cef3693947cc99ad7659ddaf694a1",
+        "duration_seconds": 600,
+        "samples": 565,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 78.955675,
+          "min": 76.0,
+          "max": 80.0,
+          "sd": 0.3421212665732367
+        },
+        "sm_clock_mhz": {
+          "mean": 1229.3215166666666,
+          "min": 1088.0,
+          "max": 1328.0,
+          "sd": 62.22889985395123
+        },
+        "power_w": {
+          "mean": 172.01009816666684,
+          "min": 54.66,
+          "max": 253.32,
+          "sd": 24.625412660265567
+        },
+        "utilization_percent": {
+          "mean": 99.61603499999995,
+          "min": 28.0,
+          "max": 100.0,
+          "sd": 4.88045754809718
+        },
+        "energy_wh": 28.668349694444473
+      },
+      {
+        "label": "open-1fan-2.json",
+        "date": "2026-11-03",
+        "csv_file": "2026-11-03-p100-open-case-cooling/results/20261103T152207.850774Z-open-1fan-2-json.csv",
+        "json_file": "2026-11-03-p100-open-case-cooling/results/20261103T152207.850774Z-open-1fan-2-json.json",
+        "csv_sha256": "1c5df57a0d2db3c014cf187c0b998c2926bc18880295bc2c5f89ba045a0645d4",
+        "json_sha256": "40a621c6f84f93af52120523a7cf3468f89c3b080e2a01addb3f03374ee4cb8f",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 78.89202833333334,
+          "min": 71.0,
+          "max": 80.0,
+          "sd": 0.7265446436367043
+        },
+        "sm_clock_mhz": {
+          "mean": 1233.0783049999995,
+          "min": 1025.0,
+          "max": 1328.0,
+          "sd": 63.08769032064523
+        },
+        "power_w": {
+          "mean": 171.54443094999968,
+          "min": 43.88,
+          "max": 250.65,
+          "sd": 27.632005497179684
+        },
+        "utilization_percent": {
+          "mean": 98.7961433333333,
+          "min": 0.0,
+          "max": 100.0,
+          "sd": 10.445770872756365
+        },
+        "energy_wh": 28.590738491666613
+      }
+    ]
+  },
+  {
+    "setup": "ARCTIC P9 PWM PST \u00b7 + extractor",
+    "runs": [
+      {
+        "label": "rear-pull-reference-1",
+        "date": "2026-11-06",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.csv",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T172551.928683Z-rear-pull-reference-1.json",
+        "csv_sha256": "3bd4934a8d5e6d6d8ebef667d876d85a40f9798e87b0161857d8fe29afce04ca",
+        "json_sha256": "8cdc7f3850f51577655795376ac4dd95ff84171eddccdb396d53695d467074bd",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.0939999999998236,
+        "temperature_c": {
+          "mean": 76.116745,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6239462623562525
+        },
+        "sm_clock_mhz": {
+          "mean": 1318.1629500000001,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 10.112235029779523
+        },
+        "power_w": {
+          "mean": 197.94553305000002,
+          "min": 53.42,
+          "max": 258.5,
+          "sd": 26.217925898524644
+        },
+        "utilization_percent": {
+          "mean": 99.57545499999995,
+          "min": 11.0,
+          "max": 100.0,
+          "sd": 5.189132863620998
+        },
+        "energy_wh": 32.990922175
+      },
+      {
+        "label": "rear-pull-reference-2",
+        "date": "2026-11-06",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.csv",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T173552.530002Z-rear-pull-reference-2.json",
+        "csv_sha256": "c108981dd05df07257b3d2ff3a868503b0ca5d12d0d110c77b5239f7effe1072",
+        "json_sha256": "2f2d8372aec5a9761f346a03b9790527de991a787d9417373b5fa72053cb8e13",
+        "duration_seconds": 600.0,
+        "samples": 567,
+        "max_gap_s": 1.0939999999998236,
+        "temperature_c": {
+          "mean": 76.48925,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6585674636410972
+        },
+        "sm_clock_mhz": {
+          "mean": 1318.545735,
+          "min": 1303.0,
+          "max": 1328.0,
+          "sd": 10.387188181109224
+        },
+        "power_w": {
+          "mean": 196.4932158666667,
+          "min": 52.96,
+          "max": 256.97,
+          "sd": 27.002491369634907
+        },
+        "utilization_percent": {
+          "mean": 99.38145500000002,
+          "min": 3.0,
+          "max": 100.0,
+          "sd": 7.22242990617705
+        },
+        "energy_wh": 32.748869311111115
+      },
+      {
+        "label": "rear-pull-reference-3",
+        "date": "2026-11-06",
+        "csv_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.csv",
+        "json_file": "2026-11-06-p100-rear-exhaust-cooling/results/20261106T174553.143168Z-rear-pull-reference-3.json",
+        "csv_sha256": "95ed9eaf4b87430fe9d89ec44ffc658f8182534cfbc5c207160ecfba616e8a88",
+        "json_sha256": "41fa398b422d7fb6ce37d9908b0d1344be684f3d6ca6446005b59a081f29a8e3",
+        "duration_seconds": 600.0,
+        "samples": 566,
+        "max_gap_s": 1.094000000000051,
+        "temperature_c": {
+          "mean": 76.52287666666666,
+          "min": 72.0,
+          "max": 77.0,
+          "sd": 0.6608554996786805
+        },
+        "sm_clock_mhz": {
+          "mean": 1317.9311183333332,
+          "min": 1278.0,
+          "max": 1328.0,
+          "sd": 10.598541266734005
+        },
+        "power_w": {
+          "mean": 198.1776684499999,
+          "min": 52.92,
+          "max": 261.65,
+          "sd": 27.245263395197913
+        },
+        "utilization_percent": {
+          "mean": 99.43138166666668,
+          "min": 4.0,
+          "max": 100.0,
+          "sd": 6.037442741563975
+        },
+        "energy_wh": 33.02961140833332
+      }
+    ]
+  }
+]

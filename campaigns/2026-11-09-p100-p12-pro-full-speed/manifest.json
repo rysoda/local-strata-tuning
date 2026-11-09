@@ -1,0 +1,46 @@
+{
+  "id": "2026-11-09-p100-p12-pro-full-speed",
+  "title": "P100 ARCTIC P12 Pro 100 percent cooling surveys",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "Tesla P100-PCIE-16GB; GPU 0; TCC; GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999"
+    ],
+    "cpu": null,
+    "ram_gib": null,
+    "pcie": null,
+    "fan": "ARCTIC P12 Pro; fixed 100%; approximately 2900 RPM (user reported)",
+    "extractor": "Continuing prior extractor setup; no other physical change reported"
+  },
+  "software": {
+    "engine": "0.1.57",
+    "control": "0.1.57",
+    "betterbench": null,
+    "os": "Windows; NVIDIA driver 582.66"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 131072,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": null,
+  "report": "REPORT.md",
+  "comparison": "README.md",
+  "findings": "results/findings.json",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 0,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": "scripts/capture.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": [
+    "2026-11-09-p100-new-fan"
+  ],
+  "planned_captures": 3,
+  "completed_captures": 3,
+  "capture_seconds": 600,
+  "sampling_interval_seconds": 1,
+  "workload_description": "Existing user-managed Strata stress; exact command/settings unknown; unchanged."
+}

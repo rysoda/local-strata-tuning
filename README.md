@@ -24,14 +24,16 @@ All selected runs are 10 minutes. Temperature and SM clock show **mean / sampled
 
 | Setup | Date | Runs | Temperature °C | SM clock MHz | Mean power W |
 |---|---|---:|---:|---:|---:|
-| **New server intake + exhaust** | Nov 7 | 3 | **67.39 / 77** | **1322.92 / 1328** | **194.76** |
-| New server intake only | Nov 7 | 3 | 73.49 / 77 | 1319.94 / 1328 | 196.95 |
-| Previous rear-pull setup | Nov 6 | 3 | 76.38 / 77 | 1318.21 / 1328 | 197.54 |
-| Older open-case one-fan setup | Nov 3 | 2 | 78.92 / 80 | 1231.20 / 1328 | 171.78 |
+| **P12 Pro 100% (~2900 RPM) + extractor** | Nov 9 | 3 | **65.69 / 67** | **1324.09 / 1328** | **193.32** |
+| P12 Pro 70% (~2230 RPM) + extractor | Nov 9 | 3 | 73.78 / 75 | 1319.21 / 1328 | 196.54 |
+| S12038-4K auto (75°C target) + extractor | Nov 7 | 3 | 67.39 / 77 | 1322.92 / 1328 | 194.76 |
+| S12038-4K auto (75°C target) only | Nov 7 | 3 | 73.49 / 77 | 1319.94 / 1328 | 196.95 |
+| P9 PWM PST + extractor | Nov 6 | 3 | 76.38 / 77 | 1318.21 / 1328 | 197.54 |
+| P9 PWM PST alone | Nov 3 | 2 | 78.92 / 80 | 1231.20 / 1328 | 171.78 |
 
-**New exhaust comparison:** mean temperature **−6.10°C**, mean clock **+0.23%** versus intake alone. Both groups reached 77°C. The third both-fan run drifted warmer; historical rows have unmatched conditions and old fan orientation is undocumented. These are cooling measurements, not inference-speed gains.
+**P12 Pro 100% versus 70%:** mean temperature **−8.09°C**, mean core clock **+4.89 MHz (+0.37%)**, mean board power **−3.22 W**. No thermal-throttle flags recorded at either P12 setting. First 100% run warmed by 1.28°C between its first/last two minutes; later runs were stable. Sequential order, unknown ambient/heat-soak duration and unmatched historical conditions limit causal claims. Fan identities/extractor labels follow the user's clarification. These are cooling measurements, not inference-speed or total-system-efficiency gains.
 
-[Full comparison, run-by-run tables and caveats](campaigns/2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md)
+[All six setups and 17 individual runs](campaigns/2026-11-09-p100-new-fan/README.md) · [Full-speed findings and drift](campaigns/2026-11-09-p100-p12-pro-full-speed/README.md)
 
 ## Campaign index
 
@@ -53,7 +55,9 @@ Speeds are ranges of per-run medians from final confirmation runs, not discovery
 
 ## Cooling measurements (separate from inference tuning)
 
-- [Five-setup P100 fan comparison](campaigns/2026-11-09-p100-new-fan/README.md): **Complete**, including ARCTIC P12 Pro at 70% / ~2230 RPM + extractor, S12038-4K auto with/without extractor, and P9 PWM PST with/without extractor. Simple summary and all 14 runs: mean/max temperature and core clock, plus board power. [P12 detailed survey](campaigns/2026-11-09-p100-new-fan/REPORT.md).
+- [P100 P12 Pro at 100% / ~2900 RPM](campaigns/2026-11-09-p100-p12-pro-full-speed/README.md): **Complete: 3/3 surveys**, mean **65.69°C / 1324.09 MHz / 193.32 W**, peak 67°C; no thermal-throttle flags. Existing P100-only 128K workload/extractor setup continued. [Detailed telemetry](campaigns/2026-11-09-p100-p12-pro-full-speed/REPORT.md). Original 70% evidence remains unchanged.
+
+- [Six-setup P100 fan comparison](campaigns/2026-11-09-p100-new-fan/README.md): **Complete**, including ARCTIC P12 Pro at 70% / ~2230 RPM and 100% / ~2900 RPM + extractor, S12038-4K auto with/without extractor, and P9 PWM PST with/without extractor. Simple summary and all 17 runs: mean/max temperature and core clock, plus board power. [P12 detailed survey](campaigns/2026-11-09-p100-new-fan/REPORT.md).
 
 - [P100 120×38 mm server intake + exhaust comparison](campaigns/2026-11-07-p100-server-fan-intake-exhaust/README.md): **Complete, 6/6 captures**. Intake + exhaust averaged **67.39°C / 1322.92 MHz / 194.76 W**, versus intake-only **73.49°C / 1319.94 MHz / 196.95 W**. Nominal 4000 RPM intake curve reaches 100% at 75°C. [Final report and historical comparisons](campaigns/2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md) include the ~172 W old one-fan reference and a third-run drift caveat.
 

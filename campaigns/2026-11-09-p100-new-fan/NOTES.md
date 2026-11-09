@@ -1,5 +1,9 @@
 # Work log
 
+## Additional 100% surveys (separate completed checkpoint)
+
+User set P12 Pro to 100% (~2900 RPM) and requested three more ten-minute surveys and a push. Kept this completed 70% capture checkpoint and raw evidence unchanged; additional surveys are in ../2026-11-09-p100-p12-pro-full-speed/. All three completed. Expanded this reporting README to six setups/all 17 selected runs, with a new results/six-fan-comparison.json (original five-fan analysis retained). Comparison script now includes the completed full-speed campaign and enforces an identical P12 inference-config digest. Mean temperature 65.69 C versus 73.78 C at 70%, sampled maxima 67 versus 75 C; mean core +4.89 MHz (+0.37%). Reports explicitly retain first-run settling, ambient/workload uncertainty, sequential order and historical caveats. No original captures were rerun or relabeled, and no server/workload changes were made by the agent.
+
 ## Completed surveys and five-setup comparison
 
 All three P12 captures completed (600 seconds each); final capture checkpoint is complete. At the subsequent reporting request the user clarified that the P12 measurements included the extractor, the previous server fan was ARCTIC S12038-4K auto targeting 75 C, and the older fan was ARCTIC P9 PWM PST. Mapped P9-alone to the selected Nov 3 old-one-fan runs (~172 W), and P9+extractor to the Nov 6 rear-pull runs (~198 W). These model/extractor labels are user-provided retrospective identification, not newly measured fan telemetry.

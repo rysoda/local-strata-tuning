@@ -1,0 +1,70 @@
+{
+  "label": "p12-pro-100pct-1",
+  "status": "complete",
+  "started_utc": "2026-11-09T11:32:56.898720+00:00",
+  "gpu_uuid": "GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+  "requested_seconds": 600,
+  "interval_seconds": 1,
+  "csv_file": "20261109T113256.898720Z-p12-pro-100pct-1.csv",
+  "finished_utc": "2026-11-09T11:42:57.364712+00:00",
+  "duration_seconds": 600,
+  "sample_count": 456,
+  "max_sample_gap_seconds": 1.360000000000582,
+  "metrics": {
+    "power_w": {
+      "mean": 191.37163126666618,
+      "min": 47.93,
+      "max": 251.33,
+      "sd": 28.28998164604036
+    },
+    "power_limit_w": {
+      "mean": 250.0,
+      "min": 250.0,
+      "max": 250.0,
+      "sd": 0.0
+    },
+    "temperature_c": {
+      "mean": 65.13028,
+      "min": 61.0,
+      "max": 66.0,
+      "sd": 0.674139294409304
+    },
+    "utilization_percent": {
+      "mean": 99.70894999999999,
+      "min": 10.0,
+      "max": 100.0,
+      "sd": 4.439790148663325
+    },
+    "memory_utilization_percent": {
+      "mean": 17.254803333333353,
+      "min": 3.0,
+      "max": 54.0,
+      "sd": 8.232548527723502
+    },
+    "sm_clock_mhz": {
+      "mean": 1324.2498799999998,
+      "min": 1303.0,
+      "max": 1328.0,
+      "sd": 5.627258656361917
+    },
+    "memory_clock_mhz": {
+      "mean": 715.0,
+      "min": 715.0,
+      "max": 715.0,
+      "sd": 0.0
+    },
+    "memory_used_mib": {
+      "mean": 15768.0,
+      "min": 15768.0,
+      "max": 15768.0,
+      "sd": 0.0
+    }
+  },
+  "throttle_active_percent": {
+    "sw_power_cap": 14.505333333332752,
+    "sw_thermal_slowdown": 0.0,
+    "hw_thermal_slowdown": 0.0,
+    "hw_power_brake_slowdown": 0.0
+  },
+  "energy_wh": 31.895271877777695
+}

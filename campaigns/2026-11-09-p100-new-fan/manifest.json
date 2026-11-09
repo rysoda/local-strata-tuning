@@ -35,6 +35,7 @@
   "resume_script": "scripts/capture.py",
   "pause_file": "state/STOP",
   "related_campaigns": [
+    "2026-11-09-p100-p12-pro-full-speed",
     "2026-11-07-p100-server-fan-intake-exhaust",
     "2026-11-06-p100-rear-exhaust-cooling",
     "2026-11-03-p100-open-case-cooling"
@@ -44,5 +45,6 @@
   "capture_seconds": 600,
   "sampling_interval_seconds": 1,
   "workload_description": "Existing user-managed Strata stress; command/settings unknown; unchanged.",
-  "comparison": "README.md"
+  "comparison": "README.md",
+  "expanded_comparison_analysis": "results/six-fan-comparison.json"
 }

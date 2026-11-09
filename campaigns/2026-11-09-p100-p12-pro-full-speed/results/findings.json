@@ -1,0 +1,107 @@
+{
+  "groups": [
+    {
+      "setup": "ARCTIC P12 Pro \u00b7 70% (~2230 RPM) + extractor",
+      "runs": 3,
+      "metrics": {
+        "temperature_c": {
+          "mean": 73.77862444444445,
+          "max": 75.0,
+          "across_run_sd": 0.15943152506408514,
+          "run_mean_range": 0.3186950000000053
+        },
+        "sm_clock_mhz": {
+          "mean": 1319.2072594444444,
+          "max": 1328.0,
+          "across_run_sd": 0.4804047506944479,
+          "run_mean_range": 0.9275199999999586
+        },
+        "power_w": {
+          "mean": 196.5417532888892,
+          "max": 257.99,
+          "across_run_sd": 1.1282354793060876,
+          "run_mean_range": 2.249665016667336
+        },
+        "utilization_percent": {
+          "mean": 99.61765166666667,
+          "max": 100.0,
+          "across_run_sd": 0.12702456043130997,
+          "run_mean_range": 0.23822833333326798
+        }
+      }
+    },
+    {
+      "setup": "ARCTIC P12 Pro \u00b7 100% (~2900 RPM) + extractor",
+      "runs": 3,
+      "metrics": {
+        "temperature_c": {
+          "mean": 65.69120333333332,
+          "max": 67.0,
+          "across_run_sd": 0.4880254296994436,
+          "run_mean_range": 0.8882099999999866
+        },
+        "sm_clock_mhz": {
+          "mean": 1324.0949666666668,
+          "max": 1328.0,
+          "across_run_sd": 0.3469757999245267,
+          "run_mean_range": 0.6399799999999232
+        },
+        "power_w": {
+          "mean": 193.3198528611107,
+          "max": 254.09,
+          "across_run_sd": 1.7973857938594273,
+          "run_mean_range": 3.541945299999668
+        },
+        "utilization_percent": {
+          "mean": 99.73345111111111,
+          "max": 100.0,
+          "across_run_sd": 0.03453417407012109,
+          "run_mean_range": 0.06399833333337313
+        }
+      }
+    }
+  ],
+  "delta_100_minus_70": {
+    "temperature_c": -8.087421111111126,
+    "sm_clock_mhz": 4.887707222222389,
+    "power_w": -3.2219004277785075,
+    "utilization_percent": 0.11579944444443413
+  },
+  "full_speed_runs": [
+    {
+      "label": "p12-pro-100pct-1",
+      "throttle_active_percent": {
+        "sw_power_cap": 14.505333333332752,
+        "sw_thermal_slowdown": 0.0,
+        "hw_thermal_slowdown": 0.0,
+        "hw_power_brake_slowdown": 0.0
+      },
+      "first_2min_mean_c": 64.5319,
+      "last_2min_mean_c": 65.81118333333333
+    },
+    {
+      "label": "p12-pro-100pct-2",
+      "throttle_active_percent": {
+        "sw_power_cap": 17.049499999999775,
+        "sw_thermal_slowdown": 0.0,
+        "hw_thermal_slowdown": 0.0,
+        "hw_power_brake_slowdown": 0.0
+      },
+      "first_2min_mean_c": 65.89465833333333,
+      "last_2min_mean_c": 65.96446666666668
+    },
+    {
+      "label": "p12-pro-100pct-3",
+      "throttle_active_percent": {
+        "sw_power_cap": 19.580499999998967,
+        "sw_thermal_slowdown": 0.0,
+        "hw_thermal_slowdown": 0.0,
+        "hw_power_brake_slowdown": 0.0
+      },
+      "first_2min_mean_c": 65.99934999999999,
+      "last_2min_mean_c": 65.98774999999999
+    }
+  ],
+  "inference_config_sha256": "cd61454b465a4fe87d85c6e9238260888968f3b9b563966bf1ccc62e8558436b",
+  "limitations": "Sequential user-managed stress; no measured ambient, post-change heat-soak duration, fan electrical power/noise or throughput. Extractor continued, no other physical change reported."
+}

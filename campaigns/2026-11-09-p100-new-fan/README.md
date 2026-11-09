@@ -1,4 +1,4 @@
-# P100 cooling — five fan setups
+# P100 cooling — 6 fan setups
 
 **All captures are complete; every run is 10 minutes.** Fan names and extractor presence are identified by the user, including the latest P12 Pro + extractor setup.
 
@@ -7,6 +7,7 @@
 | Setup | Runs | Mean temp °C | Max temp °C | Mean core MHz | Max core MHz | Mean board W |
 | --- | --- | --- | --- | --- | --- | --- |
 | ARCTIC P12 Pro · 70% (~2230 RPM) + extractor | 3 | 73.78 | 75 | 1319.21 | 1328 | 196.54 |
+| ARCTIC P12 Pro · 100% (~2900 RPM) + extractor | 3 | 65.69 | 67 | 1324.09 | 1328 | 193.32 |
 | ARCTIC S12038-4K · auto (75°C target) | 3 | 73.49 | 77 | 1319.94 | 1328 | 196.95 |
 | ARCTIC S12038-4K · auto (75°C target) + extractor | 3 | 67.39 | 77 | 1322.92 | 1328 | 194.76 |
 | ARCTIC P9 PWM PST · alone | 2 | 78.92 | 80 | 1231.20 | 1328 | 171.78 |
@@ -19,6 +20,9 @@
 | ARCTIC P12 Pro · 70% (~2230 RPM) + extractor / [1](../2026-11-09-p100-new-fan/results/20261109T104033.csv) | 2026-11-09 | 73.62 | 74 | 1318.82 | 1328 | 195.37 |
 | ARCTIC P12 Pro · 70% (~2230 RPM) + extractor / [2](../2026-11-09-p100-new-fan/results/20261109T105035.csv) | 2026-11-09 | 73.94 | 75 | 1319.06 | 1328 | 196.64 |
 | ARCTIC P12 Pro · 70% (~2230 RPM) + extractor / [3](../2026-11-09-p100-new-fan/results/20261109T110036.csv) | 2026-11-09 | 73.77 | 75 | 1319.74 | 1328 | 197.62 |
+| ARCTIC P12 Pro · 100% (~2900 RPM) + extractor / [1](../2026-11-09-p100-p12-pro-full-speed/results/20261109T113256.898720Z-p12-pro-100pct-1.csv) | 2026-11-09 | 65.13 | 66 | 1324.25 | 1328 | 191.37 |
+| ARCTIC P12 Pro · 100% (~2900 RPM) + extractor / [2](../2026-11-09-p100-p12-pro-full-speed/results/20261109T114258.997259Z-p12-pro-100pct-2.csv) | 2026-11-09 | 65.92 | 67 | 1324.34 | 1328 | 193.67 |
+| ARCTIC P12 Pro · 100% (~2900 RPM) + extractor / [3](../2026-11-09-p100-p12-pro-full-speed/results/20261109T115301.398021Z-p12-pro-100pct-3.csv) | 2026-11-09 | 66.02 | 67 | 1323.70 | 1328 | 194.91 |
 | ARCTIC S12038-4K · auto (75°C target) / [1](../2026-11-07-p100-server-fan-intake-exhaust/results/20261107T125314.991061Z-intake-1.csv) | 2026-11-07 | 73.39 | 77 | 1319.94 | 1328 | 198.28 |
 | ARCTIC S12038-4K · auto (75°C target) / [2](../2026-11-07-p100-server-fan-intake-exhaust/results/20261107T130316.492069Z-intake-2.csv) | 2026-11-07 | 73.69 | 77 | 1320.05 | 1328 | 195.86 |
 | ARCTIC S12038-4K · auto (75°C target) / [3](../2026-11-07-p100-server-fan-intake-exhaust/results/20261107T131317.971244Z-intake-3.csv) | 2026-11-07 | 73.38 | 77 | 1319.82 | 1328 | 196.71 |
@@ -33,8 +37,11 @@
 
 ## Reading the results
 
-- **P12 Pro + extractor:** 73.78°C mean, 75°C sampled maximum, sustaining ~1319 MHz. No thermal-throttle flags were observed in these three runs.
-- **S12038-4K + extractor was the coolest recorded setup:** 67.39°C mean. Its third run warmed to 70.12°C mean / 77°C maximum; all three runs remain included. Historical notes could not establish when the extractor was removed relative to that run.
+- **P12 Pro 100% versus 70%:** mean temperature **-8.09°C**, mean core clock **+4.89 MHz (+0.37%)**, mean board power **-3.22 W**. This measures thermal behavior, not inference throughput.
+- Both P12 groups used the same credential-free inference-config SHA-256. The 100% group follows the 70% group; heat-soak duration after changing speed and ambient were not recorded. Initial settling samples are included. Extractor setup continued; no other physical change reported.
+- See the [100% findings and throttle analysis](../2026-11-09-p100-p12-pro-full-speed/README.md).
+- **Lowest recorded group-mean temperature:** ARCTIC P12 Pro · 100% (~2900 RPM) + extractor, **65.69°C**. Historical conditions are not matched.
+- **S12038-4K + extractor drift caveat:** its third run warmed to 70.12°C mean / 77°C maximum; all three runs remain included. Historical notes could not establish when the extractor was removed relative to that run.
 - **Your remembered P9 power levels are confirmed:** alone **171.78 W**; with extractor **197.54 W** (closer to 198 W than 190 W). The extractor-era P9 runs also sustained much higher clocks than the older standalone runs.
 
 Means are time-weighted sample-and-hold; summary means average equal-duration run means. Maxima are the highest observed samples, not continuous peaks. “Core clock” is NVIDIA SM clock. Board power excludes external fan power.
@@ -45,6 +52,6 @@ Means are time-weighted sample-and-hold; summary means average equal-duration ru
 
 [Latest detailed survey](REPORT.md) · [Previous cooling comparison](../2026-11-07-p100-server-fan-intake-exhaust/COMPARISON.md) · [Work log](NOTES.md) · [Manifest](manifest.json) · [Capture checkpoint](state/capture-state.json)
 
-Each run number above links to its raw CSV. Recomputed statistics, source paths and SHA-256 hashes: [comparison analysis](results/five-fan-comparison.json). Rebuild with `python campaigns/2026-11-09-p100-new-fan/scripts/comparison.py`; original evidence is not changed.
+Each run number above links to its raw CSV. Recomputed statistics, source paths and SHA-256 hashes: [comparison analysis](results/six-fan-comparison.json). Rebuild with `python campaigns/2026-11-09-p100-new-fan/scripts/comparison.py`; original evidence is not changed.
 
-Telemetry collection finished after 3/3 P12 surveys; the user-managed workload/server was left running. No new measurement or restart is needed for this comparison. P100-only IQ3_S, 131072 context, int8 KV, full experts; isolated runtime `configs/private/p100.runtime.json`. API uses the usual key at `http://<this-PC-IP>:8080/v1`. Installed profiles/Startup are unchanged. Before any server recovery, verify live command lines and port ownership; archived PIDs are not ownership proof.
+Telemetry collection finished after 6 P12 surveys; the user-managed workload/server was left running. No new measurement or restart is needed for this comparison. P100-only IQ3_S, 131072 context, int8 KV, full experts; isolated runtime `configs/private/p100.runtime.json`. API uses the usual key at `http://<this-PC-IP>:8080/v1`. Installed profiles/Startup are unchanged. Before any server recovery, verify live command lines and port ownership; archived PIDs are not ownership proof.
