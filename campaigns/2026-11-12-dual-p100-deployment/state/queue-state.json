@@ -1,0 +1,49 @@
+{
+  "phase": "complete",
+  "current": null,
+  "runs": {
+    "quick-1": {
+      "phase": "complete",
+      "started": "2026-11-13T19:18:59.690384",
+      "benchmark_pid": 12496,
+      "finished": "2026-11-13T19:26:54.608773",
+      "summary": {
+        "decode": 31.82661782734698,
+        "prefill": 345.2436092081177,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      }
+    },
+    "quick-2": {
+      "phase": "complete",
+      "started": "2026-11-13T19:26:54.651337",
+      "benchmark_pid": 11032,
+      "finished": "2026-11-13T19:34:38.154355",
+      "summary": {
+        "decode": 33.09067855724033,
+        "prefill": 344.6759799945666,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      }
+    },
+    "quick-3": {
+      "phase": "complete",
+      "started": "2026-11-13T19:34:38.160596",
+      "benchmark_pid": 11856,
+      "finished": "2026-11-13T19:42:34.313544",
+      "summary": {
+        "decode": 31.08516577526707,
+        "prefill": 343.9075971859545,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      }
+    }
+  },
+  "started": "2026-11-13T19:18:59.681382",
+  "server_owned": false,
+  "supervisor_pid": 9644,
+  "finished": "2026-11-13T19:42:34.314503"
+}

@@ -1,0 +1,3 @@
+split24-pipeline {"decode": 43.59908542205952, "prefill": 346.8594284727494, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+split24-downws {"decode": 41.07693897509102, "prefill": 345.33360576285963, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+split24-pin0 {"decode": 39.5825920695818, "prefill": 377.6723813702339, "decode_ok": 5, "prefill_ok": 8, "valid": true}

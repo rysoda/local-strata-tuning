@@ -1,0 +1,3 @@
+confirm-candidate-a {"decode": 44.659921319096064, "prefill": 347.25855020661766, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+confirm-reference {"decode": 31.695759820091894, "prefill": 345.8863254932925, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+confirm-candidate-b {"decode": 47.63166003126275, "prefill": 347.5713244216135, "decode_ok": 5, "prefill_ok": 8, "valid": true}

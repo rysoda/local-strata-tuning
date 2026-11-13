@@ -1,0 +1,38 @@
+{
+  "id": "chatcmpl-70046e5c460b4b89bf5485af",
+  "object": "chat.completion",
+  "created": 1794586104,
+  "model": "qwen3.8-flash-next-iq3_s",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "OK",
+        "reasoning_content": "We need respond to user: \"Reply with just OK.\" Need final only OK. Ensure no extra.\n"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 26,
+    "total_tokens": 83,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 57,
+    "prompt_ms": 1244.2,
+    "prompt_per_token_ms": 21.828,
+    "prompt_per_second": 45.8,
+    "predicted_n": 26,
+    "predicted_ms": 978.7,
+    "predicted_per_token_ms": 37.642,
+    "predicted_per_second": 26.6,
+    "draft_n": 21,
+    "draft_n_accepted": 19
+  }
+}

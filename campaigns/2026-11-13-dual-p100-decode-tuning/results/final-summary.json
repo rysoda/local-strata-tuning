@@ -1,0 +1,27 @@
+{
+  "reference": {
+    "decode": 31.695759820091894,
+    "prefill": 345.8863254932925,
+    "decode_ok": 5,
+    "prefill_ok": 8,
+    "valid": true
+  },
+  "candidate_mean_of_two_medians": {
+    "decode": 46.145790675179406,
+    "prefill": 347.4149373141156
+  },
+  "change_pct": {
+    "decode": 45.58979162230923,
+    "prefill": 0.44194051864960837
+  },
+  "candidate_ids": [
+    "confirm-candidate-a",
+    "confirm-candidate-b"
+  ],
+  "reference_id": "confirm-reference",
+  "quality_smokes": {
+    "reference": "7/7",
+    "candidate": "7/7"
+  },
+  "statistical_significance": false
+}

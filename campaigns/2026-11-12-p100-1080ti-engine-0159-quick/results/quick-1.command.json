@@ -1,0 +1,18 @@
+[
+  "C:\\Users\\John Doe\\BetterBench\\.venv\\Scripts\\betterbench.exe",
+  "run",
+  "--endpoint",
+  "http://127.0.0.1:8080/v1",
+  "--model",
+  "qwen3.8-flash-next-iq3_s",
+  "--quick",
+  "--decode",
+  "--categories",
+  "code",
+  "--prefill",
+  "--no-concurrency",
+  "--config",
+  "C:\\ai\\tuning\\workloads\\betterbench-16k.json",
+  "--out",
+  "C:\\ai\\tuning\\campaigns\\2026-11-12-p100-1080ti-engine-0159-quick\\results\\quick-1.json"
+]

@@ -1,0 +1,3 @@
+quick-1 {"decode": 31.82661782734698, "prefill": 345.2436092081177, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+quick-2 {"decode": 33.09067855724033, "prefill": 344.6759799945666, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+quick-3 {"decode": 31.08516577526707, "prefill": 343.9075971859545, "decode_ok": 5, "prefill_ok": 8, "valid": true}

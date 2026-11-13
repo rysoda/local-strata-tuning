@@ -1,0 +1,6 @@
+{
+  "split": 24,
+  "env": {
+    "STRATA_DOWN_WS": "1"
+  }
+}

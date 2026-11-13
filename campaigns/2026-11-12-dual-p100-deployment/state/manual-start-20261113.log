@@ -1,0 +1,26 @@
+Main: GPU 2 (--gpu 1) Tesla P100-PCIE-16GB. Helper: GPU 1 (--gpu 0) Tesla P100-PCIE-16GB.
+[!] Windows may ask whether to allow Strata (python.exe) on your network: choose Allow for private networks. If you choose Cancel, the model still works on this computer.
+    Checking the engine for this computer…
+    Engine 0.1.59 (cuda) is installed.
+    qwen IQ3_S is already installed with these choices.
+    Writing this launch's settings…
+    Settings are saved.
+    Starting the engine and loading the model. The first start can take a few minutes.
+    Loading the model… 15 s
+    Loading the model… 30 s
+    Loading the model… 45 s
+    Loading the model… 60 s
+    Loading the model… 75 s
+    Loading the model… 90 s
+    The model is loaded and answering.
+    Ready: http://127.0.0.1:8080, http://172.27.73.6:8080
+    Strata is serving.
+
+Strata is serving.
+  This computer  http://127.0.0.1:8080/v1
+  Network        http://172.27.73.6:8080/v1
+  Anthropic apps http://127.0.0.1:8080   (Claude Code: ANTHROPIC_BASE_URL, no /v1 at the end)
+  API key        sk-strata-••••••••   (show it: strata launch --show-key --preset "IQ3_S 128K")
+  Engine log     C:\Users\John Doe\AppData\Local\Strata\launch\iq3_s-128k.engine.log   (follow it: strata logs --follow)
+  Watch it:    $env:STRATA_API_KEY = strata launch --show-key; strata monitor --url http://127.0.0.1:8080 --credential-env STRATA_API_KEY
+  Connect an app:  strata connect opencode      Stop:  strata launch --stop --preset "IQ3_S 128K"

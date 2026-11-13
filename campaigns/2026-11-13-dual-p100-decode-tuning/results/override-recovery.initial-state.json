@@ -1,0 +1,50 @@
+{
+  "phase": "error",
+  "current": "split24",
+  "runs": {
+    "reference36": {
+      "phase": "complete",
+      "server_pid": 13068,
+      "started": "2026-11-13 20:00:18",
+      "benchmark_pid": 6412,
+      "metrics": {
+        "decode": 31.436827313864768,
+        "prefill": 343.72977598254954,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:09:17",
+      "hardware": {
+        "0": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 488.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 54.0,
+          "min_free_mib": 748.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24": {
+      "phase": "complete",
+      "server_pid": 9372,
+      "started": "2026-11-13 20:09:31",
+      "benchmark_pid": 1336,
+      "metrics": {
+        "decode": 32.04270118639572,
+        "prefill": 344.29734283501,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:18:15"
+    }
+  },
+  "supervisor_pid": 10860,
+  "updated": "2026-11-13 20:18:25",
+  "error": "Missing actual setting: layers 0-23 (CUDA0), 24-47 (CUDA1)"
+}

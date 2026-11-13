@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-12-p100-1080ti-engine-0159-quick",
+  "title": "Strata 0.1.59 three-run installed-server speed check",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "Tesla P100-PCIE-16GB GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999",
+      "GTX 1080 Ti GPU-7d8ccb39-60d5-bc52-5e38-1cb26b742a23"
+    ],
+    "cpu": "Intel Core i5-11400F",
+    "ram_gib": 64,
+    "pcie": "P100 CPU x16 / 1080 Ti chipset x4"
+  },
+  "software": {
+    "engine": "0.1.59 CUDA12",
+    "control": "0.1.57",
+    "betterbench": "0.6.1",
+    "os": "Windows 11; NVIDIA 582.66"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 262144,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": "REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 3,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": "scripts/run.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": []
+}

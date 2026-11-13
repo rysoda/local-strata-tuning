@@ -1,0 +1,22 @@
+
+
+Name                      : 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+
+
+
+
+
+TotalPhysicalMemory : 68602007552
+
+
+
+
+
+Caption        : Microsoft Windows 11 Pro
+Version        : 10.0.26300
+LastBootUpTime : 11/13/2026 6:16:22 PM
+
+
+

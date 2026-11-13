@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\engine\\0.1.59-windows-x86_64-cuda-cuda12\\strata.exe",
+      "sha256": "3fd830eae6276ab80c58471b3820003990a49338e5c8d501dc7c7598e200ba25"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\serve\\server.py",
+      "sha256": "a0b9157f67d561db7dfdbfba6ce223b05cfc7cc70d534e1a80b46a2b328a7346"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.57\\strata.py",
+      "sha256": "8c7a97a9a0cc4a323f2662122ce4aec50fd55813fef16a108f52d6a4f0ae0b57"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\BetterBench\\.venv\\Scripts\\betterbench.exe",
+      "sha256": "ab51967704e17cc7421c6e9dfbc05ff09d1f4f29c12256852ece6e9ee4386266"
+    },
+    {
+      "path": "C:\\ai\\tuning\\workloads\\betterbench-16k.json",
+      "sha256": "b331bc1efa6af1a41e22a220a1991346037f96bdedc679e9bf1c2fd5aebbd0c3"
+    },
+    {
+      "path": "C:\\Users\\John Doe\\AppData\\Local\\Strata\\components\\control\\0.1.55\\data\\expert-profile.bin",
+      "sha256": "8f59b4aa8873209dff11c11e37bcda9529a1335b724a1afeea37bf6388975baf"
+    }
+  ],
+  "model_files": [
+    {
+      "path": "C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+      "size": 54817524224,
+      "mtime_ns": 1793097806997196900
+    },
+    {
+      "path": "C:\\Strata-data\\models\\IQ3_S\\Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00002-of-00002.gguf",
+      "size": 28800138432,
+      "mtime_ns": 1792704719386664400
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\conversions.json",
+      "size": 322,
+      "mtime_ns": 1793097859463064700
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\dense.bin",
+      "size": 1538035200,
+      "mtime_ns": 1793097859461001600
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\index.txt",
+      "size": 93685,
+      "mtime_ns": 1793097859461001600
+    },
+    {
+      "path": "C:\\Strata-data\\packs\\iq3_s\\native_experts.txt",
+      "size": 3304,
+      "mtime_ns": 1793097861181112100
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\dense.bin",
+      "size": 116099072,
+      "mtime_ns": 1792705156616752700
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\dense.txt",
+      "size": 1880,
+      "mtime_ns": 1792705156618760000
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\draft_vocab.bin",
+      "size": 425196,
+      "mtime_ns": 1792705156750593200
+    },
+    {
+      "path": "C:\\Strata-data\\mtp\\rt\\experts.bin",
+      "size": 707788800,
+      "mtime_ns": 1792705155418882100
+    }
+  ],
+  "baseline_sha256": "4de7298fd28735fbbe883bf4ead0b9265b98326fa9e6b79b3684a52db54a0b09"
+}

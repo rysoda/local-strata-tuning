@@ -1,0 +1,338 @@
+{
+  "phase": "complete",
+  "current": null,
+  "runs": {
+    "reference36": {
+      "phase": "invalid",
+      "server_pid": 13068,
+      "started": "2026-11-13 20:00:18",
+      "benchmark_pid": 6412,
+      "metrics": {
+        "decode": 31.436827313864768,
+        "prefill": 343.72977598254954,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:09:17",
+      "hardware": {
+        "0": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 488.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 54.0,
+          "min_free_mib": 748.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true,
+      "review_note": "Excluded: stale user_args reintroduced projection and 36/12. Raw samples/logs preserved; no claimed setting comparison."
+    },
+    "split24": {
+      "phase": "invalid",
+      "server_pid": 9372,
+      "started": "2026-11-13 20:09:31",
+      "benchmark_pid": 1336,
+      "metrics": {
+        "decode": 32.04270118639572,
+        "prefill": 344.29734283501,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:18:15",
+      "reviewed": true,
+      "review_note": "Excluded: stale user_args reintroduced projection and 36/12. Raw samples/logs preserved; no claimed setting comparison."
+    },
+    "reference36-v2": {
+      "phase": "complete",
+      "server_pid": 7004,
+      "started": "2026-11-13 20:20:25",
+      "benchmark_pid": 4556,
+      "metrics": {
+        "decode": 32.042130340988265,
+        "prefill": 345.8690226763893,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:29:12",
+      "hardware": {
+        "0": {
+          "max_temp_c": 72.0,
+          "min_free_mib": 488.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 52.0,
+          "min_free_mib": 748.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-v2": {
+      "phase": "complete",
+      "server_pid": 5096,
+      "started": "2026-11-13 20:29:25",
+      "benchmark_pid": 15276,
+      "metrics": {
+        "decode": 40.627621740615794,
+        "prefill": 347.36539131087636,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:37:57",
+      "hardware": {
+        "0": {
+          "max_temp_c": 67.0,
+          "min_free_mib": 516.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 65.0,
+          "min_free_mib": 726.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-pipeline": {
+      "phase": "complete",
+      "server_pid": 15004,
+      "started": "2026-11-13 20:41:02",
+      "benchmark_pid": 13480,
+      "metrics": {
+        "decode": 43.59908542205952,
+        "prefill": 346.8594284727494,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:49:18",
+      "hardware": {
+        "0": {
+          "max_temp_c": 75.0,
+          "min_free_mib": 526.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 738.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-downws": {
+      "phase": "complete",
+      "server_pid": 5688,
+      "started": "2026-11-13 20:49:31",
+      "benchmark_pid": 7560,
+      "metrics": {
+        "decode": 41.07693897509102,
+        "prefill": 345.33360576285963,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 20:58:00",
+      "hardware": {
+        "0": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 516.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 730.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-pin0": {
+      "phase": "complete",
+      "server_pid": 14436,
+      "started": "2026-11-13 20:58:13",
+      "benchmark_pid": 10876,
+      "metrics": {
+        "decode": 39.5825920695818,
+        "prefill": 377.6723813702339,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 21:06:04",
+      "hardware": {
+        "0": {
+          "max_temp_c": 74.0,
+          "min_free_mib": 517.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 73.0,
+          "min_free_mib": 723.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-pipeline-stage0": {
+      "phase": "complete",
+      "server_pid": 11100,
+      "started": "2026-11-13 21:08:24",
+      "benchmark_pid": 4472,
+      "metrics": {
+        "decode": 40.32768251685596,
+        "prefill": 346.2290688458261,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 21:16:39",
+      "hardware": {
+        "0": {
+          "max_temp_c": 75.0,
+          "min_free_mib": 518.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 69.0,
+          "min_free_mib": 968.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "split24-pipeline-stage0-pin0": {
+      "phase": "complete",
+      "server_pid": 14544,
+      "started": "2026-11-13 21:16:52",
+      "benchmark_pid": 7864,
+      "metrics": {
+        "decode": 41.476136386416265,
+        "prefill": 378.0051627217048,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 21:24:43",
+      "hardware": {
+        "0": {
+          "max_temp_c": 75.0,
+          "min_free_mib": 517.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 66.0,
+          "min_free_mib": 969.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "confirm-candidate-a": {
+      "phase": "complete",
+      "server_pid": 10824,
+      "started": "2026-11-13 21:28:49",
+      "benchmark_pid": 3332,
+      "metrics": {
+        "decode": 44.659921319096064,
+        "prefill": 347.25855020661766,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "finished": "2026-11-13 21:37:11",
+      "hardware": {
+        "0": {
+          "max_temp_c": 75.0,
+          "min_free_mib": 526.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 73.0,
+          "min_free_mib": 738.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "confirm-reference": {
+      "phase": "complete",
+      "server_pid": 10856,
+      "started": "2026-11-13 21:37:24",
+      "benchmark_pid": 10440,
+      "metrics": {
+        "decode": 31.695759820091894,
+        "prefill": 345.8863254932925,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 14180,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-13 22:03:50",
+      "hardware": {
+        "0": {
+          "max_temp_c": 75.0,
+          "min_free_mib": 488.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 61.0,
+          "min_free_mib": 748.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    },
+    "confirm-candidate-b": {
+      "phase": "complete",
+      "server_pid": 3556,
+      "started": "2026-11-13 22:04:04",
+      "benchmark_pid": 8768,
+      "metrics": {
+        "decode": 47.63166003126275,
+        "prefill": 347.5713244216135,
+        "decode_ok": 5,
+        "prefill_ok": 8,
+        "valid": true
+      },
+      "sanity_pid": 2844,
+      "sanity": {
+        "passed": 7,
+        "total": 7
+      },
+      "finished": "2026-11-13 22:24:56",
+      "hardware": {
+        "0": {
+          "max_temp_c": 76.0,
+          "min_free_mib": 526.0,
+          "thermal_active_samples": 0
+        },
+        "1": {
+          "max_temp_c": 71.0,
+          "min_free_mib": 738.0,
+          "thermal_active_samples": 0
+        }
+      },
+      "reviewed": true
+    }
+  },
+  "supervisor_pid": 9436,
+  "updated": "2026-11-13 22:25:06",
+  "recovery": "2026-11-13 reviewed user_args override; sanitized isolated baseline, new IDs reference36-v2/split24-v2; original installed profile unchanged",
+  "finished": "2026-11-13 22:32:04",
+  "recommended_profile": "recommended.json",
+  "installed_profile_unchanged": true,
+  "startup_unchanged": true,
+  "test_processes_stopped": true
+}

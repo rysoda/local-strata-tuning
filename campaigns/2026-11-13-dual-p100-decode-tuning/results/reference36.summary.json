@@ -1,0 +1,27 @@
+{
+  "phase": "complete",
+  "server_pid": 13068,
+  "started": "2026-11-13 20:00:18",
+  "benchmark_pid": 6412,
+  "metrics": {
+    "decode": 31.436827313864768,
+    "prefill": 343.72977598254954,
+    "decode_ok": 5,
+    "prefill_ok": 8,
+    "valid": true
+  },
+  "finished": "2026-11-13 20:09:17",
+  "hardware": {
+    "0": {
+      "max_temp_c": 74.0,
+      "min_free_mib": 488.0,
+      "thermal_active_samples": 0
+    },
+    "1": {
+      "max_temp_c": 54.0,
+      "min_free_mib": 748.0,
+      "thermal_active_samples": 0
+    }
+  },
+  "reviewed": true
+}

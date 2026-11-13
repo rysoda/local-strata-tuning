@@ -6,17 +6,17 @@ Hardware-specific tuning of **Qwen3.8-Flash-Next IQ3_S**, using the existing Win
 
 | Item | Current recommendation / result |
 |---|---|
-| Hardware / engine | P100 CPU PCIe x16 + 1080 Ti chipset x4; Strata 0.1.57 |
-| Model / quality settings | IQ3_S, 256K context, full experts, int8 KV; existing MTP/reasoning retained |
-| Placement | P100 layers 0–35; 1080 Ti layers 36–47/Main; trimmed stage weights |
-| **VRAM reserves: before → after** | **P100 1400 → 640 MiB; 1080 Ti 2304 → 896 MiB** |
-| **Decode: before → after** | **37.49 → 38.86 tok/s (+3.65%)** |
-| **Prefill: before → after** | **325.98 → 331.35 tok/s (+1.65%)** |
-| Validation | Three alternating candidate/reference confirmations; candidate passed both scheduled 7/7 smoke sets, including ~230K-token recall |
-| Startup | Updated to 640/896 MiB; existing experimental projection retained |
-| Read more | [Recommendation and before/after table](campaigns/2026-11-08-p100-1080ti-reserve-performance/README.md) · [Full report](campaigns/2026-11-08-p100-1080ti-reserve-performance/REPORT.md) · [Startup deployment](campaigns/2026-11-08-p100-1080ti-reserve-performance/STARTUP_UPDATE.md) |
+| Hardware / engine | **Two P100 16GB TCC, PCIe 3 x8/x8**, installed engine 0.1.59 / Control 0.1.57 |
+| Model / quality settings | IQ3_S, 256K context, full experts, int8 KV; existing MTP/reasoning retained; no projection |
+| Placement / pipeline | **24/24 trimmed split**, GPU1/Main; pipeline windows2, MTP kept on last card |
+| VRAM reserves | GPU0 **640 MiB**, GPU1 **896 MiB**, unchanged |
+| **Decode: reference → candidate** | **31.70 → 46.15 tok/s (+45.6%)** |
+| **Prefill: reference → candidate** | **345.89 → 347.41 tok/s (+0.44%, essentially unchanged)** |
+| Validation | Two candidate confirmations bracketing one reference; reference/candidate each7/7 smoke checks including230146 actual prompt tokens |
+| Startup | **Unchanged: still old36/12 + projection**; separate tuned launcher ready |
+| Read more | [Recommendation](campaigns/2026-11-13-dual-p100-decode-tuning/README.md) · [Full report/options tested](campaigns/2026-11-13-dual-p100-decode-tuning/REPORT.md) · [Ready launcher](launchers/Run-Dual-P100-Tuned.cmd) |
 
-Speed figures are means of three per-run medians on the same workload **without projection**. Modest gains are not statistically proven; Startup's retained projection was not validated by this comparison. Older topology/software results below are historical, not directly comparable.
+Candidate figures are means of two per-run medians versus one nearby fresh reference, all **without projection**. Decode repeats were44.66/47.63 tok/s; quick screening is not statistical significance or comprehensive quality equivalence. Earlier mixed-card recommendation and Startup history remain in [the reserve-performance report](campaigns/2026-11-08-p100-1080ti-reserve-performance/REPORT.md). Older topology/software results below are historical, not directly comparable.
 
 ## P100 cooling quick summary
 
@@ -39,6 +39,9 @@ All selected runs are 10 minutes. Temperature and SM clock show **mean / sampled
 
 | Campaign | Hardware / links | Engine / Control | Status | Decode (tok/s) | Prefill (tok/s) | Main finding |
 |---|---|---|---|---:|---:|---|
+| **[Dual P100 decode tuning](campaigns/2026-11-13-dual-p100-decode-tuning/)** | Two P10016GB TCC, PCIe3 x8/x8 | 0.1.59 / 0.1.57 | **Complete:10 benchmarks,2 exclusions** | **44.66–47.63** | **347.26–347.57** | 24/24 + pipeline2, MTP last; nearby reference31.70/345.89;7/7 smokes each; Startup unchanged |
+| [Dual P100 installed-server quick check](campaigns/2026-11-12-dual-p100-deployment/REPORT.md) | Two P100 16GB; inherited 36/12 split | 0.1.59 / 0.1.57 | **Complete: 3 benchmarks** | 32.00 | 344.61 | Existing projection retained; lower decode than historical mixed-card quick result, not a controlled comparison or retune |
+| [0.1.59 installed-server quick check](campaigns/2026-11-12-p100-1080ti-engine-0159-quick/) | P100 CPU x16 / 1080 Ti chipset x4 | 0.1.59 / 0.1.57 | **Complete: 3 benchmarks** | 38.43 | 329.73 | Existing projection retained; no clear speed improvement versus historical evidence; not an engine-only comparison |
 | [1080 Ti parameter tuning](campaigns/2026-10-28-1080ti-tuning/) | GTX 1080 Ti; original single-card topology | 0.1.52 / 0.1.51 | Complete: 54 benchmarks | 31.25–31.27 | 426.38–428.51 | About +3.2% decode against the full-expert reference; prefill essentially unchanged |
 | [P100 + 1080 Ti x16/x4](campaigns/2026-11-01-p100-1080ti-x16-x4/) | P100 x16; 1080 Ti x4 | 0.1.55 / 0.1.55 | Historical: 6 benchmarks | 35.08–35.93 | 283.96–287.42 | Dual-card screening; superseded by the new topology |
 | **[P100 + 1080 Ti x8/x8](campaigns/2026-11-02-p100-1080ti-x8-x8/)** | Both CPU-connected PCIe 3 x8 | 0.1.55 / 0.1.55 | **Complete: 16 benchmarks, 2 rejected configurations** | **37.30–40.62** | **317.70–319.54** | **Validated for the tested x8/x8 slots: explicit 32/16 split, trim, later reserve 1600 MiB** |

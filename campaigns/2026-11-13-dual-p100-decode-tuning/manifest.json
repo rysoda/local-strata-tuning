@@ -1,0 +1,38 @@
+{
+  "id": "2026-11-13-dual-p100-decode-tuning",
+  "title": "Dual P100 decode tuning on installed engine 0.1.59",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "GPU 0 Tesla P100-PCIE-16GB TCC",
+      "GPU 1 Tesla P100-PCIE-16GB TCC"
+    ],
+    "cpu": "Intel Core i5-11400F, 6C/12T",
+    "ram_gib": 63.89,
+    "pcie": "PCIe 3.0 x8/x8"
+  },
+  "software": {
+    "engine": "0.1.59 CUDA12",
+    "control": "0.1.57",
+    "betterbench": "0.6.1",
+    "os": "Windows 11 10.0.26300, NVIDIA 582.99"
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 262144,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": "REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 10,
+  "rejected_configurations": 2,
+  "recommended_profile": "recommended.json",
+  "resume_script": "scripts/run.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": [
+    "2026-11-12-dual-p100-deployment"
+  ]
+}

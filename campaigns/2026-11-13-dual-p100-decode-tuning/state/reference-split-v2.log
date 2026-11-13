@@ -1,0 +1,2 @@
+reference36-v2 {"decode": 32.042130340988265, "prefill": 345.8690226763893, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+split24-v2 {"decode": 40.627621740615794, "prefill": 347.36539131087636, "decode_ok": 5, "prefill_ok": 8, "valid": true}

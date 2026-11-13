@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-12-dual-p100-deployment",
+  "title": "Two P100 deployment with existing settings",
+  "status": "complete",
+  "hardware": {
+    "gpu": [
+      "GPU 0: Tesla P100-PCIE-16GB",
+      "GPU 1: Tesla P100-PCIE-16GB"
+    ],
+    "cpu": null,
+    "ram_gib": null,
+    "pcie": null
+  },
+  "software": {
+    "engine": "0.1.59",
+    "control": "0.1.57",
+    "betterbench": null,
+    "os": null
+  },
+  "model": {
+    "name": "qwen3.8-flash-next-iq3_s",
+    "context": 262144,
+    "kv": "int8",
+    "kv_resident": 32768
+  },
+  "workload": "../../workloads/betterbench-16k.json",
+  "report": "REPORT.md",
+  "state": "state/queue-state.json",
+  "completed_phase": "complete",
+  "completed_benchmarks": 3,
+  "rejected_configurations": 0,
+  "recommended_profile": null,
+  "resume_script": "scripts/quick.py",
+  "pause_file": "state/STOP",
+  "related_campaigns": []
+}

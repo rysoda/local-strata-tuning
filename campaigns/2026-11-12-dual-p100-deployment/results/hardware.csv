@@ -1,0 +1,3 @@
+index, name, uuid, memory.total [MiB], pci.bus_id, pcie.link.gen.current, pcie.link.width.current, driver_version
+0, Tesla P100-PCIE-16GB, GPU-bab5c751-1e02-b6a7-cf6f-b6256c3a5999, 16384 MiB, 00000000:01:00.0, 3, 8, 582.99
+1, Tesla P100-PCIE-16GB, GPU-3b23cf72-6f23-5588-2e4f-a4fdb0140fa6, 16384 MiB, 00000000:02:00.0, 3, 8, 582.99

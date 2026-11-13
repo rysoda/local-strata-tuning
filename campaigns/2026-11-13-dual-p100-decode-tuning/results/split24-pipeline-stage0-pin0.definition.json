@@ -1,0 +1,11 @@
+{
+  "split": 24,
+  "args": [
+    "--pipeline-windows",
+    "2"
+  ],
+  "env": {
+    "STRATA_MTP_STAGE0": "1",
+    "STRATA_ARENA_PIN_GIB": "0"
+  }
+}

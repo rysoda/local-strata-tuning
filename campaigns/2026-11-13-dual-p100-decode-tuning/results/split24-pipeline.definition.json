@@ -1,0 +1,7 @@
+{
+  "split": 24,
+  "args": [
+    "--pipeline-windows",
+    "2"
+  ]
+}

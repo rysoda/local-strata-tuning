@@ -1,0 +1,6 @@
+{
+  "split": 24,
+  "env": {
+    "STRATA_ARENA_PIN_GIB": "0"
+  }
+}

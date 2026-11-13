@@ -1,0 +1,321 @@
+{
+  "checks": [
+    {
+      "name": "stable-unique",
+      "expected": {
+        "result": [
+          3,
+          1,
+          2,
+          4
+        ]
+      },
+      "started": "2026-11-13 21:46:12",
+      "response": {
+        "id": "chatcmpl-c8ac215f106d43319652d686",
+        "object": "chat.completion",
+        "created": 1794602772,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"result\":[3,1,2,4]}",
+              "reasoning_content": "We need answer user: \"Implement stable unique mentally for [3,1,3,2,1,4,2]. Return only a JSON object with key result containing the output list.\"\n\nNeed produce final only JSON object. Need understand \"stable unique mentally\" likely stable unique preserving first occurrence order. Input [3,1,3,2,1,4,2] -> unique stable: [3,1,2,4]. Need output {\"result\":[3,1,2,4]}. Ensure only JSON object.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 85,
+          "completion_tokens": 125,
+          "total_tokens": 210,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 85,
+          "prompt_ms": 2450.1,
+          "prompt_per_token_ms": 28.825,
+          "prompt_per_second": 34.7,
+          "predicted_n": 125,
+          "predicted_ms": 3859.7,
+          "predicted_per_token_ms": 30.878,
+          "predicted_per_second": 32.4,
+          "draft_n": 106,
+          "draft_n_accepted": 87
+        }
+      },
+      "passed": true,
+      "elapsed_s": 6.390999999999622
+    },
+    {
+      "name": "python-alias-trace",
+      "expected": {
+        "a": [
+          1,
+          2,
+          3
+        ],
+        "b": [
+          1,
+          2
+        ],
+        "c": [
+          1,
+          2,
+          3
+        ]
+      },
+      "started": "2026-11-13 21:46:18",
+      "response": {
+        "id": "chatcmpl-165623a17c634851b442f19e",
+        "object": "chat.completion",
+        "created": 1794602778,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"a\":[1,2,3],\"b\":[1,2],\"c\":[1,2,3]}",
+              "reasoning_content": "We need answer user's request. Need produce final only JSON with keys a,b,c. Need determine Python: a=[1,2]; b=a[:] creates shallow copy list [1,2]; c=a references same list as a. c.append(3) mutates list referenced by a and c. b remains [1,2]. So JSON: {\"a\":[1,2,3],\"b\":[1,2],\"c\":[1,2,3]}. Ensure only JSON.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 91,
+          "completion_tokens": 127,
+          "total_tokens": 218,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 91,
+          "prompt_ms": 2447.2,
+          "prompt_per_token_ms": 26.892,
+          "prompt_per_second": 37.2,
+          "predicted_n": 127,
+          "predicted_ms": 3702.2,
+          "predicted_per_token_ms": 29.151,
+          "predicted_per_second": 34.3,
+          "draft_n": 107,
+          "draft_n_accepted": 85
+        }
+      },
+      "passed": true,
+      "elapsed_s": 6.17200000000048
+    },
+    {
+      "name": "binary-search-trace",
+      "expected": {
+        "left": 1,
+        "right": 4
+      },
+      "started": "2026-11-13 21:46:24",
+      "response": {
+        "id": "chatcmpl-db75d92000d04c51aed9d43c",
+        "object": "chat.completion",
+        "created": 1794602784,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"left\":1,\"right\":4}",
+              "reasoning_content": "We need answer user's request. Need produce final only JSON with keys left and right. Need compute bisect_left and bisect_right insertion indexes for 3 in sorted list [1,3,3,3,8]. Python bisect_left returns first index where 3 can be inserted to maintain sorted order, before existing 3s: index 1. bisect_right returns after existing 3s: index 4. Output only JSON: {\"left\":1,\"right\":4}. Ensure no extra.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 91,
+          "completion_tokens": 118,
+          "total_tokens": 209,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 91,
+          "prompt_ms": 2393.9,
+          "prompt_per_token_ms": 26.307,
+          "prompt_per_second": 38.0,
+          "predicted_n": 118,
+          "predicted_ms": 3479.0,
+          "predicted_per_token_ms": 29.483,
+          "predicted_per_second": 33.9,
+          "draft_n": 105,
+          "draft_n_accepted": 81
+        }
+      },
+      "passed": true,
+      "elapsed_s": 5.875
+    },
+    {
+      "name": "tool-call",
+      "expected": null,
+      "started": "2026-11-13 21:46:30",
+      "response": {
+        "id": "chatcmpl-79893cad69e54db7afe3cf45",
+        "object": "chat.completion",
+        "created": 1794602790,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "reasoning_content": "The user wants me to look up issue 42. Simple, direct call.\n",
+              "tool_calls": [
+                {
+                  "id": "call_068a203fabc94e27be561ec4",
+                  "type": "function",
+                  "function": {
+                    "name": "lookup_issue",
+                    "arguments": "{\"issue_id\":42}"
+                  }
+                }
+              ]
+            },
+            "finish_reason": "tool_calls"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 321,
+          "completion_tokens": 49,
+          "total_tokens": 370,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 321,
+          "prompt_ms": 4554.9,
+          "prompt_per_token_ms": 14.19,
+          "prompt_per_second": 70.5,
+          "predicted_n": 49,
+          "predicted_ms": 1661.9,
+          "predicted_per_token_ms": 33.916,
+          "predicted_per_second": 29.5,
+          "draft_n": 41,
+          "draft_n_accepted": 36
+        }
+      },
+      "passed": true,
+      "elapsed_s": 6.234000000000378
+    },
+    {
+      "name": "recall-32000",
+      "expected": {
+        "KEY_1": "CEDAR-731",
+        "KEY_2": "MAPLE-284",
+        "KEY_3": "BIRCH-956"
+      },
+      "started": "2026-11-13 21:46:37",
+      "response": {
+        "id": "chatcmpl-aad257c7933c4711afa590c3",
+        "object": "chat.completion",
+        "created": 1794602797,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"KEY_1\": \"CEDAR-731\",\n  \"KEY_2\": \"MAPLE-284\",\n  \"KEY_3\": \"BIRCH-956\"\n}",
+              "reasoning_content": "We need answer user's request. Need parse document retrieval sanity check. They provide long records with embedded statements:\n\"The recorded value of KEY_1 is CEDAR-731.\"\n...\n\"The recorded value of KEY_2 is MAPLE-284.\"\n...\n\"The recorded value of KEY_3 is BIRCH-956.\"\nNeed return only JSON object with keys KEY_1, KEY_2, KEY_3 and recorded values. Ensure no extra text. Need final JSON.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 32151,
+          "completion_tokens": 160,
+          "total_tokens": 32311,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 32151,
+          "prompt_ms": 84470.6,
+          "prompt_per_token_ms": 2.627,
+          "prompt_per_second": 380.6,
+          "predicted_n": 160,
+          "predicted_ms": 4637.5,
+          "predicted_per_token_ms": 28.984,
+          "predicted_per_second": 34.5,
+          "draft_n": 126,
+          "draft_n_accepted": 109
+        }
+      },
+      "passed": true,
+      "elapsed_s": 89.17100000000028,
+      "input_content_tokens": 32099
+    },
+    {
+      "name": "recall-119000",
+      "expected": {
+        "KEY_1": "CEDAR-731",
+        "KEY_2": "MAPLE-284",
+        "KEY_3": "BIRCH-956"
+      },
+      "started": "2026-11-13 21:48:06",
+      "response": {
+        "id": "chatcmpl-be4974bf7de84fee89f88433",
+        "object": "chat.completion",
+        "created": 1794602886,
+        "model": "qwen3.8-flash-next-iq3_s",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"KEY_1\": \"CEDAR-731\",\n  \"KEY_2\": \"MAPLE-284\",\n  \"KEY_3\": \"BIRCH-956\"\n}",
+              "reasoning_content": "We need answer user's request. Need parse document retrieval sanity check. User provided huge text with records: \"The recorded value of KEY_1 is CEDAR-731.\" then later \"The recorded value of KEY_2 is MAPLE-284.\" then later \"The recorded value of KEY_3 is BIRCH-956.\" They ask: return only the three recorded KEY values as a JSON object. Exactly JSON object with keys KEY_1, KEY_2, KEY_3 and recorded values. Need final only JSON. Ensure no extra.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 119151,
+          "completion_tokens": 171,
+          "total_tokens": 119322,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 119151,
+          "prompt_ms": 307239.8,
+          "prompt_per_token_ms": 2.579,
+          "prompt_per_second": 387.8,
+          "predicted_n": 171,
+          "predicted_ms": 5118.8,
+          "predicted_per_token_ms": 29.935,
+          "predicted_per_second": 33.4,
+          "draft_n": 144,
+          "draft_n_accepted": 109
+        }
+      },
+      "passed": true,
+      "elapsed_s": 312.5,
+      "input_content_tokens": 119099
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

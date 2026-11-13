@@ -1,0 +1,2 @@
+split24-pipeline-stage0 {"decode": 40.32768251685596, "prefill": 346.2290688458261, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+split24-pipeline-stage0-pin0 {"decode": 41.476136386416265, "prefill": 378.0051627217048, "decode_ok": 5, "prefill_ok": 8, "valid": true}

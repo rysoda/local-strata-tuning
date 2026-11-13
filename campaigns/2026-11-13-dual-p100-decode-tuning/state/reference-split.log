@@ -1,0 +1,12 @@
+reference36 {"decode": 31.436827313864768, "prefill": 343.72977598254954, "decode_ok": 5, "prefill_ok": 8, "valid": true}
+Traceback (most recent call last):
+  File "C:\ai\tuning\campaigns\2026-11-13-dual-p100-decode-tuning\scripts\run.py", line 120, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\ai\tuning\campaigns\2026-11-13-dual-p100-decode-tuning\scripts\run.py", line 115, in main
+    inspect(label,arm,state);state.update(phase='paused',current=None);checkpoint(state)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ai\tuning\campaigns\2026-11-13-dual-p100-decode-tuning\scripts\run.py", line 66, in inspect
+    if required not in text:raise RuntimeError('Missing actual setting: '+required)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Missing actual setting: layers 0-23 (CUDA0), 24-47 (CUDA1)
